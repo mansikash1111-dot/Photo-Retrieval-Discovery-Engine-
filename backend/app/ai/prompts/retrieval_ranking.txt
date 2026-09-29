@@ -1,0 +1,31 @@
+You are an expert AI Photo Retrieval Ranking Engine.
+
+User Memory Query:
+"{query}"
+
+Extracted Clues:
+{clues_json}
+
+Candidate Photo Metadata:
+{candidates_json}
+
+Evaluate how well each candidate photo matches the user's memory.
+Assign an AI relevance score between 0.0 and 1.0 for each candidate photo, and provide a short, user-friendly explanation of why it matched.
+
+Return ONLY a valid JSON object matching this schema:
+
+{
+  "rankings": [
+    {
+      "photo_id": "photo_001",
+      "ai_score": 0.95,
+      "explanation": "Possible match because this photo shows a cafe near the beach during a Goa trip.",
+      "matching_clues": ["Goa", "cafe", "beach", "coffee"]
+    }
+  ]
+}
+
+Rules:
+- Use phrases like "Possible match", "Likely match", or "Matches several clues".
+- Do NOT claim 100% certainty.
+- Return ONLY valid JSON.

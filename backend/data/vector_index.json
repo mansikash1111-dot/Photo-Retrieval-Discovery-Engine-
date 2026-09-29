@@ -1,0 +1,1612 @@
+{
+  "documents": {
+    "photo_001": {
+      "id": "photo_001",
+      "text": "Location: Goa, India.\n        Event: Goa trip.\n        People: friends, trip.\n        Scene: beach, cafe.\n        Objects: cafe, coffee.\n        Activity: sitting, drinking coffee.\n        Weather: sunny.\n        Time: afternoon.\n        Description: Friends sitting at a small cafe near the beach in Goa. (afternoon beach cafe view)..\n        Keywords: Goa beach cafe coffee friends trip ocean afternoon.",
+      "metadata": {
+        "id": "photo_001",
+        "filename": "travel_01_01.jpg",
+        "file_path": "photos/travel/travel_01_01.jpg",
+        "category": "travel",
+        "date_taken": "2025-04-19",
+        "location": "Goa, India",
+        "event": "Goa trip",
+        "description": "Friends sitting at a small cafe near the beach in Goa. (afternoon beach cafe view).",
+        "people": [
+          "friends",
+          "trip"
+        ],
+        "objects": [
+          "cafe",
+          "coffee"
+        ],
+        "scene": [
+          "beach",
+          "cafe"
+        ],
+        "activity": [
+          "sitting",
+          "drinking coffee"
+        ],
+        "weather": "sunny",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "Goa",
+          "beach",
+          "cafe",
+          "coffee",
+          "friends",
+          "trip",
+          "ocean",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_002": {
+      "id": "photo_002",
+      "text": "Location: Goa, India.\n        Event: Goa trip.\n        People: friends, trip.\n        Scene: beach, cafe.\n        Objects: cafe, coffee.\n        Activity: sitting, drinking coffee.\n        Weather: sunny.\n        Time: afternoon.\n        Description: Friends sitting at a small cafe near the beach in Goa. (sunset dining table setup)..\n        Keywords: Goa beach cafe coffee friends trip ocean sunset.",
+      "metadata": {
+        "id": "photo_002",
+        "filename": "travel_01_02.jpg",
+        "file_path": "photos/travel/travel_01_02.jpg",
+        "category": "travel",
+        "date_taken": "2025-12-11",
+        "location": "Goa, India",
+        "event": "Goa trip",
+        "description": "Friends sitting at a small cafe near the beach in Goa. (sunset dining table setup).",
+        "people": [
+          "friends",
+          "trip"
+        ],
+        "objects": [
+          "cafe",
+          "coffee"
+        ],
+        "scene": [
+          "beach",
+          "cafe"
+        ],
+        "activity": [
+          "sitting",
+          "drinking coffee"
+        ],
+        "weather": "sunny",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "Goa",
+          "beach",
+          "cafe",
+          "coffee",
+          "friends",
+          "trip",
+          "ocean",
+          "sunset"
+        ]
+      }
+    },
+    "photo_003": {
+      "id": "photo_003",
+      "text": "Location: Manali, Himachal.\n        Event: Mountain trekking.\n        People: nature, mountains.\n        Scene: mountains, hiking trail.\n        Objects: trail, backpacking.\n        Activity: trekking, sightseeing.\n        Weather: rainy.\n        Time: morning.\n        Description: Trekking on a scenic mountain pine tree trail with friends. (afternoon beach cafe view)..\n        Keywords: trekking hiking trail backpacking nature mountains forest afternoon.",
+      "metadata": {
+        "id": "photo_003",
+        "filename": "travel_02_01.jpg",
+        "file_path": "photos/travel/travel_02_01.jpg",
+        "category": "travel",
+        "date_taken": "2025-11-08",
+        "location": "Manali, Himachal",
+        "event": "Mountain trekking",
+        "description": "Trekking on a scenic mountain pine tree trail with friends. (afternoon beach cafe view).",
+        "people": [
+          "nature",
+          "mountains"
+        ],
+        "objects": [
+          "trail",
+          "backpacking"
+        ],
+        "scene": [
+          "mountains",
+          "hiking trail"
+        ],
+        "activity": [
+          "trekking",
+          "sightseeing"
+        ],
+        "weather": "rainy",
+        "time_of_day": "morning",
+        "keywords": [
+          "trekking",
+          "hiking",
+          "trail",
+          "backpacking",
+          "nature",
+          "mountains",
+          "forest",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_004": {
+      "id": "photo_004",
+      "text": "Location: Manali, Himachal.\n        Event: Mountain trekking.\n        People: nature, mountains.\n        Scene: mountains, hiking trail.\n        Objects: trail, backpacking.\n        Activity: trekking, sightseeing.\n        Weather: rainy.\n        Time: morning.\n        Description: Trekking on a scenic mountain pine tree trail with friends. (sunset dining table setup)..\n        Keywords: trekking hiking trail backpacking nature mountains forest sunset.",
+      "metadata": {
+        "id": "photo_004",
+        "filename": "travel_02_02.jpg",
+        "file_path": "photos/travel/travel_02_02.jpg",
+        "category": "travel",
+        "date_taken": "2023-05-04",
+        "location": "Manali, Himachal",
+        "event": "Mountain trekking",
+        "description": "Trekking on a scenic mountain pine tree trail with friends. (sunset dining table setup).",
+        "people": [
+          "nature",
+          "mountains"
+        ],
+        "objects": [
+          "trail",
+          "backpacking"
+        ],
+        "scene": [
+          "mountains",
+          "hiking trail"
+        ],
+        "activity": [
+          "trekking",
+          "sightseeing"
+        ],
+        "weather": "rainy",
+        "time_of_day": "morning",
+        "keywords": [
+          "trekking",
+          "hiking",
+          "trail",
+          "backpacking",
+          "nature",
+          "mountains",
+          "forest",
+          "sunset"
+        ]
+      }
+    },
+    "photo_005": {
+      "id": "photo_005",
+      "text": "Location: Jaipur, Rajasthan.\n        Event: Heritage tour.\n        People: heritage, architecture.\n        Scene: fort, palace, pink city.\n        Objects: Amber palace, pink city.\n        Activity: sightseeing, architecture photography.\n        Weather: sunny.\n        Time: afternoon.\n        Description: Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (afternoon beach cafe view)..\n        Keywords: Jaipur fort Amber palace pink city heritage architecture Rajasthan afternoon.",
+      "metadata": {
+        "id": "photo_005",
+        "filename": "travel_03_01.jpg",
+        "file_path": "photos/travel/travel_03_01.jpg",
+        "category": "travel",
+        "date_taken": "2023-06-25",
+        "location": "Jaipur, Rajasthan",
+        "event": "Heritage tour",
+        "description": "Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (afternoon beach cafe view).",
+        "people": [
+          "heritage",
+          "architecture"
+        ],
+        "objects": [
+          "Amber palace",
+          "pink city"
+        ],
+        "scene": [
+          "fort",
+          "palace",
+          "pink city"
+        ],
+        "activity": [
+          "sightseeing",
+          "architecture photography"
+        ],
+        "weather": "sunny",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "Jaipur",
+          "fort",
+          "Amber palace",
+          "pink city",
+          "heritage",
+          "architecture",
+          "Rajasthan",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_006": {
+      "id": "photo_006",
+      "text": "Location: Jaipur, Rajasthan.\n        Event: Heritage tour.\n        People: heritage, architecture.\n        Scene: fort, palace, pink city.\n        Objects: Amber palace, pink city.\n        Activity: sightseeing, architecture photography.\n        Weather: sunny.\n        Time: afternoon.\n        Description: Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (sunset dining table setup)..\n        Keywords: Jaipur fort Amber palace pink city heritage architecture Rajasthan sunset.",
+      "metadata": {
+        "id": "photo_006",
+        "filename": "travel_03_02.jpg",
+        "file_path": "photos/travel/travel_03_02.jpg",
+        "category": "travel",
+        "date_taken": "2025-10-23",
+        "location": "Jaipur, Rajasthan",
+        "event": "Heritage tour",
+        "description": "Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (sunset dining table setup).",
+        "people": [
+          "heritage",
+          "architecture"
+        ],
+        "objects": [
+          "Amber palace",
+          "pink city"
+        ],
+        "scene": [
+          "fort",
+          "palace",
+          "pink city"
+        ],
+        "activity": [
+          "sightseeing",
+          "architecture photography"
+        ],
+        "weather": "sunny",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "Jaipur",
+          "fort",
+          "Amber palace",
+          "pink city",
+          "heritage",
+          "architecture",
+          "Rajasthan",
+          "sunset"
+        ]
+      }
+    },
+    "photo_007": {
+      "id": "photo_007",
+      "text": "Location: Home Dining Room.\n        Event: Family gathering.\n        People: home, food.\n        Scene: dining table, home indoor.\n        Objects: dinner, gathering.\n        Activity: eating dinner, laughing.\n        Weather: clear.\n        Time: evening.\n        Description: Warm family reunion dinner sitting around a crowded table at home. (afternoon beach cafe view)..\n        Keywords: family reunion dinner gathering home food relatives afternoon.",
+      "metadata": {
+        "id": "photo_007",
+        "filename": "family_04_01.jpg",
+        "file_path": "photos/family/family_04_01.jpg",
+        "category": "family",
+        "date_taken": "2023-01-19",
+        "location": "Home Dining Room",
+        "event": "Family gathering",
+        "description": "Warm family reunion dinner sitting around a crowded table at home. (afternoon beach cafe view).",
+        "people": [
+          "home",
+          "food"
+        ],
+        "objects": [
+          "dinner",
+          "gathering"
+        ],
+        "scene": [
+          "dining table",
+          "home indoor"
+        ],
+        "activity": [
+          "eating dinner",
+          "laughing"
+        ],
+        "weather": "clear",
+        "time_of_day": "evening",
+        "keywords": [
+          "family",
+          "reunion",
+          "dinner",
+          "gathering",
+          "home",
+          "food",
+          "relatives",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_008": {
+      "id": "photo_008",
+      "text": "Location: Home Dining Room.\n        Event: Family gathering.\n        People: home, food.\n        Scene: dining table, home indoor.\n        Objects: dinner, gathering.\n        Activity: eating dinner, laughing.\n        Weather: clear.\n        Time: evening.\n        Description: Warm family reunion dinner sitting around a crowded table at home. (sunset dining table setup)..\n        Keywords: family reunion dinner gathering home food relatives sunset.",
+      "metadata": {
+        "id": "photo_008",
+        "filename": "family_04_02.jpg",
+        "file_path": "photos/family/family_04_02.jpg",
+        "category": "family",
+        "date_taken": "2025-01-09",
+        "location": "Home Dining Room",
+        "event": "Family gathering",
+        "description": "Warm family reunion dinner sitting around a crowded table at home. (sunset dining table setup).",
+        "people": [
+          "home",
+          "food"
+        ],
+        "objects": [
+          "dinner",
+          "gathering"
+        ],
+        "scene": [
+          "dining table",
+          "home indoor"
+        ],
+        "activity": [
+          "eating dinner",
+          "laughing"
+        ],
+        "weather": "clear",
+        "time_of_day": "evening",
+        "keywords": [
+          "family",
+          "reunion",
+          "dinner",
+          "gathering",
+          "home",
+          "food",
+          "relatives",
+          "sunset"
+        ]
+      }
+    },
+    "photo_009": {
+      "id": "photo_009",
+      "text": "Location: Party Hall.\n        Event: Birthday party.\n        People: candles, balloons.\n        Scene: party hall, decorations.\n        Objects: friends, cake.\n        Activity: cutting cake, celebrating.\n        Weather: indoor.\n        Time: evening.\n        Description: Birthday party with friends, colorful balloons, and chocolate cake on table. (afternoon beach cafe view)..\n        Keywords: birthday party friends cake candles balloons celebration afternoon.",
+      "metadata": {
+        "id": "photo_009",
+        "filename": "events_05_01.jpg",
+        "file_path": "photos/events/events_05_01.jpg",
+        "category": "events",
+        "date_taken": "2024-06-03",
+        "location": "Party Hall",
+        "event": "Birthday party",
+        "description": "Birthday party with friends, colorful balloons, and chocolate cake on table. (afternoon beach cafe view).",
+        "people": [
+          "candles",
+          "balloons"
+        ],
+        "objects": [
+          "friends",
+          "cake"
+        ],
+        "scene": [
+          "party hall",
+          "decorations"
+        ],
+        "activity": [
+          "cutting cake",
+          "celebrating"
+        ],
+        "weather": "indoor",
+        "time_of_day": "evening",
+        "keywords": [
+          "birthday",
+          "party",
+          "friends",
+          "cake",
+          "candles",
+          "balloons",
+          "celebration",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_010": {
+      "id": "photo_010",
+      "text": "Location: Party Hall.\n        Event: Birthday party.\n        People: candles, balloons.\n        Scene: party hall, decorations.\n        Objects: friends, cake.\n        Activity: cutting cake, celebrating.\n        Weather: indoor.\n        Time: evening.\n        Description: Birthday party with friends, colorful balloons, and chocolate cake on table. (sunset dining table setup)..\n        Keywords: birthday party friends cake candles balloons celebration sunset.",
+      "metadata": {
+        "id": "photo_010",
+        "filename": "events_05_02.jpg",
+        "file_path": "photos/events/events_05_02.jpg",
+        "category": "events",
+        "date_taken": "2025-09-26",
+        "location": "Party Hall",
+        "event": "Birthday party",
+        "description": "Birthday party with friends, colorful balloons, and chocolate cake on table. (sunset dining table setup).",
+        "people": [
+          "candles",
+          "balloons"
+        ],
+        "objects": [
+          "friends",
+          "cake"
+        ],
+        "scene": [
+          "party hall",
+          "decorations"
+        ],
+        "activity": [
+          "cutting cake",
+          "celebrating"
+        ],
+        "weather": "indoor",
+        "time_of_day": "evening",
+        "keywords": [
+          "birthday",
+          "party",
+          "friends",
+          "cake",
+          "candles",
+          "balloons",
+          "celebration",
+          "sunset"
+        ]
+      }
+    },
+    "photo_011": {
+      "id": "photo_011",
+      "text": "Location: Home Courtyard.\n        Event: Diwali celebration.\n        People: sparklers, traditional outfits.\n        Scene: home outdoor, rangoli.\n        Objects: diyas, lights.\n        Activity: lighting diyas, sparklers.\n        Weather: night.\n        Time: night.\n        Description: Diwali celebration with friends and family lighting traditional diyas and sparklers. (afternoon beach cafe view)..\n        Keywords: Diwali festival diyas lights sparklers traditional outfits family friends afternoon.",
+      "metadata": {
+        "id": "photo_011",
+        "filename": "events_06_01.jpg",
+        "file_path": "photos/events/events_06_01.jpg",
+        "category": "events",
+        "date_taken": "2023-04-14",
+        "location": "Home Courtyard",
+        "event": "Diwali celebration",
+        "description": "Diwali celebration with friends and family lighting traditional diyas and sparklers. (afternoon beach cafe view).",
+        "people": [
+          "sparklers",
+          "traditional outfits"
+        ],
+        "objects": [
+          "diyas",
+          "lights"
+        ],
+        "scene": [
+          "home outdoor",
+          "rangoli"
+        ],
+        "activity": [
+          "lighting diyas",
+          "sparklers"
+        ],
+        "weather": "night",
+        "time_of_day": "night",
+        "keywords": [
+          "Diwali",
+          "festival",
+          "diyas",
+          "lights",
+          "sparklers",
+          "traditional outfits",
+          "family",
+          "friends",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_012": {
+      "id": "photo_012",
+      "text": "Location: Home Courtyard.\n        Event: Diwali celebration.\n        People: sparklers, traditional outfits.\n        Scene: home outdoor, rangoli.\n        Objects: diyas, lights.\n        Activity: lighting diyas, sparklers.\n        Weather: night.\n        Time: night.\n        Description: Diwali celebration with friends and family lighting traditional diyas and sparklers. (sunset dining table setup)..\n        Keywords: Diwali festival diyas lights sparklers traditional outfits family friends sunset.",
+      "metadata": {
+        "id": "photo_012",
+        "filename": "events_06_02.jpg",
+        "file_path": "photos/events/events_06_02.jpg",
+        "category": "events",
+        "date_taken": "2025-01-08",
+        "location": "Home Courtyard",
+        "event": "Diwali celebration",
+        "description": "Diwali celebration with friends and family lighting traditional diyas and sparklers. (sunset dining table setup).",
+        "people": [
+          "sparklers",
+          "traditional outfits"
+        ],
+        "objects": [
+          "diyas",
+          "lights"
+        ],
+        "scene": [
+          "home outdoor",
+          "rangoli"
+        ],
+        "activity": [
+          "lighting diyas",
+          "sparklers"
+        ],
+        "weather": "night",
+        "time_of_day": "night",
+        "keywords": [
+          "Diwali",
+          "festival",
+          "diyas",
+          "lights",
+          "sparklers",
+          "traditional outfits",
+          "family",
+          "friends",
+          "sunset"
+        ]
+      }
+    },
+    "photo_013": {
+      "id": "photo_013",
+      "text": "Location: City Park.\n        Event: Pets with owner.\n        People: playing, park.\n        Scene: park grass, lake.\n        Objects: owner, cat.\n        Activity: playing fetch, hugging pet.\n        Weather: sunset.\n        Time: sunset.\n        Description: Golden retriever playing fetch with owner on green grass in the park. (afternoon beach cafe view)..\n        Keywords: pet dog owner cat playing park golden retriever hug afternoon.",
+      "metadata": {
+        "id": "photo_013",
+        "filename": "pets_07_01.jpg",
+        "file_path": "photos/pets/pets_07_01.jpg",
+        "category": "pets",
+        "date_taken": "2024-03-06",
+        "location": "City Park",
+        "event": "Pets with owner",
+        "description": "Golden retriever playing fetch with owner on green grass in the park. (afternoon beach cafe view).",
+        "people": [
+          "playing",
+          "park"
+        ],
+        "objects": [
+          "owner",
+          "cat"
+        ],
+        "scene": [
+          "park grass",
+          "lake"
+        ],
+        "activity": [
+          "playing fetch",
+          "hugging pet"
+        ],
+        "weather": "sunset",
+        "time_of_day": "sunset",
+        "keywords": [
+          "pet",
+          "dog",
+          "owner",
+          "cat",
+          "playing",
+          "park",
+          "golden retriever",
+          "hug",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_014": {
+      "id": "photo_014",
+      "text": "Location: City Park.\n        Event: Pets with owner.\n        People: playing, park.\n        Scene: park grass, lake.\n        Objects: owner, cat.\n        Activity: playing fetch, hugging pet.\n        Weather: sunset.\n        Time: sunset.\n        Description: Golden retriever playing fetch with owner on green grass in the park. (sunset dining table setup)..\n        Keywords: pet dog owner cat playing park golden retriever hug sunset.",
+      "metadata": {
+        "id": "photo_014",
+        "filename": "pets_07_02.jpg",
+        "file_path": "photos/pets/pets_07_02.jpg",
+        "category": "pets",
+        "date_taken": "2023-12-04",
+        "location": "City Park",
+        "event": "Pets with owner",
+        "description": "Golden retriever playing fetch with owner on green grass in the park. (sunset dining table setup).",
+        "people": [
+          "playing",
+          "park"
+        ],
+        "objects": [
+          "owner",
+          "cat"
+        ],
+        "scene": [
+          "park grass",
+          "lake"
+        ],
+        "activity": [
+          "playing fetch",
+          "hugging pet"
+        ],
+        "weather": "sunset",
+        "time_of_day": "sunset",
+        "keywords": [
+          "pet",
+          "dog",
+          "owner",
+          "cat",
+          "playing",
+          "park",
+          "golden retriever",
+          "hug",
+          "sunset"
+        ]
+      }
+    },
+    "photo_015": {
+      "id": "photo_015",
+      "text": "Location: Downtown Bistro.\n        Event: Restaurant dining.\n        People: dinner table, coffee.\n        Scene: restaurant indoor, dining table.\n        Objects: food, cafe.\n        Activity: eating, drinking coffee.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (afternoon beach cafe view)..\n        Keywords: restaurant dining food cafe dinner table coffee menu afternoon.",
+      "metadata": {
+        "id": "photo_015",
+        "filename": "food_08_01.jpg",
+        "file_path": "photos/food/food_08_01.jpg",
+        "category": "food",
+        "date_taken": "2023-07-11",
+        "location": "Downtown Bistro",
+        "event": "Restaurant dining",
+        "description": "Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (afternoon beach cafe view).",
+        "people": [
+          "dinner table",
+          "coffee"
+        ],
+        "objects": [
+          "food",
+          "cafe"
+        ],
+        "scene": [
+          "restaurant indoor",
+          "dining table"
+        ],
+        "activity": [
+          "eating",
+          "drinking coffee"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "restaurant",
+          "dining",
+          "food",
+          "cafe",
+          "dinner table",
+          "coffee",
+          "menu",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_016": {
+      "id": "photo_016",
+      "text": "Location: Downtown Bistro.\n        Event: Restaurant dining.\n        People: dinner table, coffee.\n        Scene: restaurant indoor, dining table.\n        Objects: food, cafe.\n        Activity: eating, drinking coffee.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (sunset dining table setup)..\n        Keywords: restaurant dining food cafe dinner table coffee menu sunset.",
+      "metadata": {
+        "id": "photo_016",
+        "filename": "food_08_02.jpg",
+        "file_path": "photos/food/food_08_02.jpg",
+        "category": "food",
+        "date_taken": "2023-08-08",
+        "location": "Downtown Bistro",
+        "event": "Restaurant dining",
+        "description": "Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (sunset dining table setup).",
+        "people": [
+          "dinner table",
+          "coffee"
+        ],
+        "objects": [
+          "food",
+          "cafe"
+        ],
+        "scene": [
+          "restaurant indoor",
+          "dining table"
+        ],
+        "activity": [
+          "eating",
+          "drinking coffee"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "restaurant",
+          "dining",
+          "food",
+          "cafe",
+          "dinner table",
+          "coffee",
+          "menu",
+          "sunset"
+        ]
+      }
+    },
+    "photo_017": {
+      "id": "photo_017",
+      "text": "Location: Himalayas, India.\n        Event: Himalayan mountain.\n        People: Manali, high altitude.\n        Scene: snow peaks, high altitude.\n        Objects: snow, peaks.\n        Activity: mountain viewing, expedition.\n        Weather: cold.\n        Time: morning.\n        Description: Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (afternoon beach cafe view)..\n        Keywords: Himalayas mountain snow peaks Manali high altitude trekking afternoon.",
+      "metadata": {
+        "id": "photo_017",
+        "filename": "travel_09_01.jpg",
+        "file_path": "photos/travel/travel_09_01.jpg",
+        "category": "travel",
+        "date_taken": "2023-06-27",
+        "location": "Himalayas, India",
+        "event": "Himalayan mountain",
+        "description": "Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (afternoon beach cafe view).",
+        "people": [
+          "Manali",
+          "high altitude"
+        ],
+        "objects": [
+          "snow",
+          "peaks"
+        ],
+        "scene": [
+          "snow peaks",
+          "high altitude"
+        ],
+        "activity": [
+          "mountain viewing",
+          "expedition"
+        ],
+        "weather": "cold",
+        "time_of_day": "morning",
+        "keywords": [
+          "Himalayas",
+          "mountain",
+          "snow",
+          "peaks",
+          "Manali",
+          "high altitude",
+          "trekking",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_018": {
+      "id": "photo_018",
+      "text": "Location: Himalayas, India.\n        Event: Himalayan mountain.\n        People: Manali, high altitude.\n        Scene: snow peaks, high altitude.\n        Objects: snow, peaks.\n        Activity: mountain viewing, expedition.\n        Weather: cold.\n        Time: morning.\n        Description: Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (sunset dining table setup)..\n        Keywords: Himalayas mountain snow peaks Manali high altitude trekking sunset.",
+      "metadata": {
+        "id": "photo_018",
+        "filename": "travel_09_02.jpg",
+        "file_path": "photos/travel/travel_09_02.jpg",
+        "category": "travel",
+        "date_taken": "2025-11-13",
+        "location": "Himalayas, India",
+        "event": "Himalayan mountain",
+        "description": "Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (sunset dining table setup).",
+        "people": [
+          "Manali",
+          "high altitude"
+        ],
+        "objects": [
+          "snow",
+          "peaks"
+        ],
+        "scene": [
+          "snow peaks",
+          "high altitude"
+        ],
+        "activity": [
+          "mountain viewing",
+          "expedition"
+        ],
+        "weather": "cold",
+        "time_of_day": "morning",
+        "keywords": [
+          "Himalayas",
+          "mountain",
+          "snow",
+          "peaks",
+          "Manali",
+          "high altitude",
+          "trekking",
+          "sunset"
+        ]
+      }
+    },
+    "photo_019": {
+      "id": "photo_019",
+      "text": "Location: Gourmet Kitchen.\n        Event: Food photos.\n        People: indian thali, dessert.\n        Scene: food platter, table.\n        Objects: pizza, pasta.\n        Activity: food photography.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (afternoon beach cafe view)..\n        Keywords: food dishes pizza pasta indian thali dessert delicious meal afternoon.",
+      "metadata": {
+        "id": "photo_019",
+        "filename": "food_10_01.jpg",
+        "file_path": "photos/food/food_10_01.jpg",
+        "category": "food",
+        "date_taken": "2025-11-02",
+        "location": "Gourmet Kitchen",
+        "event": "Food photos",
+        "description": "Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (afternoon beach cafe view).",
+        "people": [
+          "indian thali",
+          "dessert"
+        ],
+        "objects": [
+          "pizza",
+          "pasta"
+        ],
+        "scene": [
+          "food platter",
+          "table"
+        ],
+        "activity": [
+          "food photography"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "food",
+          "dishes",
+          "pizza",
+          "pasta",
+          "indian thali",
+          "dessert",
+          "delicious",
+          "meal",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_020": {
+      "id": "photo_020",
+      "text": "Location: Gourmet Kitchen.\n        Event: Food photos.\n        People: indian thali, dessert.\n        Scene: food platter, table.\n        Objects: pizza, pasta.\n        Activity: food photography.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (sunset dining table setup)..\n        Keywords: food dishes pizza pasta indian thali dessert delicious meal sunset.",
+      "metadata": {
+        "id": "photo_020",
+        "filename": "food_10_02.jpg",
+        "file_path": "photos/food/food_10_02.jpg",
+        "category": "food",
+        "date_taken": "2023-04-09",
+        "location": "Gourmet Kitchen",
+        "event": "Food photos",
+        "description": "Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (sunset dining table setup).",
+        "people": [
+          "indian thali",
+          "dessert"
+        ],
+        "objects": [
+          "pizza",
+          "pasta"
+        ],
+        "scene": [
+          "food platter",
+          "table"
+        ],
+        "activity": [
+          "food photography"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "food",
+          "dishes",
+          "pizza",
+          "pasta",
+          "indian thali",
+          "dessert",
+          "delicious",
+          "meal",
+          "sunset"
+        ]
+      }
+    },
+    "photo_021": {
+      "id": "photo_021",
+      "text": "Location: Dance Studio A.\n        Event: Dancing class.\n        People: salsa, hip hop.\n        Scene: dance studio, mirrors, wood floor.\n        Objects: dancing, rehearsal.\n        Activity: dancing rehearsal, salsa practice, hip hop class.\n        Weather: indoor.\n        Time: evening.\n        Description: Dance studio class rehearsal with friends practicing choreography in front of mirrors. (afternoon beach cafe view)..\n        Keywords: dancing class dance studio dancing rehearsal salsa hip hop dance practice afternoon.",
+      "metadata": {
+        "id": "photo_021",
+        "filename": "activities_11_01.jpg",
+        "file_path": "photos/activities/activities_11_01.jpg",
+        "category": "activities",
+        "date_taken": "2024-08-26",
+        "location": "Dance Studio A",
+        "event": "Dancing class",
+        "description": "Dance studio class rehearsal with friends practicing choreography in front of mirrors. (afternoon beach cafe view).",
+        "people": [
+          "salsa",
+          "hip hop"
+        ],
+        "objects": [
+          "dancing",
+          "rehearsal"
+        ],
+        "scene": [
+          "dance studio",
+          "mirrors",
+          "wood floor"
+        ],
+        "activity": [
+          "dancing rehearsal",
+          "salsa practice",
+          "hip hop class"
+        ],
+        "weather": "indoor",
+        "time_of_day": "evening",
+        "keywords": [
+          "dancing class",
+          "dance studio",
+          "dancing",
+          "rehearsal",
+          "salsa",
+          "hip hop",
+          "dance practice",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_022": {
+      "id": "photo_022",
+      "text": "Location: Dance Studio A.\n        Event: Dancing class.\n        People: salsa, hip hop.\n        Scene: dance studio, mirrors, wood floor.\n        Objects: dancing, rehearsal.\n        Activity: dancing rehearsal, salsa practice, hip hop class.\n        Weather: indoor.\n        Time: evening.\n        Description: Dance studio class rehearsal with friends practicing choreography in front of mirrors. (sunset dining table setup)..\n        Keywords: dancing class dance studio dancing rehearsal salsa hip hop dance practice sunset.",
+      "metadata": {
+        "id": "photo_022",
+        "filename": "activities_11_02.jpg",
+        "file_path": "photos/activities/activities_11_02.jpg",
+        "category": "activities",
+        "date_taken": "2024-04-08",
+        "location": "Dance Studio A",
+        "event": "Dancing class",
+        "description": "Dance studio class rehearsal with friends practicing choreography in front of mirrors. (sunset dining table setup).",
+        "people": [
+          "salsa",
+          "hip hop"
+        ],
+        "objects": [
+          "dancing",
+          "rehearsal"
+        ],
+        "scene": [
+          "dance studio",
+          "mirrors",
+          "wood floor"
+        ],
+        "activity": [
+          "dancing rehearsal",
+          "salsa practice",
+          "hip hop class"
+        ],
+        "weather": "indoor",
+        "time_of_day": "evening",
+        "keywords": [
+          "dancing class",
+          "dance studio",
+          "dancing",
+          "rehearsal",
+          "salsa",
+          "hip hop",
+          "dance practice",
+          "sunset"
+        ]
+      }
+    },
+    "photo_023": {
+      "id": "photo_023",
+      "text": "Location: Aquatic Sports Center.\n        Event: Swimming classes.\n        People: swimming laps, diver.\n        Scene: swimming pool, poolside, clear blue water.\n        Objects: swim lesson, pool water.\n        Activity: swimming lesson, swimming laps, diving.\n        Weather: sunny.\n        Time: morning.\n        Description: Swimming class lesson in a clear blue indoor pool with goggles and instructor. (afternoon beach cafe view)..\n        Keywords: swimming classes swimming pool swim lesson pool water swimming laps diver aquatics afternoon.",
+      "metadata": {
+        "id": "photo_023",
+        "filename": "activities_12_01.jpg",
+        "file_path": "photos/activities/activities_12_01.jpg",
+        "category": "activities",
+        "date_taken": "2025-01-21",
+        "location": "Aquatic Sports Center",
+        "event": "Swimming classes",
+        "description": "Swimming class lesson in a clear blue indoor pool with goggles and instructor. (afternoon beach cafe view).",
+        "people": [
+          "swimming laps",
+          "diver"
+        ],
+        "objects": [
+          "swim lesson",
+          "pool water"
+        ],
+        "scene": [
+          "swimming pool",
+          "poolside",
+          "clear blue water"
+        ],
+        "activity": [
+          "swimming lesson",
+          "swimming laps",
+          "diving"
+        ],
+        "weather": "sunny",
+        "time_of_day": "morning",
+        "keywords": [
+          "swimming classes",
+          "swimming pool",
+          "swim lesson",
+          "pool water",
+          "swimming laps",
+          "diver",
+          "aquatics",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_024": {
+      "id": "photo_024",
+      "text": "Location: Aquatic Sports Center.\n        Event: Swimming classes.\n        People: swimming laps, diver.\n        Scene: swimming pool, poolside, clear blue water.\n        Objects: swim lesson, pool water.\n        Activity: swimming lesson, swimming laps, diving.\n        Weather: sunny.\n        Time: morning.\n        Description: Swimming class lesson in a clear blue indoor pool with goggles and instructor. (sunset dining table setup)..\n        Keywords: swimming classes swimming pool swim lesson pool water swimming laps diver aquatics sunset.",
+      "metadata": {
+        "id": "photo_024",
+        "filename": "activities_12_02.jpg",
+        "file_path": "photos/activities/activities_12_02.jpg",
+        "category": "activities",
+        "date_taken": "2024-02-27",
+        "location": "Aquatic Sports Center",
+        "event": "Swimming classes",
+        "description": "Swimming class lesson in a clear blue indoor pool with goggles and instructor. (sunset dining table setup).",
+        "people": [
+          "swimming laps",
+          "diver"
+        ],
+        "objects": [
+          "swim lesson",
+          "pool water"
+        ],
+        "scene": [
+          "swimming pool",
+          "poolside",
+          "clear blue water"
+        ],
+        "activity": [
+          "swimming lesson",
+          "swimming laps",
+          "diving"
+        ],
+        "weather": "sunny",
+        "time_of_day": "morning",
+        "keywords": [
+          "swimming classes",
+          "swimming pool",
+          "swim lesson",
+          "pool water",
+          "swimming laps",
+          "diver",
+          "aquatics",
+          "sunset"
+        ]
+      }
+    },
+    "photo_025": {
+      "id": "photo_025",
+      "text": "Location: Outdoor Lawn.\n        Event: Holi celebration.\n        People: friends, family.\n        Scene: outdoor lawn, festival colors.\n        Objects: colors, gulal.\n        Activity: playing colors, splashing gulal.\n        Weather: sunny.\n        Time: morning.\n        Description: Vibrant Holi festival of colors celebration with friends and family throwing gulal. (afternoon beach cafe view)..\n        Keywords: Holi festival colors gulal friends family celebration pichkari afternoon.",
+      "metadata": {
+        "id": "photo_025",
+        "filename": "events_13_01.jpg",
+        "file_path": "photos/events/events_13_01.jpg",
+        "category": "events",
+        "date_taken": "2025-04-26",
+        "location": "Outdoor Lawn",
+        "event": "Holi celebration",
+        "description": "Vibrant Holi festival of colors celebration with friends and family throwing gulal. (afternoon beach cafe view).",
+        "people": [
+          "friends",
+          "family"
+        ],
+        "objects": [
+          "colors",
+          "gulal"
+        ],
+        "scene": [
+          "outdoor lawn",
+          "festival colors"
+        ],
+        "activity": [
+          "playing colors",
+          "splashing gulal"
+        ],
+        "weather": "sunny",
+        "time_of_day": "morning",
+        "keywords": [
+          "Holi",
+          "festival",
+          "colors",
+          "gulal",
+          "friends",
+          "family",
+          "celebration",
+          "pichkari",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_026": {
+      "id": "photo_026",
+      "text": "Location: Outdoor Lawn.\n        Event: Holi celebration.\n        People: friends, family.\n        Scene: outdoor lawn, festival colors.\n        Objects: colors, gulal.\n        Activity: playing colors, splashing gulal.\n        Weather: sunny.\n        Time: morning.\n        Description: Vibrant Holi festival of colors celebration with friends and family throwing gulal. (sunset dining table setup)..\n        Keywords: Holi festival colors gulal friends family celebration pichkari sunset.",
+      "metadata": {
+        "id": "photo_026",
+        "filename": "events_13_02.jpg",
+        "file_path": "photos/events/events_13_02.jpg",
+        "category": "events",
+        "date_taken": "2023-08-19",
+        "location": "Outdoor Lawn",
+        "event": "Holi celebration",
+        "description": "Vibrant Holi festival of colors celebration with friends and family throwing gulal. (sunset dining table setup).",
+        "people": [
+          "friends",
+          "family"
+        ],
+        "objects": [
+          "colors",
+          "gulal"
+        ],
+        "scene": [
+          "outdoor lawn",
+          "festival colors"
+        ],
+        "activity": [
+          "playing colors",
+          "splashing gulal"
+        ],
+        "weather": "sunny",
+        "time_of_day": "morning",
+        "keywords": [
+          "Holi",
+          "festival",
+          "colors",
+          "gulal",
+          "friends",
+          "family",
+          "celebration",
+          "pichkari",
+          "sunset"
+        ]
+      }
+    },
+    "photo_027": {
+      "id": "photo_027",
+      "text": "Location: Nightclub Lounge.\n        Event: Club party.\n        People: dancing, lights.\n        Scene: dance floor, DJ booth.\n        Objects: nightclub, friends.\n        Activity: dancing, enjoying music.\n        Weather: indoor.\n        Time: night.\n        Description: Nightclub party with friends under vibrant purple and blue laser lights. (afternoon beach cafe view)..\n        Keywords: club party nightclub friends dancing lights music drinks afternoon.",
+      "metadata": {
+        "id": "photo_027",
+        "filename": "events_14_01.jpg",
+        "file_path": "photos/events/events_14_01.jpg",
+        "category": "events",
+        "date_taken": "2024-02-07",
+        "location": "Nightclub Lounge",
+        "event": "Club party",
+        "description": "Nightclub party with friends under vibrant purple and blue laser lights. (afternoon beach cafe view).",
+        "people": [
+          "dancing",
+          "lights"
+        ],
+        "objects": [
+          "nightclub",
+          "friends"
+        ],
+        "scene": [
+          "dance floor",
+          "DJ booth"
+        ],
+        "activity": [
+          "dancing",
+          "enjoying music"
+        ],
+        "weather": "indoor",
+        "time_of_day": "night",
+        "keywords": [
+          "club",
+          "party",
+          "nightclub",
+          "friends",
+          "dancing",
+          "lights",
+          "music",
+          "drinks",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_028": {
+      "id": "photo_028",
+      "text": "Location: Nightclub Lounge.\n        Event: Club party.\n        People: dancing, lights.\n        Scene: dance floor, DJ booth.\n        Objects: nightclub, friends.\n        Activity: dancing, enjoying music.\n        Weather: indoor.\n        Time: night.\n        Description: Nightclub party with friends under vibrant purple and blue laser lights. (sunset dining table setup)..\n        Keywords: club party nightclub friends dancing lights music drinks sunset.",
+      "metadata": {
+        "id": "photo_028",
+        "filename": "events_14_02.jpg",
+        "file_path": "photos/events/events_14_02.jpg",
+        "category": "events",
+        "date_taken": "2024-04-20",
+        "location": "Nightclub Lounge",
+        "event": "Club party",
+        "description": "Nightclub party with friends under vibrant purple and blue laser lights. (sunset dining table setup).",
+        "people": [
+          "dancing",
+          "lights"
+        ],
+        "objects": [
+          "nightclub",
+          "friends"
+        ],
+        "scene": [
+          "dance floor",
+          "DJ booth"
+        ],
+        "activity": [
+          "dancing",
+          "enjoying music"
+        ],
+        "weather": "indoor",
+        "time_of_day": "night",
+        "keywords": [
+          "club",
+          "party",
+          "nightclub",
+          "friends",
+          "dancing",
+          "lights",
+          "music",
+          "drinks",
+          "sunset"
+        ]
+      }
+    },
+    "photo_029": {
+      "id": "photo_029",
+      "text": "Location: Mobile Screen.\n        Event: Outfit ideas.\n        People: OOTD, fashion.\n        Scene: fashion board, screenshot.\n        Objects: clothing, style.\n        Activity: saving outfit ideas.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (afternoon beach cafe view)..\n        Keywords: screenshot outfit clothing style OOTD fashion shopping ideas afternoon.",
+      "metadata": {
+        "id": "photo_029",
+        "filename": "screenshots_15_01.jpg",
+        "file_path": "photos/screenshots/screenshots_15_01.jpg",
+        "category": "screenshots",
+        "date_taken": "2024-07-25",
+        "location": "Mobile Screen",
+        "event": "Outfit ideas",
+        "description": "Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (afternoon beach cafe view).",
+        "people": [
+          "OOTD",
+          "fashion"
+        ],
+        "objects": [
+          "clothing",
+          "style"
+        ],
+        "scene": [
+          "fashion board",
+          "screenshot"
+        ],
+        "activity": [
+          "saving outfit ideas"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "outfit",
+          "clothing",
+          "style",
+          "OOTD",
+          "fashion",
+          "shopping",
+          "ideas",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_030": {
+      "id": "photo_030",
+      "text": "Location: Mobile Screen.\n        Event: Outfit ideas.\n        People: OOTD, fashion.\n        Scene: fashion board, screenshot.\n        Objects: clothing, style.\n        Activity: saving outfit ideas.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (sunset dining table setup)..\n        Keywords: screenshot outfit clothing style OOTD fashion shopping ideas sunset.",
+      "metadata": {
+        "id": "photo_030",
+        "filename": "screenshots_15_02.jpg",
+        "file_path": "photos/screenshots/screenshots_15_02.jpg",
+        "category": "screenshots",
+        "date_taken": "2023-06-25",
+        "location": "Mobile Screen",
+        "event": "Outfit ideas",
+        "description": "Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (sunset dining table setup).",
+        "people": [
+          "OOTD",
+          "fashion"
+        ],
+        "objects": [
+          "clothing",
+          "style"
+        ],
+        "scene": [
+          "fashion board",
+          "screenshot"
+        ],
+        "activity": [
+          "saving outfit ideas"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "outfit",
+          "clothing",
+          "style",
+          "OOTD",
+          "fashion",
+          "shopping",
+          "ideas",
+          "sunset"
+        ]
+      }
+    },
+    "photo_031": {
+      "id": "photo_031",
+      "text": "Location: Mobile Screen.\n        Event: Positive thoughts.\n        People: inspiration, text.\n        Scene: quote card, text screenshot.\n        Objects: quote, motivational.\n        Activity: saving quotes.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of an inspiring positive thought and motivational mindset quote. (afternoon beach cafe view)..\n        Keywords: screenshot positive thought quote motivational inspiration text mindset afternoon.",
+      "metadata": {
+        "id": "photo_031",
+        "filename": "screenshots_16_01.jpg",
+        "file_path": "photos/screenshots/screenshots_16_01.jpg",
+        "category": "screenshots",
+        "date_taken": "2023-12-04",
+        "location": "Mobile Screen",
+        "event": "Positive thoughts",
+        "description": "Screenshot of an inspiring positive thought and motivational mindset quote. (afternoon beach cafe view).",
+        "people": [
+          "inspiration",
+          "text"
+        ],
+        "objects": [
+          "quote",
+          "motivational"
+        ],
+        "scene": [
+          "quote card",
+          "text screenshot"
+        ],
+        "activity": [
+          "saving quotes"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "positive thought",
+          "quote",
+          "motivational",
+          "inspiration",
+          "text",
+          "mindset",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_032": {
+      "id": "photo_032",
+      "text": "Location: Mobile Screen.\n        Event: Positive thoughts.\n        People: inspiration, text.\n        Scene: quote card, text screenshot.\n        Objects: quote, motivational.\n        Activity: saving quotes.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of an inspiring positive thought and motivational mindset quote. (sunset dining table setup)..\n        Keywords: screenshot positive thought quote motivational inspiration text mindset sunset.",
+      "metadata": {
+        "id": "photo_032",
+        "filename": "screenshots_16_02.jpg",
+        "file_path": "photos/screenshots/screenshots_16_02.jpg",
+        "category": "screenshots",
+        "date_taken": "2023-03-19",
+        "location": "Mobile Screen",
+        "event": "Positive thoughts",
+        "description": "Screenshot of an inspiring positive thought and motivational mindset quote. (sunset dining table setup).",
+        "people": [
+          "inspiration",
+          "text"
+        ],
+        "objects": [
+          "quote",
+          "motivational"
+        ],
+        "scene": [
+          "quote card",
+          "text screenshot"
+        ],
+        "activity": [
+          "saving quotes"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "positive thought",
+          "quote",
+          "motivational",
+          "inspiration",
+          "text",
+          "mindset",
+          "sunset"
+        ]
+      }
+    },
+    "photo_033": {
+      "id": "photo_033",
+      "text": "Location: Mobile Screen.\n        Event: Social media comments.\n        People: discussion, post.\n        Scene: discussion thread, tweet screenshot.\n        Objects: comment, tweet.\n        Activity: saving comments.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of an interesting social media comment thread and viral tweet discussion. (afternoon beach cafe view)..\n        Keywords: screenshot social media comment tweet discussion post chat afternoon.",
+      "metadata": {
+        "id": "photo_033",
+        "filename": "screenshots_17_01.jpg",
+        "file_path": "photos/screenshots/screenshots_17_01.jpg",
+        "category": "screenshots",
+        "date_taken": "2025-01-06",
+        "location": "Mobile Screen",
+        "event": "Social media comments",
+        "description": "Screenshot of an interesting social media comment thread and viral tweet discussion. (afternoon beach cafe view).",
+        "people": [
+          "discussion",
+          "post"
+        ],
+        "objects": [
+          "comment",
+          "tweet"
+        ],
+        "scene": [
+          "discussion thread",
+          "tweet screenshot"
+        ],
+        "activity": [
+          "saving comments"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "social media",
+          "comment",
+          "tweet",
+          "discussion",
+          "post",
+          "chat",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_034": {
+      "id": "photo_034",
+      "text": "Location: Mobile Screen.\n        Event: Social media comments.\n        People: discussion, post.\n        Scene: discussion thread, tweet screenshot.\n        Objects: comment, tweet.\n        Activity: saving comments.\n        Weather: digital.\n        Time: day.\n        Description: Screenshot of an interesting social media comment thread and viral tweet discussion. (sunset dining table setup)..\n        Keywords: screenshot social media comment tweet discussion post chat sunset.",
+      "metadata": {
+        "id": "photo_034",
+        "filename": "screenshots_17_02.jpg",
+        "file_path": "photos/screenshots/screenshots_17_02.jpg",
+        "category": "screenshots",
+        "date_taken": "2024-04-15",
+        "location": "Mobile Screen",
+        "event": "Social media comments",
+        "description": "Screenshot of an interesting social media comment thread and viral tweet discussion. (sunset dining table setup).",
+        "people": [
+          "discussion",
+          "post"
+        ],
+        "objects": [
+          "comment",
+          "tweet"
+        ],
+        "scene": [
+          "discussion thread",
+          "tweet screenshot"
+        ],
+        "activity": [
+          "saving comments"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "screenshot",
+          "social media",
+          "comment",
+          "tweet",
+          "discussion",
+          "post",
+          "chat",
+          "sunset"
+        ]
+      }
+    },
+    "photo_035": {
+      "id": "photo_035",
+      "text": "Location: Document Scan.\n        Event: Restaurant receipts.\n        People: tax invoice, scan.\n        Scene: paper receipt, tax invoice.\n        Objects: bill, restaurant receipt.\n        Activity: scanning receipt.\n        Weather: digital.\n        Time: day.\n        Description: Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (afternoon beach cafe view)..\n        Keywords: document receipt bill restaurant receipt tax invoice scan paper expense afternoon.",
+      "metadata": {
+        "id": "photo_035",
+        "filename": "documents_18_01.jpg",
+        "file_path": "photos/documents/documents_18_01.jpg",
+        "category": "documents",
+        "date_taken": "2023-06-13",
+        "location": "Document Scan",
+        "event": "Restaurant receipts",
+        "description": "Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (afternoon beach cafe view).",
+        "people": [
+          "tax invoice",
+          "scan"
+        ],
+        "objects": [
+          "bill",
+          "restaurant receipt"
+        ],
+        "scene": [
+          "paper receipt",
+          "tax invoice"
+        ],
+        "activity": [
+          "scanning receipt"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "document",
+          "receipt",
+          "bill",
+          "restaurant receipt",
+          "tax invoice",
+          "scan",
+          "paper",
+          "expense",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_036": {
+      "id": "photo_036",
+      "text": "Location: Document Scan.\n        Event: Restaurant receipts.\n        People: tax invoice, scan.\n        Scene: paper receipt, tax invoice.\n        Objects: bill, restaurant receipt.\n        Activity: scanning receipt.\n        Weather: digital.\n        Time: day.\n        Description: Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (sunset dining table setup)..\n        Keywords: document receipt bill restaurant receipt tax invoice scan paper expense sunset.",
+      "metadata": {
+        "id": "photo_036",
+        "filename": "documents_18_02.jpg",
+        "file_path": "photos/documents/documents_18_02.jpg",
+        "category": "documents",
+        "date_taken": "2023-06-21",
+        "location": "Document Scan",
+        "event": "Restaurant receipts",
+        "description": "Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (sunset dining table setup).",
+        "people": [
+          "tax invoice",
+          "scan"
+        ],
+        "objects": [
+          "bill",
+          "restaurant receipt"
+        ],
+        "scene": [
+          "paper receipt",
+          "tax invoice"
+        ],
+        "activity": [
+          "scanning receipt"
+        ],
+        "weather": "digital",
+        "time_of_day": "day",
+        "keywords": [
+          "document",
+          "receipt",
+          "bill",
+          "restaurant receipt",
+          "tax invoice",
+          "scan",
+          "paper",
+          "expense",
+          "sunset"
+        ]
+      }
+    },
+    "photo_037": {
+      "id": "photo_037",
+      "text": "Location: Cafe & Lounge.\n        Event: Cafe video clips.\n        People: motion, clip.\n        Scene: cafe ambiance, video clip.\n        Objects: celebration clip, party video.\n        Activity: filming video.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Short video clip of cozy cafe coffee brewing and lively party celebration moments. (afternoon beach cafe view)..\n        Keywords: video cafe video celebration clip party video motion clip mp4 afternoon.",
+      "metadata": {
+        "id": "photo_037",
+        "filename": "videos_19_01.jpg",
+        "file_path": "photos/videos/videos_19_01.jpg",
+        "category": "videos",
+        "date_taken": "2025-10-12",
+        "location": "Cafe & Lounge",
+        "event": "Cafe video clips",
+        "description": "Short video clip of cozy cafe coffee brewing and lively party celebration moments. (afternoon beach cafe view).",
+        "people": [
+          "motion",
+          "clip"
+        ],
+        "objects": [
+          "celebration clip",
+          "party video"
+        ],
+        "scene": [
+          "cafe ambiance",
+          "video clip"
+        ],
+        "activity": [
+          "filming video"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "video",
+          "cafe video",
+          "celebration clip",
+          "party video",
+          "motion",
+          "clip",
+          "mp4",
+          "afternoon"
+        ]
+      }
+    },
+    "photo_038": {
+      "id": "photo_038",
+      "text": "Location: Cafe & Lounge.\n        Event: Cafe video clips.\n        People: motion, clip.\n        Scene: cafe ambiance, video clip.\n        Objects: celebration clip, party video.\n        Activity: filming video.\n        Weather: indoor.\n        Time: afternoon.\n        Description: Short video clip of cozy cafe coffee brewing and lively party celebration moments. (sunset dining table setup)..\n        Keywords: video cafe video celebration clip party video motion clip mp4 sunset.",
+      "metadata": {
+        "id": "photo_038",
+        "filename": "videos_19_02.jpg",
+        "file_path": "photos/videos/videos_19_02.jpg",
+        "category": "videos",
+        "date_taken": "2024-03-26",
+        "location": "Cafe & Lounge",
+        "event": "Cafe video clips",
+        "description": "Short video clip of cozy cafe coffee brewing and lively party celebration moments. (sunset dining table setup).",
+        "people": [
+          "motion",
+          "clip"
+        ],
+        "objects": [
+          "celebration clip",
+          "party video"
+        ],
+        "scene": [
+          "cafe ambiance",
+          "video clip"
+        ],
+        "activity": [
+          "filming video"
+        ],
+        "weather": "indoor",
+        "time_of_day": "afternoon",
+        "keywords": [
+          "video",
+          "cafe video",
+          "celebration clip",
+          "party video",
+          "motion",
+          "clip",
+          "mp4",
+          "sunset"
+        ]
+      }
+    }
+  }
+}
