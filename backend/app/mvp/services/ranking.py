@@ -1,5 +1,5 @@
 import logging
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 from app.config import settings
 
 logger = logging.getLogger(__name__)
@@ -11,7 +11,7 @@ class RankingService:
         self.w_context = settings.CONTEXT_WEIGHT
         self.w_ai = settings.AI_RANKING_WEIGHT
 
-    def compute_metadata_score(self, clues: Dict[str, Any], photo: Dict[str, Any]) -> Tuple_Score:
+    def compute_metadata_score(self, clues: Dict[str, Any], photo: Dict[str, Any]) -> Tuple[float, List[str]]:
         """
         Computes overlap score between extracted clues and photo metadata.
         """
@@ -141,5 +141,3 @@ class RankingService:
             item["rank"] = i + 1
 
         return ranked_results
-
-Tuple_Score = Any
