@@ -15,12 +15,17 @@ import {
   ShieldCheck
 } from 'lucide-react';
 
-export const LoginPage: React.FC = () => {
+interface LoginPageProps {
+  defaultSignUp?: boolean;
+}
+
+export const LoginPage: React.FC<LoginPageProps> = ({ defaultSignUp = false }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { login, signup, isAuthenticated } = useAuth();
 
-  const [isSignUp, setIsSignUp] = useState<boolean>(false);
+  const isSignUpInitial = defaultSignUp || location.pathname === '/signup' || (location.state as any)?.mode === 'signup';
+  const [isSignUp, setIsSignUp] = useState<boolean>(isSignUpInitial);
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [fullName, setFullName] = useState<string>('');
@@ -29,6 +34,15 @@ export const LoginPage: React.FC = () => {
 
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
+
+  // Sync isSignUp with route change
+  React.useEffect(() => {
+    if (location.pathname === '/signup' || defaultSignUp) {
+      setIsSignUp(true);
+    } else if (location.pathname === '/login') {
+      setIsSignUp(false);
+    }
+  }, [location.pathname, defaultSignUp]);
 
   // Redirect if already logged in
   const from = (location.state as any)?.from?.pathname || '/mvp/retrieval';
@@ -183,7 +197,12 @@ export const LoginPage: React.FC = () => {
         }}>
           <button
             type="button"
-            onClick={() => { setIsSignUp(false); setErrorMessage(null); setSuccessMessage(null); }}
+            onClick={() => {
+              setIsSignUp(false);
+              setErrorMessage(null);
+              setSuccessMessage(null);
+              navigate('/login', { replace: true });
+            }}
             style={{
               flex: 1,
               padding: '0.6rem 1rem',
@@ -201,7 +220,12 @@ export const LoginPage: React.FC = () => {
           </button>
           <button
             type="button"
-            onClick={() => { setIsSignUp(true); setErrorMessage(null); setSuccessMessage(null); }}
+            onClick={() => {
+              setIsSignUp(true);
+              setErrorMessage(null);
+              setSuccessMessage(null);
+              navigate('/signup', { replace: true });
+            }}
             style={{
               flex: 1,
               padding: '0.6rem 1rem',

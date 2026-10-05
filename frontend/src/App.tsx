@@ -26,6 +26,7 @@ export const App: React.FC = () => {
           {/* Public Overview & Auth Routes */}
           <Route path="/" element={<Dashboard />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<LoginPage defaultSignUp={true} />} />
           
           {/* Part 5: AI-Native Photo Retrieval MVP Routes (Protected) */}
           <Route 

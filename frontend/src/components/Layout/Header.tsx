@@ -13,6 +13,11 @@ export const Header: React.FC<HeaderProps> = ({ title, isDemoActive, onSeedDemo 
   const navigate = useNavigate();
   const { user, isAuthenticated, logout } = useAuth();
 
+  const handleLogout = () => {
+    logout();
+    navigate('/signup');
+  };
+
   return (
     <header className="top-header">
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -78,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({ title, isDemoActive, onSeedDemo 
             </div>
 
             <button
-              onClick={logout}
+              onClick={handleLogout}
               title="Log Out of Session"
               style={{
                 background: 'rgba(239, 68, 68, 0.15)',
@@ -100,7 +105,7 @@ export const Header: React.FC<HeaderProps> = ({ title, isDemoActive, onSeedDemo 
         ) : (
           <button
             className="btn btn-secondary"
-            onClick={() => navigate('/login')}
+            onClick={() => navigate('/signup')}
             style={{
               marginLeft: '0.5rem',
               borderColor: 'var(--accent-blue)',

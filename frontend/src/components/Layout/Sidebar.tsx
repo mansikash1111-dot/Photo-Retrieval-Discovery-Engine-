@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, 
   PlayCircle, 
@@ -27,7 +27,13 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
+  const navigate = useNavigate();
   const { user, isAuthenticated, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/signup');
+  };
 
   const getCount = (slug?: string) => {
     if (!stats || !stats.source_breakdown) return null;
@@ -188,7 +194,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
             </div>
 
             <button
-              onClick={logout}
+              onClick={handleLogout}
               title="Sign Out"
               style={{
                 background: 'rgba(239, 68, 68, 0.12)',
@@ -210,7 +216,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
           </div>
         ) : (
           <NavLink
-            to="/login"
+            to="/signup"
             style={{
               display: 'flex',
               alignItems: 'center',
