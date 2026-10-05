@@ -8,10 +8,10 @@ if str(backend_dir) not in sys.path:
     sys.path.insert(0, str(backend_dir))
 
 from app.database.database import SessionLocal, engine, Base
-from app.database.models import Photo
+from app.database.models import Photo, RetrievalResult, RetrievalFeedback, RetrievalStep, RetrievalSession
 from app.config import METADATA_DIR
 
-def seed_photos():
+def seed_photos(clear_existing: bool = True):
     Base.metadata.create_all(bind=engine)
     metadata_file = METADATA_DIR / "photos.json"
 
@@ -24,59 +24,42 @@ def seed_photos():
 
     db = SessionLocal()
     inserted = 0
-    skipped = 0
-    updated = 0
     errors = 0
 
     try:
+        if clear_existing:
+            print("Removing existing photos and prior session logs...")
+            db.query(RetrievalFeedback).delete()
+            db.query(RetrievalResult).delete()
+            db.query(RetrievalStep).delete()
+            db.query(RetrievalSession).delete()
+            db.query(Photo).delete()
+            db.commit()
+
         for item in items:
             p_id = item["id"]
-            existing = db.query(Photo).filter(Photo.id == p_id).first()
-
-            if existing:
-                # Update fields if changed
-                existing.filename = item["filename"]
-                existing.file_path = item["file_path"]
-                existing.category = item.get("category", "travel")
-                existing.date_taken = item.get("date_taken")
-                existing.location = item.get("location")
-                existing.event = item.get("event")
-                existing.description = item["description"]
-                existing.people = json.dumps(item.get("people", []))
-                existing.objects = json.dumps(item.get("objects", []))
-                existing.scene = json.dumps(item.get("scene", []))
-                existing.activity = json.dumps(item.get("activity", []))
-                existing.weather = item.get("weather")
-                existing.time_of_day = item.get("time_of_day")
-                existing.keywords = json.dumps(item.get("keywords", []))
-                updated += 1
-                skipped += 1
-            else:
-                photo = Photo(
-                    id=p_id,
-                    filename=item["filename"],
-                    file_path=item["file_path"],
-                    category=item.get("category", "travel"),
-                    date_taken=item.get("date_taken"),
-                    location=item.get("location"),
-                    event=item.get("event"),
-                    description=item["description"],
-                    people=json.dumps(item.get("people", [])),
-                    objects=json.dumps(item.get("objects", [])),
-                    scene=json.dumps(item.get("scene", [])),
-                    activity=json.dumps(item.get("activity", [])),
-                    weather=item.get("weather"),
-                    time_of_day=item.get("time_of_day"),
-                    keywords=json.dumps(item.get("keywords", []))
-                )
-                db.add(photo)
-                inserted += 1
+            photo = Photo(
+                id=p_id,
+                filename=item["filename"],
+                file_path=item["file_path"],
+                category=item.get("category", "travel"),
+                date_taken=item.get("date_taken"),
+                location=item.get("location"),
+                event=item.get("event"),
+                description=item["description"],
+                people=json.dumps(item.get("people", [])),
+                objects=json.dumps(item.get("objects", [])),
+                scene=json.dumps(item.get("scene", [])),
+                activity=json.dumps(item.get("activity", [])),
+                weather=item.get("weather"),
+                time_of_day=item.get("time_of_day"),
+                keywords=json.dumps(item.get("keywords", []))
+            )
+            db.add(photo)
+            inserted += 1
 
         db.commit()
-        print(f"Generated photos: {len(items)}")
-        print(f"Inserted: {inserted}")
-        print(f"Skipped/Updated: {skipped}")
-        print(f"Errors: {errors}")
+        print(f"Successfully seeded {inserted} real photos into database.")
 
     except Exception as e:
         db.rollback()
@@ -86,4 +69,4 @@ def seed_photos():
         db.close()
 
 if __name__ == "__main__":
-    seed_photos()
+    seed_photos(clear_existing=True)

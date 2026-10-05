@@ -1,6 +1,6 @@
 import { Source, Review, ReviewListResponse, CollectionJob, StatsResponse, FetchReviewsParams } from '../types';
+export const API_BASE = (import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '') + '/api';
 
-const API_BASE = '/api';
 
 export async function getSources(): Promise<Source[]> {
   const res = await fetch(`${API_BASE}/sources`);

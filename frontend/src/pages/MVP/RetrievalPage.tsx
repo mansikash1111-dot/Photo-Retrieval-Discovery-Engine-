@@ -7,9 +7,12 @@ import { Clarification } from '../../components/MVP/Clarification';
 import { RefinementInput } from '../../components/MVP/RefinementInput';
 import { CandidateResult } from '../../components/MVP/PhotoResultCard';
 import { AlertCircle, CheckCircle, Download } from 'lucide-react';
+import { API_BASE } from '../../services/api';
 
 export const RetrievalPage: React.FC = () => {
   const [query, setQuery] = useState('');
+  const [searchedQuery, setSearchedQuery] = useState('');
+  const [hasSearched, setHasSearched] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [stepNumber, setStepNumber] = useState(1);
   const [interpretation, setInterpretation] = useState<any>(null);
@@ -20,14 +23,17 @@ export const RetrievalPage: React.FC = () => {
   const [confirmedPhoto, setConfirmedPhoto] = useState<CandidateResult | null>(null);
 
   const executeSearch = async (searchQuery: string, resetSession: boolean = false) => {
+    if (!searchQuery.trim()) return;
     setLoading(true);
+    setHasSearched(true);
+    setSearchedQuery(searchQuery);
     setConfirmedSuccess(false);
     setConfirmedPhoto(null);
     try {
       const activeSession = resetSession ? null : sessionId;
       const nextStep = resetSession ? 1 : stepNumber + 1;
 
-      const res = await fetch('/api/mvp/retrieval/search', {
+      const res = await fetch(`${API_BASE}/mvp/retrieval/search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -43,7 +49,7 @@ export const RetrievalPage: React.FC = () => {
       setSessionId(data.session_id);
       setStepNumber(data.step_number);
       setInterpretation(data.interpretation);
-      setResults(data.results);
+      setResults(data.results || []);
       setClarification(data.clarification);
     } catch (err) {
       console.error('Error executing retrieval search:', err);
@@ -54,6 +60,11 @@ export const RetrievalPage: React.FC = () => {
 
   const handleInitialSearch = () => {
     executeSearch(query, true);
+  };
+
+  const handleSelectTopic = (topic: string) => {
+    setQuery(topic);
+    executeSearch(topic, true);
   };
 
   const handleRefine = (refinementText: string) => {
@@ -73,7 +84,7 @@ export const RetrievalPage: React.FC = () => {
     const target = results.find(r => r.photo_id === photoId) || null;
     setConfirmedPhoto(target);
     try {
-      await fetch('/api/mvp/feedback', {
+      await fetch(`${API_BASE}/mvp/feedback`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -135,7 +146,19 @@ export const RetrievalPage: React.FC = () => {
                 <span>Download Photo</span>
               </button>
             )}
-            <button className="btn btn-secondary" onClick={() => { setQuery(''); setInterpretation(null); setResults([]); setConfirmedSuccess(false); setConfirmedPhoto(null); }}>
+            <button
+              className="btn btn-secondary"
+              onClick={() => {
+                setQuery('');
+                setSearchedQuery('');
+                setHasSearched(false);
+                setInterpretation(null);
+                setResults([]);
+                setClarification(null);
+                setConfirmedSuccess(false);
+                setConfirmedPhoto(null);
+              }}
+            >
               Start New Search
             </button>
           </div>
@@ -165,16 +188,20 @@ export const RetrievalPage: React.FC = () => {
       )}
 
       {/* Candidate Results Grid */}
-      <ResultsGrid
-        candidates={results}
-        query={query}
-        onConfirm={handleConfirmPhoto}
-        onRefine={() => {
-          const el = document.getElementById('refinement-section');
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        }}
-        loading={loading}
-      />
+      {(hasSearched || loading) && (
+        <ResultsGrid
+          candidates={results}
+          query={searchedQuery || query}
+          hasSearched={hasSearched}
+          onSelectTopic={handleSelectTopic}
+          onConfirm={handleConfirmPhoto}
+          onRefine={() => {
+            const el = document.getElementById('refinement-section');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }}
+          loading={loading}
+        />
+      )}
 
       {/* Conversational Refinement Bar */}
       {results.length > 0 && (

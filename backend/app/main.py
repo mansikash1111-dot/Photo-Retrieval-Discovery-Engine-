@@ -5,8 +5,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.database.database import engine, Base, SessionLocal
-from app.database.models import Source, Review, Photo
-from app.api.routes import sources, reviews, stats, collection, mvp
+from app.database.models import Source, Review, Photo, User
+from app.api.routes import sources, reviews, stats, collection, mvp, auth
 
 logging.basicConfig(
     level=logging.INFO,
@@ -92,6 +92,23 @@ def init_db():
             except Exception as e:
                 logger.warning(f"Could not auto-seed photos: {e}")
 
+        # Check users count for authentication
+        user_count = db.query(User).count()
+        if user_count == 0:
+            logger.info("Database empty of users. Auto-seeding default demo user...")
+            try:
+                from app.utils.security import hash_password
+                demo_user = User(
+                    email="demo@googlephotos.com",
+                    hashed_password=hash_password("Password123"),
+                    full_name="Demo User"
+                )
+                db.add(demo_user)
+                db.commit()
+                logger.info("Demo user created: demo@googlephotos.com / Password123")
+            except Exception as e:
+                logger.warning(f"Could not auto-seed demo user: {e}")
+
     finally:
         db.close()
 
@@ -124,6 +141,7 @@ app.include_router(stats.router, prefix="/api")
 app.include_router(reviews.router, prefix="/api")
 app.include_router(collection.router, prefix="/api")
 app.include_router(mvp.router, prefix="/api")
+app.include_router(auth.router, prefix="/api")
 
 @app.get("/api/health")
 def health_check():

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Layout } from '../../components/Layout/Layout';
 import { StatCard } from '../../components/StatCard/StatCard';
 import { Activity, CheckCircle, Footprints, Image, AlertCircle, RefreshCw } from 'lucide-react';
+import { API_BASE } from '../../services/api';
 
 interface AnalyticsSummary {
   total_sessions: number;
@@ -19,7 +20,7 @@ export const AnalyticsPage: React.FC = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const res = await fetch('/api/mvp/analytics/summary');
+      const res = await fetch(`${API_BASE}/mvp/analytics/summary`);
       if (res.ok) {
         const data = await res.json();
         setSummary(data);

@@ -32,16 +32,21 @@ export const PhotoResultCard: React.FC<PhotoResultCardProps> = ({
 }) => {
   const scorePct = Math.round(candidate.final_score * 100);
 
-  // Compute candidate image source with direct backend URL fallback
+  // Compute candidate image source with dynamic backend resolution
+  const apiHost = import.meta.env.VITE_API_URL ? String(import.meta.env.VITE_API_URL).replace(/\/$/, '') : '';
+  const normalizedPath = candidate.image_url.startsWith('/') ? candidate.image_url : `/${candidate.image_url}`;
+  
   const initialUrl = candidate.image_url.startsWith('http')
     ? candidate.image_url
-    : candidate.image_url.startsWith('/')
-    ? candidate.image_url
-    : `/${candidate.image_url}`;
+    : apiHost
+    ? `${apiHost}${normalizedPath}`
+    : normalizedPath;
 
   const directBackendUrl = candidate.image_url.startsWith('http')
     ? candidate.image_url
-    : `http://localhost:8000${candidate.image_url.startsWith('/') ? '' : '/'}${candidate.image_url}`;
+    : apiHost
+    ? `${apiHost}${normalizedPath}`
+    : normalizedPath;
 
   const [imageSrc, setImageSrc] = useState<string>(initialUrl);
   const [hasFailed, setHasFailed] = useState<boolean>(false);

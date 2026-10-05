@@ -120,6 +120,17 @@ class CollectionJob(Base):
 
     source = relationship("Source", back_populates="jobs")
 
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String(255), unique=True, nullable=False, index=True)
+    hashed_password = Column(String(255), nullable=False)
+    full_name = Column(String(255), nullable=True)
+    is_active = Column(Boolean, default=True, nullable=False)
+    created_at = Column(DateTime, default=utc_now, nullable=False)
+    updated_at = Column(DateTime, default=utc_now, onupdate=utc_now, nullable=False)
+
 # =========================================================
 # PART 5: AI-NATIVE PHOTO RETRIEVAL MVP MODELS
 # =========================================================

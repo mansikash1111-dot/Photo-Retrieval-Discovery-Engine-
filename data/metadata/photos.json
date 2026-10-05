@@ -1,1458 +1,2375 @@
 [
   {
     "id": "photo_001",
-    "filename": "travel_01_01.jpg",
-    "file_path": "photos/travel/travel_01_01.jpg",
-    "category": "travel",
-    "date_taken": "2025-04-19",
-    "location": "Goa, India",
-    "event": "Goa trip",
-    "description": "Friends sitting at a small cafe near the beach in Goa. (afternoon beach cafe view).",
+    "filename": "events_01_01.jpg",
+    "file_path": "photos/events/events_01_01.jpg",
+    "category": "events",
+    "date_taken": "2023-07-27",
+    "location": "Skyline Lounge & Nightclub",
+    "event": "Club party with friends",
+    "description": "Nightclub club party with friends dancing under vibrant stage laser lights and DJ music. (candid angle).",
     "people": [
       "friends",
-      "trip"
+      "family"
     ],
     "objects": [
-      "cafe",
-      "coffee"
+      "club party with friends",
+      "club",
+      "party",
+      "friends"
     ],
     "scene": [
-      "beach",
-      "cafe"
+      "nightclub",
+      "dance floor",
+      "DJ booth",
+      "club"
     ],
     "activity": [
-      "sitting",
-      "drinking coffee"
+      "dancing",
+      "partying with friends",
+      "clubbing"
     ],
-    "weather": "sunny",
-    "time_of_day": "afternoon",
+    "weather": "indoor",
+    "time_of_day": "night",
     "keywords": [
-      "Goa",
-      "beach",
-      "cafe",
-      "coffee",
+      "club party with friends",
+      "club",
+      "party",
       "friends",
-      "trip",
-      "ocean",
-      "afternoon"
+      "nightclub",
+      "club party",
+      "dancing",
+      "DJ",
+      "nightlife",
+      "drinks",
+      "candid angle"
     ]
   },
   {
     "id": "photo_002",
-    "filename": "travel_01_02.jpg",
-    "file_path": "photos/travel/travel_01_02.jpg",
-    "category": "travel",
-    "date_taken": "2025-12-11",
-    "location": "Goa, India",
-    "event": "Goa trip",
-    "description": "Friends sitting at a small cafe near the beach in Goa. (sunset dining table setup).",
+    "filename": "events_01_02.jpg",
+    "file_path": "photos/events/events_01_02.jpg",
+    "category": "events",
+    "date_taken": "2024-05-14",
+    "location": "Skyline Lounge & Nightclub",
+    "event": "Club party with friends",
+    "description": "Nightclub club party with friends dancing under vibrant stage laser lights and DJ music. (close-up detail viewpoint).",
     "people": [
       "friends",
-      "trip"
+      "family"
     ],
     "objects": [
-      "cafe",
-      "coffee"
+      "club party with friends",
+      "club",
+      "party",
+      "friends"
     ],
     "scene": [
-      "beach",
-      "cafe"
+      "nightclub",
+      "dance floor",
+      "DJ booth",
+      "club"
     ],
     "activity": [
-      "sitting",
-      "drinking coffee"
+      "dancing",
+      "partying with friends",
+      "clubbing"
     ],
-    "weather": "sunny",
-    "time_of_day": "afternoon",
+    "weather": "indoor",
+    "time_of_day": "night",
     "keywords": [
-      "Goa",
-      "beach",
-      "cafe",
-      "coffee",
+      "club party with friends",
+      "club",
+      "party",
       "friends",
-      "trip",
-      "ocean",
-      "sunset"
+      "nightclub",
+      "club party",
+      "dancing",
+      "DJ",
+      "nightlife",
+      "drinks",
+      "close-up detail viewpoint"
     ]
   },
   {
     "id": "photo_003",
-    "filename": "travel_02_01.jpg",
-    "file_path": "photos/travel/travel_02_01.jpg",
-    "category": "travel",
-    "date_taken": "2025-11-08",
-    "location": "Manali, Himachal",
-    "event": "Mountain trekking",
-    "description": "Trekking on a scenic mountain pine tree trail with friends. (afternoon beach cafe view).",
+    "filename": "events_01_03.jpg",
+    "file_path": "photos/events/events_01_03.jpg",
+    "category": "events",
+    "date_taken": "2023-01-16",
+    "location": "Skyline Lounge & Nightclub",
+    "event": "Club party with friends",
+    "description": "Nightclub club party with friends dancing under vibrant stage laser lights and DJ music. (wide perspective shot).",
     "people": [
-      "nature",
-      "mountains"
+      "friends",
+      "family"
     ],
     "objects": [
-      "trail",
-      "backpacking"
+      "club party with friends",
+      "club",
+      "party",
+      "friends"
     ],
     "scene": [
-      "mountains",
-      "hiking trail"
+      "nightclub",
+      "dance floor",
+      "DJ booth",
+      "club"
     ],
     "activity": [
-      "trekking",
-      "sightseeing"
+      "dancing",
+      "partying with friends",
+      "clubbing"
     ],
-    "weather": "rainy",
-    "time_of_day": "morning",
+    "weather": "indoor",
+    "time_of_day": "night",
     "keywords": [
-      "trekking",
-      "hiking",
-      "trail",
-      "backpacking",
-      "nature",
-      "mountains",
-      "forest",
-      "afternoon"
+      "club party with friends",
+      "club",
+      "party",
+      "friends",
+      "nightclub",
+      "club party",
+      "dancing",
+      "DJ",
+      "nightlife",
+      "drinks",
+      "wide perspective shot"
     ]
   },
   {
     "id": "photo_004",
-    "filename": "travel_02_02.jpg",
-    "file_path": "photos/travel/travel_02_02.jpg",
+    "filename": "travel_02_01.jpg",
+    "file_path": "photos/travel/travel_02_01.jpg",
     "category": "travel",
-    "date_taken": "2023-05-04",
-    "location": "Manali, Himachal",
-    "event": "Mountain trekking",
-    "description": "Trekking on a scenic mountain pine tree trail with friends. (sunset dining table setup).",
+    "date_taken": "2023-09-20",
+    "location": "Triund Trek, Himachal",
+    "event": "Trekking",
+    "description": "Scenic mountain trekking trail through green pine trees and rocky paths. (candid angle).",
     "people": [
-      "nature",
-      "mountains"
+      "individual"
     ],
     "objects": [
-      "trail",
-      "backpacking"
+      "trekking",
+      "trek",
+      "hiking",
+      "mountain trail"
     ],
     "scene": [
-      "mountains",
-      "hiking trail"
+      "trekking trail",
+      "forest",
+      "mountain trail"
     ],
     "activity": [
       "trekking",
-      "sightseeing"
+      "hiking",
+      "backpacking",
+      "climbing"
     ],
-    "weather": "rainy",
+    "weather": "clear",
     "time_of_day": "morning",
     "keywords": [
       "trekking",
+      "trek",
       "hiking",
-      "trail",
+      "mountain trail",
       "backpacking",
       "nature",
-      "mountains",
       "forest",
-      "sunset"
+      "adventure",
+      "trail",
+      "mountains",
+      "candid angle"
     ]
   },
   {
     "id": "photo_005",
-    "filename": "travel_03_01.jpg",
-    "file_path": "photos/travel/travel_03_01.jpg",
+    "filename": "travel_02_02.jpg",
+    "file_path": "photos/travel/travel_02_02.jpg",
     "category": "travel",
-    "date_taken": "2023-06-25",
-    "location": "Jaipur, Rajasthan",
-    "event": "Heritage tour",
-    "description": "Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (afternoon beach cafe view).",
+    "date_taken": "2023-04-15",
+    "location": "Triund Trek, Himachal",
+    "event": "Trekking",
+    "description": "Scenic mountain trekking trail through green pine trees and rocky paths. (close-up detail viewpoint).",
     "people": [
-      "heritage",
-      "architecture"
+      "individual"
     ],
     "objects": [
-      "Amber palace",
-      "pink city"
+      "trekking",
+      "trek",
+      "hiking",
+      "mountain trail"
     ],
     "scene": [
-      "fort",
-      "palace",
-      "pink city"
+      "trekking trail",
+      "forest",
+      "mountain trail"
     ],
     "activity": [
-      "sightseeing",
-      "architecture photography"
+      "trekking",
+      "hiking",
+      "backpacking",
+      "climbing"
     ],
-    "weather": "sunny",
-    "time_of_day": "afternoon",
+    "weather": "clear",
+    "time_of_day": "morning",
     "keywords": [
-      "Jaipur",
-      "fort",
-      "Amber palace",
-      "pink city",
-      "heritage",
-      "architecture",
-      "Rajasthan",
-      "afternoon"
+      "trekking",
+      "trek",
+      "hiking",
+      "mountain trail",
+      "backpacking",
+      "nature",
+      "forest",
+      "adventure",
+      "trail",
+      "mountains",
+      "close-up detail viewpoint"
     ]
   },
   {
     "id": "photo_006",
-    "filename": "travel_03_02.jpg",
-    "file_path": "photos/travel/travel_03_02.jpg",
+    "filename": "travel_02_03.jpg",
+    "file_path": "photos/travel/travel_02_03.jpg",
     "category": "travel",
-    "date_taken": "2025-10-23",
-    "location": "Jaipur, Rajasthan",
-    "event": "Heritage tour",
-    "description": "Sightseeing at Amber Fort and heritage pink city palaces in Jaipur. (sunset dining table setup).",
+    "date_taken": "2024-09-24",
+    "location": "Triund Trek, Himachal",
+    "event": "Trekking",
+    "description": "Scenic mountain trekking trail through green pine trees and rocky paths. (wide perspective shot).",
     "people": [
-      "heritage",
-      "architecture"
+      "individual"
     ],
     "objects": [
-      "Amber palace",
-      "pink city"
+      "trekking",
+      "trek",
+      "hiking",
+      "mountain trail"
     ],
     "scene": [
-      "fort",
-      "palace",
-      "pink city"
+      "trekking trail",
+      "forest",
+      "mountain trail"
     ],
     "activity": [
-      "sightseeing",
-      "architecture photography"
+      "trekking",
+      "hiking",
+      "backpacking",
+      "climbing"
+    ],
+    "weather": "clear",
+    "time_of_day": "morning",
+    "keywords": [
+      "trekking",
+      "trek",
+      "hiking",
+      "mountain trail",
+      "backpacking",
+      "nature",
+      "forest",
+      "adventure",
+      "trail",
+      "mountains",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_007",
+    "filename": "events_03_01.jpg",
+    "file_path": "photos/events/events_03_01.jpg",
+    "category": "events",
+    "date_taken": "2023-03-20",
+    "location": "Celebration Hall",
+    "event": "Birthday party with friends",
+    "description": "Joyful birthday party with friends celebrating with colorful balloons, candles, and cake. (candid angle).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party"
+    ],
+    "scene": [
+      "party room",
+      "birthday balloons",
+      "cake table"
+    ],
+    "activity": [
+      "cutting cake",
+      "celebrating birthday with friends",
+      "cheering"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party",
+      "friends",
+      "cake",
+      "balloons",
+      "candles",
+      "celebration",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_008",
+    "filename": "events_03_02.jpg",
+    "file_path": "photos/events/events_03_02.jpg",
+    "category": "events",
+    "date_taken": "2025-04-10",
+    "location": "Celebration Hall",
+    "event": "Birthday party with friends",
+    "description": "Joyful birthday party with friends celebrating with colorful balloons, candles, and cake. (close-up detail viewpoint).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party"
+    ],
+    "scene": [
+      "party room",
+      "birthday balloons",
+      "cake table"
+    ],
+    "activity": [
+      "cutting cake",
+      "celebrating birthday with friends",
+      "cheering"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party",
+      "friends",
+      "cake",
+      "balloons",
+      "candles",
+      "celebration",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_009",
+    "filename": "events_03_03.jpg",
+    "file_path": "photos/events/events_03_03.jpg",
+    "category": "events",
+    "date_taken": "2023-08-02",
+    "location": "Celebration Hall",
+    "event": "Birthday party with friends",
+    "description": "Joyful birthday party with friends celebrating with colorful balloons, candles, and cake. (wide perspective shot).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party"
+    ],
+    "scene": [
+      "party room",
+      "birthday balloons",
+      "cake table"
+    ],
+    "activity": [
+      "cutting cake",
+      "celebrating birthday with friends",
+      "cheering"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "birthday party with friends",
+      "birthday",
+      "birthday party",
+      "party",
+      "friends",
+      "cake",
+      "balloons",
+      "candles",
+      "celebration",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_010",
+    "filename": "events_04_01.jpg",
+    "file_path": "photos/events/events_04_01.jpg",
+    "category": "events",
+    "date_taken": "2025-06-07",
+    "location": "Home Courtyard",
+    "event": "Diwali with friends and family",
+    "description": "Festive Diwali with friends and family lighting traditional clay diyas and decorative lights. (candid angle).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas"
+    ],
+    "scene": [
+      "Diwali lights",
+      "diyas",
+      "rangoli"
+    ],
+    "activity": [
+      "lighting diyas",
+      "celebrating Diwali with friends and family",
+      "sparklers"
+    ],
+    "weather": "night",
+    "time_of_day": "night",
+    "keywords": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas",
+      "sparklers",
+      "rangoli",
+      "lights",
+      "family",
+      "friends",
+      "celebration",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_011",
+    "filename": "events_04_02.jpg",
+    "file_path": "photos/events/events_04_02.jpg",
+    "category": "events",
+    "date_taken": "2025-07-20",
+    "location": "Home Courtyard",
+    "event": "Diwali with friends and family",
+    "description": "Festive Diwali with friends and family lighting traditional clay diyas and decorative lights. (close-up detail viewpoint).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas"
+    ],
+    "scene": [
+      "Diwali lights",
+      "diyas",
+      "rangoli"
+    ],
+    "activity": [
+      "lighting diyas",
+      "celebrating Diwali with friends and family",
+      "sparklers"
+    ],
+    "weather": "night",
+    "time_of_day": "night",
+    "keywords": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas",
+      "sparklers",
+      "rangoli",
+      "lights",
+      "family",
+      "friends",
+      "celebration",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_012",
+    "filename": "events_04_03.jpg",
+    "file_path": "photos/events/events_04_03.jpg",
+    "category": "events",
+    "date_taken": "2023-07-28",
+    "location": "Home Courtyard",
+    "event": "Diwali with friends and family",
+    "description": "Festive Diwali with friends and family lighting traditional clay diyas and decorative lights. (wide perspective shot).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas"
+    ],
+    "scene": [
+      "Diwali lights",
+      "diyas",
+      "rangoli"
+    ],
+    "activity": [
+      "lighting diyas",
+      "celebrating Diwali with friends and family",
+      "sparklers"
+    ],
+    "weather": "night",
+    "time_of_day": "night",
+    "keywords": [
+      "Diwali with friends and family",
+      "Diwali",
+      "festival of lights",
+      "diyas",
+      "sparklers",
+      "rangoli",
+      "lights",
+      "family",
+      "friends",
+      "celebration",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_013",
+    "filename": "family_05_01.jpg",
+    "file_path": "photos/family/family_05_01.jpg",
+    "category": "family",
+    "date_taken": "2025-06-18",
+    "location": "Family Living Room & Dining",
+    "event": "Family gatherings",
+    "description": "Warm family gatherings reunion dinner sharing laughter around the home dining table. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings"
+    ],
+    "scene": [
+      "family dining table",
+      "living room",
+      "home reunion"
+    ],
+    "activity": [
+      "gathering",
+      "reunion dinner",
+      "spending time together"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings",
+      "reunion",
+      "dinner",
+      "relatives",
+      "home",
+      "together",
+      "dinner table",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_014",
+    "filename": "family_05_02.jpg",
+    "file_path": "photos/family/family_05_02.jpg",
+    "category": "family",
+    "date_taken": "2023-12-26",
+    "location": "Family Living Room & Dining",
+    "event": "Family gatherings",
+    "description": "Warm family gatherings reunion dinner sharing laughter around the home dining table. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings"
+    ],
+    "scene": [
+      "family dining table",
+      "living room",
+      "home reunion"
+    ],
+    "activity": [
+      "gathering",
+      "reunion dinner",
+      "spending time together"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings",
+      "reunion",
+      "dinner",
+      "relatives",
+      "home",
+      "together",
+      "dinner table",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_015",
+    "filename": "family_05_03.jpg",
+    "file_path": "photos/family/family_05_03.jpg",
+    "category": "family",
+    "date_taken": "2025-10-21",
+    "location": "Family Living Room & Dining",
+    "event": "Family gatherings",
+    "description": "Warm family gatherings reunion dinner sharing laughter around the home dining table. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings"
+    ],
+    "scene": [
+      "family dining table",
+      "living room",
+      "home reunion"
+    ],
+    "activity": [
+      "gathering",
+      "reunion dinner",
+      "spending time together"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "family gatherings",
+      "family gathering",
+      "family",
+      "gatherings",
+      "reunion",
+      "dinner",
+      "relatives",
+      "home",
+      "together",
+      "dinner table",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_016",
+    "filename": "pets_06_01.jpg",
+    "file_path": "photos/pets/pets_06_01.jpg",
+    "category": "pets",
+    "date_taken": "2023-12-17",
+    "location": "Green Meadow Park",
+    "event": "Pets with owner",
+    "description": "Beloved pets with owner playing together outdoors on green grass during sunset. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner"
+    ],
+    "scene": [
+      "park grass",
+      "outdoor meadow"
+    ],
+    "activity": [
+      "playing fetch",
+      "hugging pet",
+      "spending time with dog"
+    ],
+    "weather": "sunset",
+    "time_of_day": "sunset",
+    "keywords": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner",
+      "dog",
+      "puppy",
+      "golden retriever",
+      "cat",
+      "playing",
+      "park",
+      "companion",
+      "animals",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_017",
+    "filename": "pets_06_02.jpg",
+    "file_path": "photos/pets/pets_06_02.jpg",
+    "category": "pets",
+    "date_taken": "2025-04-06",
+    "location": "Green Meadow Park",
+    "event": "Pets with owner",
+    "description": "Beloved pets with owner playing together outdoors on green grass during sunset. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner"
+    ],
+    "scene": [
+      "park grass",
+      "outdoor meadow"
+    ],
+    "activity": [
+      "playing fetch",
+      "hugging pet",
+      "spending time with dog"
+    ],
+    "weather": "sunset",
+    "time_of_day": "sunset",
+    "keywords": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner",
+      "dog",
+      "puppy",
+      "golden retriever",
+      "cat",
+      "playing",
+      "park",
+      "companion",
+      "animals",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_018",
+    "filename": "pets_06_03.jpg",
+    "file_path": "photos/pets/pets_06_03.jpg",
+    "category": "pets",
+    "date_taken": "2023-03-12",
+    "location": "Green Meadow Park",
+    "event": "Pets with owner",
+    "description": "Beloved pets with owner playing together outdoors on green grass during sunset. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner"
+    ],
+    "scene": [
+      "park grass",
+      "outdoor meadow"
+    ],
+    "activity": [
+      "playing fetch",
+      "hugging pet",
+      "spending time with dog"
+    ],
+    "weather": "sunset",
+    "time_of_day": "sunset",
+    "keywords": [
+      "pets with owner",
+      "pets",
+      "pet",
+      "owner",
+      "dog",
+      "puppy",
+      "golden retriever",
+      "cat",
+      "playing",
+      "park",
+      "companion",
+      "animals",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_019",
+    "filename": "food_07_01.jpg",
+    "file_path": "photos/food/food_07_01.jpg",
+    "category": "food",
+    "date_taken": "2025-04-15",
+    "location": "Olive Garden Bistro",
+    "event": "Restaurant",
+    "description": "Cozy restaurant dining ambiance with warm lamps, wine glasses, and table arrangements. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining"
+    ],
+    "scene": [
+      "restaurant dining room",
+      "table setting",
+      "bistro interior"
+    ],
+    "activity": [
+      "restaurant dining",
+      "eating dinner",
+      "ordering food"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining",
+      "table",
+      "cafe",
+      "food",
+      "lunch",
+      "dinner",
+      "menu",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_020",
+    "filename": "food_07_02.jpg",
+    "file_path": "photos/food/food_07_02.jpg",
+    "category": "food",
+    "date_taken": "2023-12-25",
+    "location": "Olive Garden Bistro",
+    "event": "Restaurant",
+    "description": "Cozy restaurant dining ambiance with warm lamps, wine glasses, and table arrangements. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining"
+    ],
+    "scene": [
+      "restaurant dining room",
+      "table setting",
+      "bistro interior"
+    ],
+    "activity": [
+      "restaurant dining",
+      "eating dinner",
+      "ordering food"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining",
+      "table",
+      "cafe",
+      "food",
+      "lunch",
+      "dinner",
+      "menu",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_021",
+    "filename": "food_07_03.jpg",
+    "file_path": "photos/food/food_07_03.jpg",
+    "category": "food",
+    "date_taken": "2024-12-10",
+    "location": "Olive Garden Bistro",
+    "event": "Restaurant",
+    "description": "Cozy restaurant dining ambiance with warm lamps, wine glasses, and table arrangements. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining"
+    ],
+    "scene": [
+      "restaurant dining room",
+      "table setting",
+      "bistro interior"
+    ],
+    "activity": [
+      "restaurant dining",
+      "eating dinner",
+      "ordering food"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "restaurant dining",
+      "table",
+      "cafe",
+      "food",
+      "lunch",
+      "dinner",
+      "menu",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_022",
+    "filename": "travel_08_01.jpg",
+    "file_path": "photos/travel/travel_08_01.jpg",
+    "category": "travel",
+    "date_taken": "2023-07-16",
+    "location": "Himalayas, India",
+    "event": "Himalayan mountain",
+    "description": "Majestic snowy Himalayan mountain peaks rising above clouds in crisp morning sunlight. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks"
+    ],
+    "scene": [
+      "snow peaks",
+      "high altitude mountains",
+      "glaciers"
+    ],
+    "activity": [
+      "mountain expedition",
+      "sightseeing"
+    ],
+    "weather": "cold",
+    "time_of_day": "morning",
+    "keywords": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks",
+      "high altitude",
+      "glaciers",
+      "snow",
+      "Manali",
+      "summit",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_023",
+    "filename": "travel_08_02.jpg",
+    "file_path": "photos/travel/travel_08_02.jpg",
+    "category": "travel",
+    "date_taken": "2024-08-01",
+    "location": "Himalayas, India",
+    "event": "Himalayan mountain",
+    "description": "Majestic snowy Himalayan mountain peaks rising above clouds in crisp morning sunlight. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks"
+    ],
+    "scene": [
+      "snow peaks",
+      "high altitude mountains",
+      "glaciers"
+    ],
+    "activity": [
+      "mountain expedition",
+      "sightseeing"
+    ],
+    "weather": "cold",
+    "time_of_day": "morning",
+    "keywords": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks",
+      "high altitude",
+      "glaciers",
+      "snow",
+      "Manali",
+      "summit",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_024",
+    "filename": "travel_08_03.jpg",
+    "file_path": "photos/travel/travel_08_03.jpg",
+    "category": "travel",
+    "date_taken": "2025-06-21",
+    "location": "Himalayas, India",
+    "event": "Himalayan mountain",
+    "description": "Majestic snowy Himalayan mountain peaks rising above clouds in crisp morning sunlight. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks"
+    ],
+    "scene": [
+      "snow peaks",
+      "high altitude mountains",
+      "glaciers"
+    ],
+    "activity": [
+      "mountain expedition",
+      "sightseeing"
+    ],
+    "weather": "cold",
+    "time_of_day": "morning",
+    "keywords": [
+      "Himalayan mountain",
+      "Himalayas",
+      "mountain",
+      "snow peaks",
+      "high altitude",
+      "glaciers",
+      "snow",
+      "Manali",
+      "summit",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_025",
+    "filename": "travel_09_01.jpg",
+    "file_path": "photos/travel/travel_09_01.jpg",
+    "category": "travel",
+    "date_taken": "2024-02-16",
+    "location": "Jaipur, Rajasthan",
+    "event": "Jaipur",
+    "description": "Stunning historical Jaipur palace architecture and royal Pink City heritage landmarks. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Jaipur",
+      "Rajasthan",
+      "Hawa Mahal",
+      "Amber Fort"
+    ],
+    "scene": [
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city palace"
+    ],
+    "activity": [
+      "sightseeing Jaipur",
+      "exploring palace",
+      "architecture tour"
     ],
     "weather": "sunny",
     "time_of_day": "afternoon",
     "keywords": [
       "Jaipur",
-      "fort",
-      "Amber palace",
-      "pink city",
-      "heritage",
-      "architecture",
       "Rajasthan",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_007",
-    "filename": "family_04_01.jpg",
-    "file_path": "photos/family/family_04_01.jpg",
-    "category": "family",
-    "date_taken": "2023-01-19",
-    "location": "Home Dining Room",
-    "event": "Family gathering",
-    "description": "Warm family reunion dinner sitting around a crowded table at home. (afternoon beach cafe view).",
-    "people": [
-      "home",
-      "food"
-    ],
-    "objects": [
-      "dinner",
-      "gathering"
-    ],
-    "scene": [
-      "dining table",
-      "home indoor"
-    ],
-    "activity": [
-      "eating dinner",
-      "laughing"
-    ],
-    "weather": "clear",
-    "time_of_day": "evening",
-    "keywords": [
-      "family",
-      "reunion",
-      "dinner",
-      "gathering",
-      "home",
-      "food",
-      "relatives",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_008",
-    "filename": "family_04_02.jpg",
-    "file_path": "photos/family/family_04_02.jpg",
-    "category": "family",
-    "date_taken": "2025-01-09",
-    "location": "Home Dining Room",
-    "event": "Family gathering",
-    "description": "Warm family reunion dinner sitting around a crowded table at home. (sunset dining table setup).",
-    "people": [
-      "home",
-      "food"
-    ],
-    "objects": [
-      "dinner",
-      "gathering"
-    ],
-    "scene": [
-      "dining table",
-      "home indoor"
-    ],
-    "activity": [
-      "eating dinner",
-      "laughing"
-    ],
-    "weather": "clear",
-    "time_of_day": "evening",
-    "keywords": [
-      "family",
-      "reunion",
-      "dinner",
-      "gathering",
-      "home",
-      "food",
-      "relatives",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_009",
-    "filename": "events_05_01.jpg",
-    "file_path": "photos/events/events_05_01.jpg",
-    "category": "events",
-    "date_taken": "2024-06-03",
-    "location": "Party Hall",
-    "event": "Birthday party",
-    "description": "Birthday party with friends, colorful balloons, and chocolate cake on table. (afternoon beach cafe view).",
-    "people": [
-      "candles",
-      "balloons"
-    ],
-    "objects": [
-      "friends",
-      "cake"
-    ],
-    "scene": [
-      "party hall",
-      "decorations"
-    ],
-    "activity": [
-      "cutting cake",
-      "celebrating"
-    ],
-    "weather": "indoor",
-    "time_of_day": "evening",
-    "keywords": [
-      "birthday",
-      "party",
-      "friends",
-      "cake",
-      "candles",
-      "balloons",
-      "celebration",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_010",
-    "filename": "events_05_02.jpg",
-    "file_path": "photos/events/events_05_02.jpg",
-    "category": "events",
-    "date_taken": "2025-09-26",
-    "location": "Party Hall",
-    "event": "Birthday party",
-    "description": "Birthday party with friends, colorful balloons, and chocolate cake on table. (sunset dining table setup).",
-    "people": [
-      "candles",
-      "balloons"
-    ],
-    "objects": [
-      "friends",
-      "cake"
-    ],
-    "scene": [
-      "party hall",
-      "decorations"
-    ],
-    "activity": [
-      "cutting cake",
-      "celebrating"
-    ],
-    "weather": "indoor",
-    "time_of_day": "evening",
-    "keywords": [
-      "birthday",
-      "party",
-      "friends",
-      "cake",
-      "candles",
-      "balloons",
-      "celebration",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_011",
-    "filename": "events_06_01.jpg",
-    "file_path": "photos/events/events_06_01.jpg",
-    "category": "events",
-    "date_taken": "2023-04-14",
-    "location": "Home Courtyard",
-    "event": "Diwali celebration",
-    "description": "Diwali celebration with friends and family lighting traditional diyas and sparklers. (afternoon beach cafe view).",
-    "people": [
-      "sparklers",
-      "traditional outfits"
-    ],
-    "objects": [
-      "diyas",
-      "lights"
-    ],
-    "scene": [
-      "home outdoor",
-      "rangoli"
-    ],
-    "activity": [
-      "lighting diyas",
-      "sparklers"
-    ],
-    "weather": "night",
-    "time_of_day": "night",
-    "keywords": [
-      "Diwali",
-      "festival",
-      "diyas",
-      "lights",
-      "sparklers",
-      "traditional outfits",
-      "family",
-      "friends",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_012",
-    "filename": "events_06_02.jpg",
-    "file_path": "photos/events/events_06_02.jpg",
-    "category": "events",
-    "date_taken": "2025-01-08",
-    "location": "Home Courtyard",
-    "event": "Diwali celebration",
-    "description": "Diwali celebration with friends and family lighting traditional diyas and sparklers. (sunset dining table setup).",
-    "people": [
-      "sparklers",
-      "traditional outfits"
-    ],
-    "objects": [
-      "diyas",
-      "lights"
-    ],
-    "scene": [
-      "home outdoor",
-      "rangoli"
-    ],
-    "activity": [
-      "lighting diyas",
-      "sparklers"
-    ],
-    "weather": "night",
-    "time_of_day": "night",
-    "keywords": [
-      "Diwali",
-      "festival",
-      "diyas",
-      "lights",
-      "sparklers",
-      "traditional outfits",
-      "family",
-      "friends",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_013",
-    "filename": "pets_07_01.jpg",
-    "file_path": "photos/pets/pets_07_01.jpg",
-    "category": "pets",
-    "date_taken": "2024-03-06",
-    "location": "City Park",
-    "event": "Pets with owner",
-    "description": "Golden retriever playing fetch with owner on green grass in the park. (afternoon beach cafe view).",
-    "people": [
-      "playing",
-      "park"
-    ],
-    "objects": [
-      "owner",
-      "cat"
-    ],
-    "scene": [
-      "park grass",
-      "lake"
-    ],
-    "activity": [
-      "playing fetch",
-      "hugging pet"
-    ],
-    "weather": "sunset",
-    "time_of_day": "sunset",
-    "keywords": [
-      "pet",
-      "dog",
-      "owner",
-      "cat",
-      "playing",
-      "park",
-      "golden retriever",
-      "hug",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_014",
-    "filename": "pets_07_02.jpg",
-    "file_path": "photos/pets/pets_07_02.jpg",
-    "category": "pets",
-    "date_taken": "2023-12-04",
-    "location": "City Park",
-    "event": "Pets with owner",
-    "description": "Golden retriever playing fetch with owner on green grass in the park. (sunset dining table setup).",
-    "people": [
-      "playing",
-      "park"
-    ],
-    "objects": [
-      "owner",
-      "cat"
-    ],
-    "scene": [
-      "park grass",
-      "lake"
-    ],
-    "activity": [
-      "playing fetch",
-      "hugging pet"
-    ],
-    "weather": "sunset",
-    "time_of_day": "sunset",
-    "keywords": [
-      "pet",
-      "dog",
-      "owner",
-      "cat",
-      "playing",
-      "park",
-      "golden retriever",
-      "hug",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_015",
-    "filename": "food_08_01.jpg",
-    "file_path": "photos/food/food_08_01.jpg",
-    "category": "food",
-    "date_taken": "2023-07-11",
-    "location": "Downtown Bistro",
-    "event": "Restaurant dining",
-    "description": "Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (afternoon beach cafe view).",
-    "people": [
-      "dinner table",
-      "coffee"
-    ],
-    "objects": [
-      "food",
-      "cafe"
-    ],
-    "scene": [
-      "restaurant indoor",
-      "dining table"
-    ],
-    "activity": [
-      "eating",
-      "drinking coffee"
-    ],
-    "weather": "indoor",
-    "time_of_day": "afternoon",
-    "keywords": [
-      "restaurant",
-      "dining",
-      "food",
-      "cafe",
-      "dinner table",
-      "coffee",
-      "menu",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_016",
-    "filename": "food_08_02.jpg",
-    "file_path": "photos/food/food_08_02.jpg",
-    "category": "food",
-    "date_taken": "2023-08-08",
-    "location": "Downtown Bistro",
-    "event": "Restaurant dining",
-    "description": "Cozy restaurant dining table with coffee, appetizers, and warm indoor lights. (sunset dining table setup).",
-    "people": [
-      "dinner table",
-      "coffee"
-    ],
-    "objects": [
-      "food",
-      "cafe"
-    ],
-    "scene": [
-      "restaurant indoor",
-      "dining table"
-    ],
-    "activity": [
-      "eating",
-      "drinking coffee"
-    ],
-    "weather": "indoor",
-    "time_of_day": "afternoon",
-    "keywords": [
-      "restaurant",
-      "dining",
-      "food",
-      "cafe",
-      "dinner table",
-      "coffee",
-      "menu",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_017",
-    "filename": "travel_09_01.jpg",
-    "file_path": "photos/travel/travel_09_01.jpg",
-    "category": "travel",
-    "date_taken": "2023-06-27",
-    "location": "Himalayas, India",
-    "event": "Himalayan mountain",
-    "description": "Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (afternoon beach cafe view).",
-    "people": [
-      "Manali",
-      "high altitude"
-    ],
-    "objects": [
-      "snow",
-      "peaks"
-    ],
-    "scene": [
-      "snow peaks",
-      "high altitude"
-    ],
-    "activity": [
-      "mountain viewing",
-      "expedition"
-    ],
-    "weather": "cold",
-    "time_of_day": "morning",
-    "keywords": [
-      "Himalayas",
-      "mountain",
-      "snow",
-      "peaks",
-      "Manali",
-      "high altitude",
-      "trekking",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_018",
-    "filename": "travel_09_02.jpg",
-    "file_path": "photos/travel/travel_09_02.jpg",
-    "category": "travel",
-    "date_taken": "2025-11-13",
-    "location": "Himalayas, India",
-    "event": "Himalayan mountain",
-    "description": "Breathtaking high altitude snowy Himalayan mountain peaks during expedition. (sunset dining table setup).",
-    "people": [
-      "Manali",
-      "high altitude"
-    ],
-    "objects": [
-      "snow",
-      "peaks"
-    ],
-    "scene": [
-      "snow peaks",
-      "high altitude"
-    ],
-    "activity": [
-      "mountain viewing",
-      "expedition"
-    ],
-    "weather": "cold",
-    "time_of_day": "morning",
-    "keywords": [
-      "Himalayas",
-      "mountain",
-      "snow",
-      "peaks",
-      "Manali",
-      "high altitude",
-      "trekking",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_019",
-    "filename": "food_10_01.jpg",
-    "file_path": "photos/food/food_10_01.jpg",
-    "category": "food",
-    "date_taken": "2025-11-02",
-    "location": "Gourmet Kitchen",
-    "event": "Food photos",
-    "description": "Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (afternoon beach cafe view).",
-    "people": [
-      "indian thali",
-      "dessert"
-    ],
-    "objects": [
-      "pizza",
-      "pasta"
-    ],
-    "scene": [
-      "food platter",
-      "table"
-    ],
-    "activity": [
-      "food photography"
-    ],
-    "weather": "indoor",
-    "time_of_day": "afternoon",
-    "keywords": [
-      "food",
-      "dishes",
-      "pizza",
-      "pasta",
-      "indian thali",
-      "dessert",
-      "delicious",
-      "meal",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_020",
-    "filename": "food_10_02.jpg",
-    "file_path": "photos/food/food_10_02.jpg",
-    "category": "food",
-    "date_taken": "2023-04-09",
-    "location": "Gourmet Kitchen",
-    "event": "Food photos",
-    "description": "Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes. (sunset dining table setup).",
-    "people": [
-      "indian thali",
-      "dessert"
-    ],
-    "objects": [
-      "pizza",
-      "pasta"
-    ],
-    "scene": [
-      "food platter",
-      "table"
-    ],
-    "activity": [
-      "food photography"
-    ],
-    "weather": "indoor",
-    "time_of_day": "afternoon",
-    "keywords": [
-      "food",
-      "dishes",
-      "pizza",
-      "pasta",
-      "indian thali",
-      "dessert",
-      "delicious",
-      "meal",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_021",
-    "filename": "activities_11_01.jpg",
-    "file_path": "photos/activities/activities_11_01.jpg",
-    "category": "activities",
-    "date_taken": "2024-08-26",
-    "location": "Dance Studio A",
-    "event": "Dancing class",
-    "description": "Dance studio class rehearsal with friends practicing choreography in front of mirrors. (afternoon beach cafe view).",
-    "people": [
-      "salsa",
-      "hip hop"
-    ],
-    "objects": [
-      "dancing",
-      "rehearsal"
-    ],
-    "scene": [
-      "dance studio",
-      "mirrors",
-      "wood floor"
-    ],
-    "activity": [
-      "dancing rehearsal",
-      "salsa practice",
-      "hip hop class"
-    ],
-    "weather": "indoor",
-    "time_of_day": "evening",
-    "keywords": [
-      "dancing class",
-      "dance studio",
-      "dancing",
-      "rehearsal",
-      "salsa",
-      "hip hop",
-      "dance practice",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_022",
-    "filename": "activities_11_02.jpg",
-    "file_path": "photos/activities/activities_11_02.jpg",
-    "category": "activities",
-    "date_taken": "2024-04-08",
-    "location": "Dance Studio A",
-    "event": "Dancing class",
-    "description": "Dance studio class rehearsal with friends practicing choreography in front of mirrors. (sunset dining table setup).",
-    "people": [
-      "salsa",
-      "hip hop"
-    ],
-    "objects": [
-      "dancing",
-      "rehearsal"
-    ],
-    "scene": [
-      "dance studio",
-      "mirrors",
-      "wood floor"
-    ],
-    "activity": [
-      "dancing rehearsal",
-      "salsa practice",
-      "hip hop class"
-    ],
-    "weather": "indoor",
-    "time_of_day": "evening",
-    "keywords": [
-      "dancing class",
-      "dance studio",
-      "dancing",
-      "rehearsal",
-      "salsa",
-      "hip hop",
-      "dance practice",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_023",
-    "filename": "activities_12_01.jpg",
-    "file_path": "photos/activities/activities_12_01.jpg",
-    "category": "activities",
-    "date_taken": "2025-01-21",
-    "location": "Aquatic Sports Center",
-    "event": "Swimming classes",
-    "description": "Swimming class lesson in a clear blue indoor pool with goggles and instructor. (afternoon beach cafe view).",
-    "people": [
-      "swimming laps",
-      "diver"
-    ],
-    "objects": [
-      "swim lesson",
-      "pool water"
-    ],
-    "scene": [
-      "swimming pool",
-      "poolside",
-      "clear blue water"
-    ],
-    "activity": [
-      "swimming lesson",
-      "swimming laps",
-      "diving"
-    ],
-    "weather": "sunny",
-    "time_of_day": "morning",
-    "keywords": [
-      "swimming classes",
-      "swimming pool",
-      "swim lesson",
-      "pool water",
-      "swimming laps",
-      "diver",
-      "aquatics",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_024",
-    "filename": "activities_12_02.jpg",
-    "file_path": "photos/activities/activities_12_02.jpg",
-    "category": "activities",
-    "date_taken": "2024-02-27",
-    "location": "Aquatic Sports Center",
-    "event": "Swimming classes",
-    "description": "Swimming class lesson in a clear blue indoor pool with goggles and instructor. (sunset dining table setup).",
-    "people": [
-      "swimming laps",
-      "diver"
-    ],
-    "objects": [
-      "swim lesson",
-      "pool water"
-    ],
-    "scene": [
-      "swimming pool",
-      "poolside",
-      "clear blue water"
-    ],
-    "activity": [
-      "swimming lesson",
-      "swimming laps",
-      "diving"
-    ],
-    "weather": "sunny",
-    "time_of_day": "morning",
-    "keywords": [
-      "swimming classes",
-      "swimming pool",
-      "swim lesson",
-      "pool water",
-      "swimming laps",
-      "diver",
-      "aquatics",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_025",
-    "filename": "events_13_01.jpg",
-    "file_path": "photos/events/events_13_01.jpg",
-    "category": "events",
-    "date_taken": "2025-04-26",
-    "location": "Outdoor Lawn",
-    "event": "Holi celebration",
-    "description": "Vibrant Holi festival of colors celebration with friends and family throwing gulal. (afternoon beach cafe view).",
-    "people": [
-      "friends",
-      "family"
-    ],
-    "objects": [
-      "colors",
-      "gulal"
-    ],
-    "scene": [
-      "outdoor lawn",
-      "festival colors"
-    ],
-    "activity": [
-      "playing colors",
-      "splashing gulal"
-    ],
-    "weather": "sunny",
-    "time_of_day": "morning",
-    "keywords": [
-      "Holi",
-      "festival",
-      "colors",
-      "gulal",
-      "friends",
-      "family",
-      "celebration",
-      "pichkari",
-      "afternoon"
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city",
+      "palace",
+      "heritage",
+      "monument",
+      "fort",
+      "candid angle"
     ]
   },
   {
     "id": "photo_026",
-    "filename": "events_13_02.jpg",
-    "file_path": "photos/events/events_13_02.jpg",
+    "filename": "travel_09_02.jpg",
+    "file_path": "photos/travel/travel_09_02.jpg",
+    "category": "travel",
+    "date_taken": "2024-09-12",
+    "location": "Jaipur, Rajasthan",
+    "event": "Jaipur",
+    "description": "Stunning historical Jaipur palace architecture and royal Pink City heritage landmarks. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Jaipur",
+      "Rajasthan",
+      "Hawa Mahal",
+      "Amber Fort"
+    ],
+    "scene": [
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city palace"
+    ],
+    "activity": [
+      "sightseeing Jaipur",
+      "exploring palace",
+      "architecture tour"
+    ],
+    "weather": "sunny",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "Jaipur",
+      "Rajasthan",
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city",
+      "palace",
+      "heritage",
+      "monument",
+      "fort",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_027",
+    "filename": "travel_09_03.jpg",
+    "file_path": "photos/travel/travel_09_03.jpg",
+    "category": "travel",
+    "date_taken": "2025-12-04",
+    "location": "Jaipur, Rajasthan",
+    "event": "Jaipur",
+    "description": "Stunning historical Jaipur palace architecture and royal Pink City heritage landmarks. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Jaipur",
+      "Rajasthan",
+      "Hawa Mahal",
+      "Amber Fort"
+    ],
+    "scene": [
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city palace"
+    ],
+    "activity": [
+      "sightseeing Jaipur",
+      "exploring palace",
+      "architecture tour"
+    ],
+    "weather": "sunny",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "Jaipur",
+      "Rajasthan",
+      "Hawa Mahal",
+      "Amber Fort",
+      "pink city",
+      "palace",
+      "heritage",
+      "monument",
+      "fort",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_028",
+    "filename": "food_10_01.jpg",
+    "file_path": "photos/food/food_10_01.jpg",
+    "category": "food",
+    "date_taken": "2023-08-28",
+    "location": "Gourmet Table",
+    "event": "Food photos",
+    "description": "Mouthwatering food photos featuring freshly baked pizza, gourmet delicacies, and colorful dishes. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza"
+    ],
+    "scene": [
+      "food platter",
+      "dining table",
+      "gourmet dishes"
+    ],
+    "activity": [
+      "food photography",
+      "tasting delicious meals"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza",
+      "delicious",
+      "cuisine",
+      "pasta",
+      "platter",
+      "meal",
+      "yummy",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_029",
+    "filename": "food_10_02.jpg",
+    "file_path": "photos/food/food_10_02.jpg",
+    "category": "food",
+    "date_taken": "2024-12-25",
+    "location": "Gourmet Table",
+    "event": "Food photos",
+    "description": "Mouthwatering food photos featuring freshly baked pizza, gourmet delicacies, and colorful dishes. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza"
+    ],
+    "scene": [
+      "food platter",
+      "dining table",
+      "gourmet dishes"
+    ],
+    "activity": [
+      "food photography",
+      "tasting delicious meals"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza",
+      "delicious",
+      "cuisine",
+      "pasta",
+      "platter",
+      "meal",
+      "yummy",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_030",
+    "filename": "food_10_03.jpg",
+    "file_path": "photos/food/food_10_03.jpg",
+    "category": "food",
+    "date_taken": "2025-06-01",
+    "location": "Gourmet Table",
+    "event": "Food photos",
+    "description": "Mouthwatering food photos featuring freshly baked pizza, gourmet delicacies, and colorful dishes. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza"
+    ],
+    "scene": [
+      "food platter",
+      "dining table",
+      "gourmet dishes"
+    ],
+    "activity": [
+      "food photography",
+      "tasting delicious meals"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "food photos",
+      "food",
+      "dishes",
+      "pizza",
+      "delicious",
+      "cuisine",
+      "pasta",
+      "platter",
+      "meal",
+      "yummy",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_031",
+    "filename": "activities_11_01.jpg",
+    "file_path": "photos/activities/activities_11_01.jpg",
+    "category": "activities",
+    "date_taken": "2024-07-25",
+    "location": "Rhythm Dance Studio",
+    "event": "Dancing class",
+    "description": "Energetic dancing class rehearsal inside dance studio practicing choreography in front of mirrors. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio"
+    ],
+    "scene": [
+      "dance studio",
+      "mirrors",
+      "wooden dance floor"
+    ],
+    "activity": [
+      "dancing class",
+      "dance rehearsal",
+      "choreography training"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio",
+      "dancer",
+      "choreography",
+      "rehearsal",
+      "salsa",
+      "hip hop",
+      "dance practice",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_032",
+    "filename": "activities_11_02.jpg",
+    "file_path": "photos/activities/activities_11_02.jpg",
+    "category": "activities",
+    "date_taken": "2025-04-06",
+    "location": "Rhythm Dance Studio",
+    "event": "Dancing class",
+    "description": "Energetic dancing class rehearsal inside dance studio practicing choreography in front of mirrors. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio"
+    ],
+    "scene": [
+      "dance studio",
+      "mirrors",
+      "wooden dance floor"
+    ],
+    "activity": [
+      "dancing class",
+      "dance rehearsal",
+      "choreography training"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio",
+      "dancer",
+      "choreography",
+      "rehearsal",
+      "salsa",
+      "hip hop",
+      "dance practice",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_033",
+    "filename": "activities_11_03.jpg",
+    "file_path": "photos/activities/activities_11_03.jpg",
+    "category": "activities",
+    "date_taken": "2025-01-17",
+    "location": "Rhythm Dance Studio",
+    "event": "Dancing class",
+    "description": "Energetic dancing class rehearsal inside dance studio practicing choreography in front of mirrors. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio"
+    ],
+    "scene": [
+      "dance studio",
+      "mirrors",
+      "wooden dance floor"
+    ],
+    "activity": [
+      "dancing class",
+      "dance rehearsal",
+      "choreography training"
+    ],
+    "weather": "indoor",
+    "time_of_day": "evening",
+    "keywords": [
+      "dancing class",
+      "dance",
+      "dancing",
+      "dance studio",
+      "dancer",
+      "choreography",
+      "rehearsal",
+      "salsa",
+      "hip hop",
+      "dance practice",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_034",
+    "filename": "activities_12_01.jpg",
+    "file_path": "photos/activities/activities_12_01.jpg",
+    "category": "activities",
+    "date_taken": "2023-07-10",
+    "location": "Aquatic Sports Complex",
+    "event": "Swimming classes",
+    "description": "Indoor swimming classes in clear blue Olympic size pool with lane dividers. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson"
+    ],
+    "scene": [
+      "swimming pool",
+      "clear blue water",
+      "pool lanes"
+    ],
+    "activity": [
+      "swimming classes",
+      "swimming laps",
+      "diving lesson"
+    ],
+    "weather": "indoor",
+    "time_of_day": "morning",
+    "keywords": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson",
+      "pool",
+      "water",
+      "laps",
+      "swimmer",
+      "goggles",
+      "diving",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_035",
+    "filename": "activities_12_02.jpg",
+    "file_path": "photos/activities/activities_12_02.jpg",
+    "category": "activities",
+    "date_taken": "2023-04-19",
+    "location": "Aquatic Sports Complex",
+    "event": "Swimming classes",
+    "description": "Indoor swimming classes in clear blue Olympic size pool with lane dividers. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson"
+    ],
+    "scene": [
+      "swimming pool",
+      "clear blue water",
+      "pool lanes"
+    ],
+    "activity": [
+      "swimming classes",
+      "swimming laps",
+      "diving lesson"
+    ],
+    "weather": "indoor",
+    "time_of_day": "morning",
+    "keywords": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson",
+      "pool",
+      "water",
+      "laps",
+      "swimmer",
+      "goggles",
+      "diving",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_036",
+    "filename": "activities_12_03.jpg",
+    "file_path": "photos/activities/activities_12_03.jpg",
+    "category": "activities",
+    "date_taken": "2024-10-08",
+    "location": "Aquatic Sports Complex",
+    "event": "Swimming classes",
+    "description": "Indoor swimming classes in clear blue Olympic size pool with lane dividers. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson"
+    ],
+    "scene": [
+      "swimming pool",
+      "clear blue water",
+      "pool lanes"
+    ],
+    "activity": [
+      "swimming classes",
+      "swimming laps",
+      "diving lesson"
+    ],
+    "weather": "indoor",
+    "time_of_day": "morning",
+    "keywords": [
+      "swimming classes",
+      "swimming pool",
+      "swimming",
+      "swim lesson",
+      "pool",
+      "water",
+      "laps",
+      "swimmer",
+      "goggles",
+      "diving",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_037",
+    "filename": "events_13_01.jpg",
+    "file_path": "photos/events/events_13_01.jpg",
     "category": "events",
-    "date_taken": "2023-08-19",
-    "location": "Outdoor Lawn",
-    "event": "Holi celebration",
-    "description": "Vibrant Holi festival of colors celebration with friends and family throwing gulal. (sunset dining table setup).",
+    "date_taken": "2024-12-05",
+    "location": "Garden Lawn",
+    "event": "Holi celebration with friend and family",
+    "description": "Vibrant holi celebration with friend and family splashing colorful organic gulal powder. (candid angle).",
     "people": [
       "friends",
       "family"
     ],
     "objects": [
-      "colors",
-      "gulal"
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
+      "colors"
     ],
     "scene": [
+      "color clouds",
       "outdoor lawn",
-      "festival colors"
+      "gulal"
     ],
     "activity": [
-      "playing colors",
-      "splashing gulal"
+      "holi celebration with friend and family",
+      "throwing gulal colors",
+      "celebrating festival"
     ],
     "weather": "sunny",
     "time_of_day": "morning",
     "keywords": [
-      "Holi",
-      "festival",
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
       "colors",
       "gulal",
+      "festival of colors",
       "friends",
       "family",
-      "celebration",
       "pichkari",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_027",
-    "filename": "events_14_01.jpg",
-    "file_path": "photos/events/events_14_01.jpg",
-    "category": "events",
-    "date_taken": "2024-02-07",
-    "location": "Nightclub Lounge",
-    "event": "Club party",
-    "description": "Nightclub party with friends under vibrant purple and blue laser lights. (afternoon beach cafe view).",
-    "people": [
-      "dancing",
-      "lights"
-    ],
-    "objects": [
-      "nightclub",
-      "friends"
-    ],
-    "scene": [
-      "dance floor",
-      "DJ booth"
-    ],
-    "activity": [
-      "dancing",
-      "enjoying music"
-    ],
-    "weather": "indoor",
-    "time_of_day": "night",
-    "keywords": [
-      "club",
-      "party",
-      "nightclub",
-      "friends",
-      "dancing",
-      "lights",
-      "music",
-      "drinks",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_028",
-    "filename": "events_14_02.jpg",
-    "file_path": "photos/events/events_14_02.jpg",
-    "category": "events",
-    "date_taken": "2024-04-20",
-    "location": "Nightclub Lounge",
-    "event": "Club party",
-    "description": "Nightclub party with friends under vibrant purple and blue laser lights. (sunset dining table setup).",
-    "people": [
-      "dancing",
-      "lights"
-    ],
-    "objects": [
-      "nightclub",
-      "friends"
-    ],
-    "scene": [
-      "dance floor",
-      "DJ booth"
-    ],
-    "activity": [
-      "dancing",
-      "enjoying music"
-    ],
-    "weather": "indoor",
-    "time_of_day": "night",
-    "keywords": [
-      "club",
-      "party",
-      "nightclub",
-      "friends",
-      "dancing",
-      "lights",
-      "music",
-      "drinks",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_029",
-    "filename": "screenshots_15_01.jpg",
-    "file_path": "photos/screenshots/screenshots_15_01.jpg",
-    "category": "screenshots",
-    "date_taken": "2024-07-25",
-    "location": "Mobile Screen",
-    "event": "Outfit ideas",
-    "description": "Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (afternoon beach cafe view).",
-    "people": [
-      "OOTD",
-      "fashion"
-    ],
-    "objects": [
-      "clothing",
-      "style"
-    ],
-    "scene": [
-      "fashion board",
-      "screenshot"
-    ],
-    "activity": [
-      "saving outfit ideas"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "outfit",
-      "clothing",
-      "style",
-      "OOTD",
-      "fashion",
-      "shopping",
-      "ideas",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_030",
-    "filename": "screenshots_15_02.jpg",
-    "file_path": "photos/screenshots/screenshots_15_02.jpg",
-    "category": "screenshots",
-    "date_taken": "2023-06-25",
-    "location": "Mobile Screen",
-    "event": "Outfit ideas",
-    "description": "Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board. (sunset dining table setup).",
-    "people": [
-      "OOTD",
-      "fashion"
-    ],
-    "objects": [
-      "clothing",
-      "style"
-    ],
-    "scene": [
-      "fashion board",
-      "screenshot"
-    ],
-    "activity": [
-      "saving outfit ideas"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "outfit",
-      "clothing",
-      "style",
-      "OOTD",
-      "fashion",
-      "shopping",
-      "ideas",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_031",
-    "filename": "screenshots_16_01.jpg",
-    "file_path": "photos/screenshots/screenshots_16_01.jpg",
-    "category": "screenshots",
-    "date_taken": "2023-12-04",
-    "location": "Mobile Screen",
-    "event": "Positive thoughts",
-    "description": "Screenshot of an inspiring positive thought and motivational mindset quote. (afternoon beach cafe view).",
-    "people": [
-      "inspiration",
-      "text"
-    ],
-    "objects": [
-      "quote",
-      "motivational"
-    ],
-    "scene": [
-      "quote card",
-      "text screenshot"
-    ],
-    "activity": [
-      "saving quotes"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "positive thought",
-      "quote",
-      "motivational",
-      "inspiration",
-      "text",
-      "mindset",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_032",
-    "filename": "screenshots_16_02.jpg",
-    "file_path": "photos/screenshots/screenshots_16_02.jpg",
-    "category": "screenshots",
-    "date_taken": "2023-03-19",
-    "location": "Mobile Screen",
-    "event": "Positive thoughts",
-    "description": "Screenshot of an inspiring positive thought and motivational mindset quote. (sunset dining table setup).",
-    "people": [
-      "inspiration",
-      "text"
-    ],
-    "objects": [
-      "quote",
-      "motivational"
-    ],
-    "scene": [
-      "quote card",
-      "text screenshot"
-    ],
-    "activity": [
-      "saving quotes"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "positive thought",
-      "quote",
-      "motivational",
-      "inspiration",
-      "text",
-      "mindset",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_033",
-    "filename": "screenshots_17_01.jpg",
-    "file_path": "photos/screenshots/screenshots_17_01.jpg",
-    "category": "screenshots",
-    "date_taken": "2025-01-06",
-    "location": "Mobile Screen",
-    "event": "Social media comments",
-    "description": "Screenshot of an interesting social media comment thread and viral tweet discussion. (afternoon beach cafe view).",
-    "people": [
-      "discussion",
-      "post"
-    ],
-    "objects": [
-      "comment",
-      "tweet"
-    ],
-    "scene": [
-      "discussion thread",
-      "tweet screenshot"
-    ],
-    "activity": [
-      "saving comments"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "social media",
-      "comment",
-      "tweet",
-      "discussion",
-      "post",
-      "chat",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_034",
-    "filename": "screenshots_17_02.jpg",
-    "file_path": "photos/screenshots/screenshots_17_02.jpg",
-    "category": "screenshots",
-    "date_taken": "2024-04-15",
-    "location": "Mobile Screen",
-    "event": "Social media comments",
-    "description": "Screenshot of an interesting social media comment thread and viral tweet discussion. (sunset dining table setup).",
-    "people": [
-      "discussion",
-      "post"
-    ],
-    "objects": [
-      "comment",
-      "tweet"
-    ],
-    "scene": [
-      "discussion thread",
-      "tweet screenshot"
-    ],
-    "activity": [
-      "saving comments"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "screenshot",
-      "social media",
-      "comment",
-      "tweet",
-      "discussion",
-      "post",
-      "chat",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_035",
-    "filename": "documents_18_01.jpg",
-    "file_path": "photos/documents/documents_18_01.jpg",
-    "category": "documents",
-    "date_taken": "2023-06-13",
-    "location": "Document Scan",
-    "event": "Restaurant receipts",
-    "description": "Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (afternoon beach cafe view).",
-    "people": [
-      "tax invoice",
-      "scan"
-    ],
-    "objects": [
-      "bill",
-      "restaurant receipt"
-    ],
-    "scene": [
-      "paper receipt",
-      "tax invoice"
-    ],
-    "activity": [
-      "scanning receipt"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "document",
-      "receipt",
-      "bill",
-      "restaurant receipt",
-      "tax invoice",
-      "scan",
-      "paper",
-      "expense",
-      "afternoon"
-    ]
-  },
-  {
-    "id": "photo_036",
-    "filename": "documents_18_02.jpg",
-    "file_path": "photos/documents/documents_18_02.jpg",
-    "category": "documents",
-    "date_taken": "2023-06-21",
-    "location": "Document Scan",
-    "event": "Restaurant receipts",
-    "description": "Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items. (sunset dining table setup).",
-    "people": [
-      "tax invoice",
-      "scan"
-    ],
-    "objects": [
-      "bill",
-      "restaurant receipt"
-    ],
-    "scene": [
-      "paper receipt",
-      "tax invoice"
-    ],
-    "activity": [
-      "scanning receipt"
-    ],
-    "weather": "digital",
-    "time_of_day": "day",
-    "keywords": [
-      "document",
-      "receipt",
-      "bill",
-      "restaurant receipt",
-      "tax invoice",
-      "scan",
-      "paper",
-      "expense",
-      "sunset"
-    ]
-  },
-  {
-    "id": "photo_037",
-    "filename": "videos_19_01.jpg",
-    "file_path": "photos/videos/videos_19_01.jpg",
-    "category": "videos",
-    "date_taken": "2025-10-12",
-    "location": "Cafe & Lounge",
-    "event": "Cafe video clips",
-    "description": "Short video clip of cozy cafe coffee brewing and lively party celebration moments. (afternoon beach cafe view).",
-    "people": [
-      "motion",
-      "clip"
-    ],
-    "objects": [
-      "celebration clip",
-      "party video"
-    ],
-    "scene": [
-      "cafe ambiance",
-      "video clip"
-    ],
-    "activity": [
-      "filming video"
-    ],
-    "weather": "indoor",
-    "time_of_day": "afternoon",
-    "keywords": [
-      "video",
-      "cafe video",
-      "celebration clip",
-      "party video",
-      "motion",
-      "clip",
-      "mp4",
-      "afternoon"
+      "candid angle"
     ]
   },
   {
     "id": "photo_038",
-    "filename": "videos_19_02.jpg",
-    "file_path": "photos/videos/videos_19_02.jpg",
-    "category": "videos",
-    "date_taken": "2024-03-26",
-    "location": "Cafe & Lounge",
-    "event": "Cafe video clips",
-    "description": "Short video clip of cozy cafe coffee brewing and lively party celebration moments. (sunset dining table setup).",
+    "filename": "events_13_02.jpg",
+    "file_path": "photos/events/events_13_02.jpg",
+    "category": "events",
+    "date_taken": "2024-08-11",
+    "location": "Garden Lawn",
+    "event": "Holi celebration with friend and family",
+    "description": "Vibrant holi celebration with friend and family splashing colorful organic gulal powder. (close-up detail viewpoint).",
     "people": [
-      "motion",
-      "clip"
+      "friends",
+      "family"
     ],
     "objects": [
-      "celebration clip",
-      "party video"
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
+      "colors"
     ],
     "scene": [
-      "cafe ambiance",
-      "video clip"
+      "color clouds",
+      "outdoor lawn",
+      "gulal"
     ],
     "activity": [
-      "filming video"
+      "holi celebration with friend and family",
+      "throwing gulal colors",
+      "celebrating festival"
+    ],
+    "weather": "sunny",
+    "time_of_day": "morning",
+    "keywords": [
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
+      "colors",
+      "gulal",
+      "festival of colors",
+      "friends",
+      "family",
+      "pichkari",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_039",
+    "filename": "events_13_03.jpg",
+    "file_path": "photos/events/events_13_03.jpg",
+    "category": "events",
+    "date_taken": "2023-09-19",
+    "location": "Garden Lawn",
+    "event": "Holi celebration with friend and family",
+    "description": "Vibrant holi celebration with friend and family splashing colorful organic gulal powder. (wide perspective shot).",
+    "people": [
+      "friends",
+      "family"
+    ],
+    "objects": [
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
+      "colors"
+    ],
+    "scene": [
+      "color clouds",
+      "outdoor lawn",
+      "gulal"
+    ],
+    "activity": [
+      "holi celebration with friend and family",
+      "throwing gulal colors",
+      "celebrating festival"
+    ],
+    "weather": "sunny",
+    "time_of_day": "morning",
+    "keywords": [
+      "holi celebration with friend and family",
+      "holi",
+      "celebration",
+      "colors",
+      "gulal",
+      "festival of colors",
+      "friends",
+      "family",
+      "pichkari",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_040",
+    "filename": "screenshots_14_01.jpg",
+    "file_path": "photos/screenshots/screenshots_14_01.jpg",
+    "category": "screenshots",
+    "date_taken": "2025-04-04",
+    "location": "Mobile Screen",
+    "event": "Outfits screenshots",
+    "description": "Mobile phone screenshot of stylish modern outfits, aesthetic lookbook ideas, and fashion combinations. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit"
+    ],
+    "scene": [
+      "fashion board",
+      "lookbook",
+      "outfit collage"
+    ],
+    "activity": [
+      "saving outfit screenshot",
+      "fashion styling"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit",
+      "OOTD",
+      "fashion",
+      "clothing",
+      "style",
+      "wardrobe",
+      "outfit ideas",
+      "fashion board",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_041",
+    "filename": "screenshots_14_02.jpg",
+    "file_path": "photos/screenshots/screenshots_14_02.jpg",
+    "category": "screenshots",
+    "date_taken": "2025-09-02",
+    "location": "Mobile Screen",
+    "event": "Outfits screenshots",
+    "description": "Mobile phone screenshot of stylish modern outfits, aesthetic lookbook ideas, and fashion combinations. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit"
+    ],
+    "scene": [
+      "fashion board",
+      "lookbook",
+      "outfit collage"
+    ],
+    "activity": [
+      "saving outfit screenshot",
+      "fashion styling"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit",
+      "OOTD",
+      "fashion",
+      "clothing",
+      "style",
+      "wardrobe",
+      "outfit ideas",
+      "fashion board",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_042",
+    "filename": "screenshots_14_03.jpg",
+    "file_path": "photos/screenshots/screenshots_14_03.jpg",
+    "category": "screenshots",
+    "date_taken": "2025-08-21",
+    "location": "Mobile Screen",
+    "event": "Outfits screenshots",
+    "description": "Mobile phone screenshot of stylish modern outfits, aesthetic lookbook ideas, and fashion combinations. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit"
+    ],
+    "scene": [
+      "fashion board",
+      "lookbook",
+      "outfit collage"
+    ],
+    "activity": [
+      "saving outfit screenshot",
+      "fashion styling"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "screenshots",
+      "screenshot",
+      "outfits",
+      "outfit",
+      "OOTD",
+      "fashion",
+      "clothing",
+      "style",
+      "wardrobe",
+      "outfit ideas",
+      "fashion board",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_043",
+    "filename": "screenshots_15_01.jpg",
+    "file_path": "photos/screenshots/screenshots_15_01.jpg",
+    "category": "screenshots",
+    "date_taken": "2024-02-01",
+    "location": "Mobile Screen",
+    "event": "Positive thoughts screenshots",
+    "description": "Inspirational screenshot of positive thoughts, uplifting motivational quotes, and growth mindset affirmations. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote"
+    ],
+    "scene": [
+      "quote card",
+      "inspirational graphic",
+      "typography"
+    ],
+    "activity": [
+      "saving positive thoughts",
+      "reading motivational quotes"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote",
+      "motivation",
+      "inspiration",
+      "mindset",
+      "wisdom",
+      "screenshot",
+      "affirmations",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_044",
+    "filename": "screenshots_15_02.jpg",
+    "file_path": "photos/screenshots/screenshots_15_02.jpg",
+    "category": "screenshots",
+    "date_taken": "2023-08-04",
+    "location": "Mobile Screen",
+    "event": "Positive thoughts screenshots",
+    "description": "Inspirational screenshot of positive thoughts, uplifting motivational quotes, and growth mindset affirmations. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote"
+    ],
+    "scene": [
+      "quote card",
+      "inspirational graphic",
+      "typography"
+    ],
+    "activity": [
+      "saving positive thoughts",
+      "reading motivational quotes"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote",
+      "motivation",
+      "inspiration",
+      "mindset",
+      "wisdom",
+      "screenshot",
+      "affirmations",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_045",
+    "filename": "screenshots_15_03.jpg",
+    "file_path": "photos/screenshots/screenshots_15_03.jpg",
+    "category": "screenshots",
+    "date_taken": "2023-07-07",
+    "location": "Mobile Screen",
+    "event": "Positive thoughts screenshots",
+    "description": "Inspirational screenshot of positive thoughts, uplifting motivational quotes, and growth mindset affirmations. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote"
+    ],
+    "scene": [
+      "quote card",
+      "inspirational graphic",
+      "typography"
+    ],
+    "activity": [
+      "saving positive thoughts",
+      "reading motivational quotes"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "positive thoughts",
+      "positive",
+      "thoughts",
+      "quote",
+      "motivation",
+      "inspiration",
+      "mindset",
+      "wisdom",
+      "screenshot",
+      "affirmations",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_046",
+    "filename": "screenshots_16_01.jpg",
+    "file_path": "photos/screenshots/screenshots_16_01.jpg",
+    "category": "screenshots",
+    "date_taken": "2023-04-02",
+    "location": "Mobile Screen",
+    "event": "Social media comments",
+    "description": "Screenshot capturing viral comment in social media discussion thread and interesting user replies. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments"
+    ],
+    "scene": [
+      "comment thread",
+      "social media discussion",
+      "tweet"
+    ],
+    "activity": [
+      "saving social media comment screenshot",
+      "reading comments"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments",
+      "tweet",
+      "discussion",
+      "post",
+      "screenshot",
+      "chat",
+      "online",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_047",
+    "filename": "screenshots_16_02.jpg",
+    "file_path": "photos/screenshots/screenshots_16_02.jpg",
+    "category": "screenshots",
+    "date_taken": "2023-01-08",
+    "location": "Mobile Screen",
+    "event": "Social media comments",
+    "description": "Screenshot capturing viral comment in social media discussion thread and interesting user replies. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments"
+    ],
+    "scene": [
+      "comment thread",
+      "social media discussion",
+      "tweet"
+    ],
+    "activity": [
+      "saving social media comment screenshot",
+      "reading comments"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments",
+      "tweet",
+      "discussion",
+      "post",
+      "screenshot",
+      "chat",
+      "online",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_048",
+    "filename": "screenshots_16_03.jpg",
+    "file_path": "photos/screenshots/screenshots_16_03.jpg",
+    "category": "screenshots",
+    "date_taken": "2024-06-07",
+    "location": "Mobile Screen",
+    "event": "Social media comments",
+    "description": "Screenshot capturing viral comment in social media discussion thread and interesting user replies. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments"
+    ],
+    "scene": [
+      "comment thread",
+      "social media discussion",
+      "tweet"
+    ],
+    "activity": [
+      "saving social media comment screenshot",
+      "reading comments"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "comment in social media",
+      "social media",
+      "comment",
+      "comments",
+      "tweet",
+      "discussion",
+      "post",
+      "screenshot",
+      "chat",
+      "online",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_049",
+    "filename": "documents_17_01.jpg",
+    "file_path": "photos/documents/documents_17_01.jpg",
+    "category": "documents",
+    "date_taken": "2024-01-21",
+    "location": "Office & Expense Scanner",
+    "event": "Restaurant bill receipts",
+    "description": "Document scan of restaurant bill receipts showing detailed itemized food charges and tax breakdown. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt"
+    ],
+    "scene": [
+      "paper bill",
+      "restaurant receipt",
+      "tax invoice"
+    ],
+    "activity": [
+      "saving restaurant bill receipts",
+      "expense tracking"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt",
+      "bill",
+      "invoice",
+      "document",
+      "documents",
+      "tax invoice",
+      "expense",
+      "paper",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_050",
+    "filename": "documents_17_02.jpg",
+    "file_path": "photos/documents/documents_17_02.jpg",
+    "category": "documents",
+    "date_taken": "2024-02-26",
+    "location": "Office & Expense Scanner",
+    "event": "Restaurant bill receipts",
+    "description": "Document scan of restaurant bill receipts showing detailed itemized food charges and tax breakdown. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt"
+    ],
+    "scene": [
+      "paper bill",
+      "restaurant receipt",
+      "tax invoice"
+    ],
+    "activity": [
+      "saving restaurant bill receipts",
+      "expense tracking"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt",
+      "bill",
+      "invoice",
+      "document",
+      "documents",
+      "tax invoice",
+      "expense",
+      "paper",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_051",
+    "filename": "documents_17_03.jpg",
+    "file_path": "photos/documents/documents_17_03.jpg",
+    "category": "documents",
+    "date_taken": "2025-05-19",
+    "location": "Office & Expense Scanner",
+    "event": "Restaurant bill receipts",
+    "description": "Document scan of restaurant bill receipts showing detailed itemized food charges and tax breakdown. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt"
+    ],
+    "scene": [
+      "paper bill",
+      "restaurant receipt",
+      "tax invoice"
+    ],
+    "activity": [
+      "saving restaurant bill receipts",
+      "expense tracking"
+    ],
+    "weather": "digital",
+    "time_of_day": "day",
+    "keywords": [
+      "Restaurant bill receipts",
+      "restaurant bill",
+      "receipts",
+      "receipt",
+      "bill",
+      "invoice",
+      "document",
+      "documents",
+      "tax invoice",
+      "expense",
+      "paper",
+      "wide perspective shot"
+    ]
+  },
+  {
+    "id": "photo_052",
+    "filename": "videos_18_01.jpg",
+    "file_path": "photos/videos/videos_18_01.jpg",
+    "category": "videos",
+    "date_taken": "2023-05-05",
+    "location": "Cafe & Lounge",
+    "event": "Video clips of cafe and celebration",
+    "description": "Video preview clip capturing warm cafe latte art and vibrant party celebration moments. (candid angle).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "video",
+      "video like cafe",
+      "cafe video",
+      "celebration video"
+    ],
+    "scene": [
+      "cafe video frame",
+      "celebration clip",
+      "motion video"
+    ],
+    "activity": [
+      "recording cafe video",
+      "filming celebration moment"
     ],
     "weather": "indoor",
     "time_of_day": "afternoon",
     "keywords": [
       "video",
+      "video like cafe",
       "cafe video",
-      "celebration clip",
-      "party video",
-      "motion",
+      "celebration video",
       "clip",
-      "mp4",
-      "sunset"
+      "motion",
+      "reels",
+      "footage",
+      "cafe",
+      "celebration",
+      "any celebration",
+      "candid angle"
+    ]
+  },
+  {
+    "id": "photo_053",
+    "filename": "videos_18_02.jpg",
+    "file_path": "photos/videos/videos_18_02.jpg",
+    "category": "videos",
+    "date_taken": "2023-10-12",
+    "location": "Cafe & Lounge",
+    "event": "Video clips of cafe and celebration",
+    "description": "Video preview clip capturing warm cafe latte art and vibrant party celebration moments. (close-up detail viewpoint).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "video",
+      "video like cafe",
+      "cafe video",
+      "celebration video"
+    ],
+    "scene": [
+      "cafe video frame",
+      "celebration clip",
+      "motion video"
+    ],
+    "activity": [
+      "recording cafe video",
+      "filming celebration moment"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "video",
+      "video like cafe",
+      "cafe video",
+      "celebration video",
+      "clip",
+      "motion",
+      "reels",
+      "footage",
+      "cafe",
+      "celebration",
+      "any celebration",
+      "close-up detail viewpoint"
+    ]
+  },
+  {
+    "id": "photo_054",
+    "filename": "videos_18_03.jpg",
+    "file_path": "photos/videos/videos_18_03.jpg",
+    "category": "videos",
+    "date_taken": "2024-01-28",
+    "location": "Cafe & Lounge",
+    "event": "Video clips of cafe and celebration",
+    "description": "Video preview clip capturing warm cafe latte art and vibrant party celebration moments. (wide perspective shot).",
+    "people": [
+      "individual"
+    ],
+    "objects": [
+      "video",
+      "video like cafe",
+      "cafe video",
+      "celebration video"
+    ],
+    "scene": [
+      "cafe video frame",
+      "celebration clip",
+      "motion video"
+    ],
+    "activity": [
+      "recording cafe video",
+      "filming celebration moment"
+    ],
+    "weather": "indoor",
+    "time_of_day": "afternoon",
+    "keywords": [
+      "video",
+      "video like cafe",
+      "cafe video",
+      "celebration video",
+      "clip",
+      "motion",
+      "reels",
+      "footage",
+      "cafe",
+      "celebration",
+      "any celebration",
+      "wide perspective shot"
     ]
   }
 ]

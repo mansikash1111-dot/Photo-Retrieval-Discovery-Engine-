@@ -1,9 +1,10 @@
 import os
 import json
 import random
+import shutil
 import sys
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 # Add backend directory to sys.path
 backend_dir = Path(__file__).resolve().parent.parent
@@ -12,258 +13,241 @@ if str(backend_dir) not in sys.path:
 
 from app.config import settings, DATA_DIR, PHOTOS_DIR, METADATA_DIR, TASKS_DIR
 
-# Define 19 rich scenarios matching user requests (Photos, Screenshots, Documents, Videos)
+# Define the exact 18 user-requested real photo scenarios
 SCENARIOS = [
     {
-        "category": "travel",
-        "event": "Goa trip",
-        "location": "Goa, India",
-        "scene": ["beach", "cafe"],
-        "activity": ["sitting", "drinking coffee"],
-        "weather": "sunny",
-        "time_of_day": "afternoon",
-        "base_desc": "Friends sitting at a small cafe near the beach in Goa.",
-        "keywords": ["Goa", "beach", "cafe", "coffee", "friends", "trip", "ocean"]
+        "category": "events",
+        "event": "Club party with friends",
+        "location": "Skyline Lounge & Nightclub",
+        "scene": ["nightclub", "dance floor", "DJ booth", "club"],
+        "activity": ["dancing", "partying with friends", "clubbing"],
+        "weather": "indoor",
+        "time_of_day": "night",
+        "base_desc": "Nightclub club party with friends dancing under vibrant stage laser lights and DJ music.",
+        "keywords": ["club party with friends", "club", "party", "friends", "nightclub", "club party", "dancing", "DJ", "nightlife", "drinks"]
     },
     {
         "category": "travel",
-        "event": "Mountain trekking",
-        "location": "Manali, Himachal",
-        "scene": ["mountains", "hiking trail"],
-        "activity": ["trekking", "sightseeing"],
-        "weather": "rainy",
+        "event": "Trekking",
+        "location": "Triund Trek, Himachal",
+        "scene": ["trekking trail", "forest", "mountain trail"],
+        "activity": ["trekking", "hiking", "backpacking", "climbing"],
+        "weather": "clear",
         "time_of_day": "morning",
-        "base_desc": "Trekking on a scenic mountain pine tree trail with friends.",
-        "keywords": ["trekking", "hiking", "trail", "backpacking", "nature", "mountains", "forest"]
+        "base_desc": "Scenic mountain trekking trail through green pine trees and rocky paths.",
+        "keywords": ["trekking", "trek", "hiking", "mountain trail", "backpacking", "nature", "forest", "adventure", "trail", "mountains"]
     },
     {
-        "category": "travel",
-        "event": "Heritage tour",
-        "location": "Jaipur, Rajasthan",
-        "scene": ["fort", "palace", "pink city"],
-        "activity": ["sightseeing", "architecture photography"],
-        "weather": "sunny",
-        "time_of_day": "afternoon",
-        "base_desc": "Sightseeing at Amber Fort and heritage pink city palaces in Jaipur.",
-        "keywords": ["Jaipur", "fort", "Amber palace", "pink city", "heritage", "architecture", "Rajasthan"]
+        "category": "events",
+        "event": "Birthday party with friends",
+        "location": "Celebration Hall",
+        "scene": ["party room", "birthday balloons", "cake table"],
+        "activity": ["cutting cake", "celebrating birthday with friends", "cheering"],
+        "weather": "indoor",
+        "time_of_day": "evening",
+        "base_desc": "Joyful birthday party with friends celebrating with colorful balloons, candles, and cake.",
+        "keywords": ["birthday party with friends", "birthday", "birthday party", "party", "friends", "cake", "balloons", "candles", "celebration"]
+    },
+    {
+        "category": "events",
+        "event": "Diwali with friends and family",
+        "location": "Home Courtyard",
+        "scene": ["Diwali lights", "diyas", "rangoli"],
+        "activity": ["lighting diyas", "celebrating Diwali with friends and family", "sparklers"],
+        "weather": "night",
+        "time_of_day": "night",
+        "base_desc": "Festive Diwali with friends and family lighting traditional clay diyas and decorative lights.",
+        "keywords": ["Diwali with friends and family", "Diwali", "festival of lights", "diyas", "sparklers", "rangoli", "lights", "family", "friends", "celebration"]
     },
     {
         "category": "family",
-        "event": "Family gathering",
-        "location": "Home Dining Room",
-        "scene": ["dining table", "home indoor"],
-        "activity": ["eating dinner", "laughing"],
-        "weather": "clear",
-        "time_of_day": "evening",
-        "base_desc": "Warm family reunion dinner sitting around a crowded table at home.",
-        "keywords": ["family", "reunion", "dinner", "gathering", "home", "food", "relatives"]
-    },
-    {
-        "category": "events",
-        "event": "Birthday party",
-        "location": "Party Hall",
-        "scene": ["party hall", "decorations"],
-        "activity": ["cutting cake", "celebrating"],
+        "event": "Family gatherings",
+        "location": "Family Living Room & Dining",
+        "scene": ["family dining table", "living room", "home reunion"],
+        "activity": ["gathering", "reunion dinner", "spending time together"],
         "weather": "indoor",
         "time_of_day": "evening",
-        "base_desc": "Birthday party with friends, colorful balloons, and chocolate cake on table.",
-        "keywords": ["birthday", "party", "friends", "cake", "candles", "balloons", "celebration"]
-    },
-    {
-        "category": "events",
-        "event": "Diwali celebration",
-        "location": "Home Courtyard",
-        "scene": ["home outdoor", "rangoli"],
-        "activity": ["lighting diyas", "sparklers"],
-        "weather": "night",
-        "time_of_day": "night",
-        "base_desc": "Diwali celebration with friends and family lighting traditional diyas and sparklers.",
-        "keywords": ["Diwali", "festival", "diyas", "lights", "sparklers", "traditional outfits", "family", "friends"]
+        "base_desc": "Warm family gatherings reunion dinner sharing laughter around the home dining table.",
+        "keywords": ["family gatherings", "family gathering", "family", "gatherings", "reunion", "dinner", "relatives", "home", "together", "dinner table"]
     },
     {
         "category": "pets",
         "event": "Pets with owner",
-        "location": "City Park",
-        "scene": ["park grass", "lake"],
-        "activity": ["playing fetch", "hugging pet"],
+        "location": "Green Meadow Park",
+        "scene": ["park grass", "outdoor meadow"],
+        "activity": ["playing fetch", "hugging pet", "spending time with dog"],
         "weather": "sunset",
         "time_of_day": "sunset",
-        "base_desc": "Golden retriever playing fetch with owner on green grass in the park.",
-        "keywords": ["pet", "dog", "owner", "cat", "playing", "park", "golden retriever", "hug"]
+        "base_desc": "Beloved pets with owner playing together outdoors on green grass during sunset.",
+        "keywords": ["pets with owner", "pets", "pet", "owner", "dog", "puppy", "golden retriever", "cat", "playing", "park", "companion", "animals"]
     },
     {
         "category": "food",
-        "event": "Restaurant dining",
-        "location": "Downtown Bistro",
-        "scene": ["restaurant indoor", "dining table"],
-        "activity": ["eating", "drinking coffee"],
+        "event": "Restaurant",
+        "location": "Olive Garden Bistro",
+        "scene": ["restaurant dining room", "table setting", "bistro interior"],
+        "activity": ["restaurant dining", "eating dinner", "ordering food"],
         "weather": "indoor",
         "time_of_day": "afternoon",
-        "base_desc": "Cozy restaurant dining table with coffee, appetizers, and warm indoor lights.",
-        "keywords": ["restaurant", "dining", "food", "cafe", "dinner table", "coffee", "menu"]
+        "base_desc": "Cozy restaurant dining ambiance with warm lamps, wine glasses, and table arrangements.",
+        "keywords": ["restaurant", "dining", "bistro", "restaurant dining", "table", "cafe", "food", "lunch", "dinner", "menu"]
     },
     {
         "category": "travel",
         "event": "Himalayan mountain",
         "location": "Himalayas, India",
-        "scene": ["snow peaks", "high altitude"],
-        "activity": ["mountain viewing", "expedition"],
+        "scene": ["snow peaks", "high altitude mountains", "glaciers"],
+        "activity": ["mountain expedition", "sightseeing"],
         "weather": "cold",
         "time_of_day": "morning",
-        "base_desc": "Breathtaking high altitude snowy Himalayan mountain peaks during expedition.",
-        "keywords": ["Himalayas", "mountain", "snow", "peaks", "Manali", "high altitude", "trekking"]
+        "base_desc": "Majestic snowy Himalayan mountain peaks rising above clouds in crisp morning sunlight.",
+        "keywords": ["Himalayan mountain", "Himalayas", "mountain", "snow peaks", "high altitude", "glaciers", "snow", "Manali", "summit"]
+    },
+    {
+        "category": "travel",
+        "event": "Jaipur",
+        "location": "Jaipur, Rajasthan",
+        "scene": ["Hawa Mahal", "Amber Fort", "pink city palace"],
+        "activity": ["sightseeing Jaipur", "exploring palace", "architecture tour"],
+        "weather": "sunny",
+        "time_of_day": "afternoon",
+        "base_desc": "Stunning historical Jaipur palace architecture and royal Pink City heritage landmarks.",
+        "keywords": ["Jaipur", "Rajasthan", "Hawa Mahal", "Amber Fort", "pink city", "palace", "heritage", "monument", "fort"]
     },
     {
         "category": "food",
         "event": "Food photos",
-        "location": "Gourmet Kitchen",
-        "scene": ["food platter", "table"],
-        "activity": ["food photography"],
+        "location": "Gourmet Table",
+        "scene": ["food platter", "dining table", "gourmet dishes"],
+        "activity": ["food photography", "tasting delicious meals"],
         "weather": "indoor",
         "time_of_day": "afternoon",
-        "base_desc": "Delicious food platter featuring gourmet pizza, pasta, and Indian thali dishes.",
-        "keywords": ["food", "dishes", "pizza", "pasta", "indian thali", "dessert", "delicious", "meal"]
+        "base_desc": "Mouthwatering food photos featuring freshly baked pizza, gourmet delicacies, and colorful dishes.",
+        "keywords": ["food photos", "food", "dishes", "pizza", "delicious", "cuisine", "pasta", "platter", "meal", "yummy"]
     },
     {
         "category": "activities",
         "event": "Dancing class",
-        "location": "Dance Studio A",
-        "scene": ["dance studio", "mirrors", "wood floor"],
-        "activity": ["dancing rehearsal", "salsa practice", "hip hop class"],
+        "location": "Rhythm Dance Studio",
+        "scene": ["dance studio", "mirrors", "wooden dance floor"],
+        "activity": ["dancing class", "dance rehearsal", "choreography training"],
         "weather": "indoor",
         "time_of_day": "evening",
-        "base_desc": "Dance studio class rehearsal with friends practicing choreography in front of mirrors.",
-        "keywords": ["dancing class", "dance studio", "dancing", "rehearsal", "salsa", "hip hop", "dance practice"]
+        "base_desc": "Energetic dancing class rehearsal inside dance studio practicing choreography in front of mirrors.",
+        "keywords": ["dancing class", "dance", "dancing", "dance studio", "dancer", "choreography", "rehearsal", "salsa", "hip hop", "dance practice"]
     },
     {
         "category": "activities",
         "event": "Swimming classes",
-        "location": "Aquatic Sports Center",
-        "scene": ["swimming pool", "poolside", "clear blue water"],
-        "activity": ["swimming lesson", "swimming laps", "diving"],
-        "weather": "sunny",
-        "time_of_day": "morning",
-        "base_desc": "Swimming class lesson in a clear blue indoor pool with goggles and instructor.",
-        "keywords": ["swimming classes", "swimming pool", "swim lesson", "pool water", "swimming laps", "diver", "aquatics"]
-    },
-    {
-        "category": "events",
-        "event": "Holi celebration",
-        "location": "Outdoor Lawn",
-        "scene": ["outdoor lawn", "festival colors"],
-        "activity": ["playing colors", "splashing gulal"],
-        "weather": "sunny",
-        "time_of_day": "morning",
-        "base_desc": "Vibrant Holi festival of colors celebration with friends and family throwing gulal.",
-        "keywords": ["Holi", "festival", "colors", "gulal", "friends", "family", "celebration", "pichkari"]
-    },
-    {
-        "category": "events",
-        "event": "Club party",
-        "location": "Nightclub Lounge",
-        "scene": ["dance floor", "DJ booth"],
-        "activity": ["dancing", "enjoying music"],
+        "location": "Aquatic Sports Complex",
+        "scene": ["swimming pool", "clear blue water", "pool lanes"],
+        "activity": ["swimming classes", "swimming laps", "diving lesson"],
         "weather": "indoor",
-        "time_of_day": "night",
-        "base_desc": "Nightclub party with friends under vibrant purple and blue laser lights.",
-        "keywords": ["club", "party", "nightclub", "friends", "dancing", "lights", "music", "drinks"]
+        "time_of_day": "morning",
+        "base_desc": "Indoor swimming classes in clear blue Olympic size pool with lane dividers.",
+        "keywords": ["swimming classes", "swimming pool", "swimming", "swim lesson", "pool", "water", "laps", "swimmer", "goggles", "diving"]
+    },
+    {
+        "category": "events",
+        "event": "Holi celebration with friend and family",
+        "location": "Garden Lawn",
+        "scene": ["color clouds", "outdoor lawn", "gulal"],
+        "activity": ["holi celebration with friend and family", "throwing gulal colors", "celebrating festival"],
+        "weather": "sunny",
+        "time_of_day": "morning",
+        "base_desc": "Vibrant holi celebration with friend and family splashing colorful organic gulal powder.",
+        "keywords": ["holi celebration with friend and family", "holi", "celebration", "colors", "gulal", "festival of colors", "friends", "family", "pichkari"]
     },
     {
         "category": "screenshots",
-        "event": "Outfit ideas",
+        "event": "Outfits screenshots",
         "location": "Mobile Screen",
-        "scene": ["fashion board", "screenshot"],
-        "activity": ["saving outfit ideas"],
+        "scene": ["fashion board", "lookbook", "outfit collage"],
+        "activity": ["saving outfit screenshot", "fashion styling"],
         "weather": "digital",
         "time_of_day": "day",
-        "base_desc": "Screenshot of stylish fashion outfit ideas, clothing combinations, and OOTD board.",
-        "keywords": ["screenshot", "outfit", "clothing", "style", "OOTD", "fashion", "shopping", "ideas"]
+        "base_desc": "Mobile phone screenshot of stylish modern outfits, aesthetic lookbook ideas, and fashion combinations.",
+        "keywords": ["screenshots", "screenshot", "outfits", "outfit", "OOTD", "fashion", "clothing", "style", "wardrobe", "outfit ideas", "fashion board"]
     },
     {
         "category": "screenshots",
-        "event": "Positive thoughts",
+        "event": "Positive thoughts screenshots",
         "location": "Mobile Screen",
-        "scene": ["quote card", "text screenshot"],
-        "activity": ["saving quotes"],
+        "scene": ["quote card", "inspirational graphic", "typography"],
+        "activity": ["saving positive thoughts", "reading motivational quotes"],
         "weather": "digital",
         "time_of_day": "day",
-        "base_desc": "Screenshot of an inspiring positive thought and motivational mindset quote.",
-        "keywords": ["screenshot", "positive thought", "quote", "motivational", "inspiration", "text", "mindset"]
+        "base_desc": "Inspirational screenshot of positive thoughts, uplifting motivational quotes, and growth mindset affirmations.",
+        "keywords": ["positive thoughts", "positive", "thoughts", "quote", "motivation", "inspiration", "mindset", "wisdom", "screenshot", "affirmations"]
     },
     {
         "category": "screenshots",
         "event": "Social media comments",
         "location": "Mobile Screen",
-        "scene": ["discussion thread", "tweet screenshot"],
-        "activity": ["saving comments"],
+        "scene": ["comment thread", "social media discussion", "tweet"],
+        "activity": ["saving social media comment screenshot", "reading comments"],
         "weather": "digital",
         "time_of_day": "day",
-        "base_desc": "Screenshot of an interesting social media comment thread and viral tweet discussion.",
-        "keywords": ["screenshot", "social media", "comment", "tweet", "discussion", "post", "chat"]
+        "base_desc": "Screenshot capturing viral comment in social media discussion thread and interesting user replies.",
+        "keywords": ["comment in social media", "social media", "comment", "comments", "tweet", "discussion", "post", "screenshot", "chat", "online"]
     },
     {
         "category": "documents",
-        "event": "Restaurant receipts",
-        "location": "Document Scan",
-        "scene": ["paper receipt", "tax invoice"],
-        "activity": ["scanning receipt"],
+        "event": "Restaurant bill receipts",
+        "location": "Office & Expense Scanner",
+        "scene": ["paper bill", "restaurant receipt", "tax invoice"],
+        "activity": ["saving restaurant bill receipts", "expense tracking"],
         "weather": "digital",
         "time_of_day": "day",
-        "base_desc": "Scan of a restaurant bill receipt showing total tax invoice breakdown and meal items.",
-        "keywords": ["document", "receipt", "bill", "restaurant receipt", "tax invoice", "scan", "paper", "expense"]
+        "base_desc": "Document scan of restaurant bill receipts showing detailed itemized food charges and tax breakdown.",
+        "keywords": ["Restaurant bill receipts", "restaurant bill", "receipts", "receipt", "bill", "invoice", "document", "documents", "tax invoice", "expense", "paper"]
     },
     {
         "category": "videos",
-        "event": "Cafe video clips",
+        "event": "Video clips of cafe and celebration",
         "location": "Cafe & Lounge",
-        "scene": ["cafe ambiance", "video clip"],
-        "activity": ["filming video"],
+        "scene": ["cafe video frame", "celebration clip", "motion video"],
+        "activity": ["recording cafe video", "filming celebration moment"],
         "weather": "indoor",
         "time_of_day": "afternoon",
-        "base_desc": "Short video clip of cozy cafe coffee brewing and lively party celebration moments.",
-        "keywords": ["video", "cafe video", "celebration clip", "party video", "motion", "clip", "mp4"]
+        "base_desc": "Video preview clip capturing warm cafe latte art and vibrant party celebration moments.",
+        "keywords": ["video", "video like cafe", "cafe video", "celebration video", "clip", "motion", "reels", "footage", "cafe", "celebration", "any celebration"]
     }
 ]
 
+# Verified high quality real photographs from Unsplash (tested & reachable)
 REAL_PHOTO_URLS = {
-    "Goa trip": [
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1471922694854-ff5baf356843?w=800&auto=format&fit=crop&q=80"
+    "Club party with friends": [
+        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80"
     ],
-    "Mountain trekking": [
+    "Trekking": [
         "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?w=800&auto=format&fit=crop&q=80"
     ],
-    "Heritage tour": [
-        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&auto=format&fit=crop&q=80"
-    ],
-    "Family gathering": [
-        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&auto=format&fit=crop&q=80"
-    ],
-    "Birthday party": [
+    "Birthday party with friends": [
         "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&auto=format&fit=crop&q=80"
     ],
-    "Diwali celebration": [
+    "Diwali with friends and family": [
         "https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?w=800&auto=format&fit=crop&q=80"
+    ],
+    "Family gatherings": [
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&auto=format&fit=crop&q=80"
     ],
     "Pets with owner": [
         "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&auto=format&fit=crop&q=80"
     ],
-    "Restaurant dining": [
+    "Restaurant": [
         "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&auto=format&fit=crop&q=80"
@@ -272,6 +256,11 @@ REAL_PHOTO_URLS = {
         "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&auto=format&fit=crop&q=80"
+    ],
+    "Jaipur": [
+        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&auto=format&fit=crop&q=80"
     ],
     "Food photos": [
         "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop&q=80",
@@ -288,34 +277,35 @@ REAL_PHOTO_URLS = {
         "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800&auto=format&fit=crop&q=80",
         "https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?w=800&auto=format&fit=crop&q=80"
     ],
-    "Holi celebration": [
+    "Holi celebration with friend and family": [
         "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&auto=format&fit=crop&q=80"
     ],
-    "Club party": [
-        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80"
-    ],
-    "Outfit ideas": [
+    "Outfits screenshots": [
         "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop&q=80"
     ],
-    "Positive thoughts": [
+    "Positive thoughts screenshots": [
         "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&auto=format&fit=crop&q=80"
     ],
     "Social media comments": [
         "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&auto=format&fit=crop&q=80"
     ],
-    "Restaurant receipts": [
+    "Restaurant bill receipts": [
         "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=80"
     ],
-    "Cafe video clips": [
+    "Video clips of cafe and celebration": [
         "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format&fit=crop&q=80"
+        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&auto=format&fit=crop&q=80"
     ]
 }
 
@@ -332,52 +322,44 @@ def draw_synthetic_image(filepath: Path, scenario: dict, photo_idx: int, variati
         target_url = urls[photo_idx % len(urls)]
         try:
             import httpx
-            resp = httpx.get(target_url, timeout=8.0, follow_redirects=True)
-            if resp.status_code == 200:
+            resp = httpx.get(target_url, timeout=12.0, follow_redirects=True)
+            if resp.status_code == 200 and len(resp.content) > 1000:
                 with open(filepath, "wb") as f:
                     f.write(resp.content)
                 return
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Warning: could not download {target_url}: {e}")
 
-    # Fallback Pillow drawing if offline
-    width, height = 600, 400
-    cat = scenario["category"]
-    bg_top, bg_bottom = (70, 150, 230), (34, 139, 34)
-    img = Image.new("RGB", (width, height), bg_top)
+    # Fallback Pillow drawing if network issue
+    width, height = 800, 500
+    img = Image.new("RGB", (width, height), (30, 41, 59))
     draw = ImageDraw.Draw(img)
-    draw.rectangle([0, height // 2, width, height], fill=bg_bottom)
-    draw.rectangle([30, 35, width - 30, 115], fill=(10, 15, 25, 220))
-    draw.text((50, 48), f"[{scenario['category'].upper()}] {scenario['event']}", fill=(255, 255, 255))
+    draw.rectangle([20, 20, width - 20, height - 20], fill=(15, 23, 42), outline=(59, 130, 246), width=2)
+    draw.text((40, 50), f"[{scenario['category'].upper()}] {scenario['event']}", fill=(255, 255, 255))
+    draw.text((40, 90), f"Variation: {variation}", fill=(147, 197, 253))
     img.save(filepath, "JPEG", quality=90)
 
 
 def generate_dataset():
-    photos_per_scenario = 2  # 2 distinct unique variations per scenario (no duplicates)
+    photos_per_scenario = 3  # 3 distinct real photos per scenario (54 real photos total)
 
     photos_metadata = []
     
     variations = [
-        "afternoon beach cafe view",
-        "sunset dining table setup",
-        "close-up detail shot",
-        "wide angle group memory",
-        "rainy morning perspective",
-        "street side viewpoint",
-        "evening outdoor seating",
-        "candid portrait memory",
-        "bright sunny angle",
-        "dramatic lighting angle",
-        "cozy indoor perspective",
-        "cloudy weather memory",
-        "side view table arrangement",
-        "festive celebration angle",
-        "panoramic view memory"
+        "candid angle",
+        "close-up detail viewpoint",
+        "wide perspective shot"
     ]
 
     photo_id_counter = 1
 
-    print(f"Generating {len(SCENARIOS) * photos_per_scenario} real photos & media across {len(SCENARIOS)} scenarios...")
+    # Clean out old photos directory completely
+    photos_dir = DATA_DIR / "photos"
+    if photos_dir.exists():
+        shutil.rmtree(photos_dir)
+    photos_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"Generating and downloading {len(SCENARIOS) * photos_per_scenario} real photos across {len(SCENARIOS)} scenarios...")
 
     for sc_idx, sc in enumerate(SCENARIOS):
         cat = sc["category"]
@@ -389,10 +371,10 @@ def generate_dataset():
 
             var = variations[i % len(variations)]
 
-            # Download real image file / draw fallback
+            # Download real image file
             draw_synthetic_image(full_img_path, sc, i, var)
 
-            # Metadata creation with realistic distractor variations
+            # Metadata creation with realistic timestamps
             date_year = random.choice([2023, 2024, 2025])
             date_month = random.randint(1, 12)
             date_day = random.randint(1, 28)
@@ -409,13 +391,13 @@ def generate_dataset():
                 "location": sc["location"],
                 "event": sc["event"],
                 "description": desc,
-                "people": sc["keywords"][4:6] if len(sc["keywords"]) > 5 else ["friends"],
-                "objects": sc["keywords"][2:4],
+                "people": ["friends", "family"] if "friends" in sc["keywords"] else ["individual"],
+                "objects": sc["keywords"][:4],
                 "scene": sc["scene"],
                 "activity": sc["activity"],
                 "weather": sc["weather"],
                 "time_of_day": sc["time_of_day"],
-                "keywords": sc["keywords"] + [var.split()[0]]
+                "keywords": sc["keywords"] + [var]
             }
 
             photos_metadata.append(meta)
@@ -427,10 +409,11 @@ def generate_dataset():
     with open(metadata_file, "w", encoding="utf-8") as f:
         json.dump(photos_metadata, f, indent=2)
 
-    print(f"Successfully generated {len(photos_metadata)} photos metadata in {metadata_file}")
+    print(f"Successfully generated {len(photos_metadata)} real photos metadata in {metadata_file}")
 
-    # Generate Retrieval Tasks JSON for all scenarios
+    # Generate Retrieval Tasks JSON
     generate_retrieval_tasks(photos_metadata)
+
 
 def generate_retrieval_tasks(photos: list):
     TASKS_DIR.mkdir(parents=True, exist_ok=True)
@@ -438,129 +421,129 @@ def generate_retrieval_tasks(photos: list):
     tasks = [
         {
             "task_id": "TASK_001",
-            "query": "Find the photo from my Goa trip where we were sitting at a small cafe near the beach.",
-            "expected_clues": ["Goa", "beach", "cafe", "sitting"],
-            "difficulty": "medium",
-            "target_photo_ids": [p["id"] for p in photos if "Goa" in p["location"] and "cafe" in p["scene"]][:2]
+            "query": "club party with friends",
+            "expected_clues": ["club", "party", "friends", "nightclub"],
+            "difficulty": "easy",
+            "target_photo_ids": [p["id"] for p in photos if "club party with friends" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_002",
-            "query": "Find the picture of my dog with owner near the park during sunset.",
-            "expected_clues": ["dog", "pet", "owner", "park"],
+            "query": "trekking",
+            "expected_clues": ["trekking", "hiking", "trail", "mountains"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "dog" in p["keywords"] or "owner" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "trekking" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_003",
-            "query": "Find the sick day medicine photo on the bedside table.",
-            "expected_clues": ["medicine", "pills", "bedside table", "sick"],
+            "query": "birthday party with friends",
+            "expected_clues": ["birthday", "party", "friends", "cake"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "medicine" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "birthday party with friends" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_004",
-            "query": "Find the birthday party photo with friends, balloons, and cake.",
-            "expected_clues": ["birthday", "party", "balloons", "cake"],
+            "query": "Diwali with friends and family",
+            "expected_clues": ["Diwali", "diyas", "lights", "family"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "birthday" in p["event"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "Diwali with friends and family" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_005",
-            "query": "Find the mountain trekking photo with pine trees and trail.",
-            "expected_clues": ["trekking", "hiking", "trail", "mountains"],
-            "difficulty": "medium",
-            "target_photo_ids": [p["id"] for p in photos if "trekking" in p["keywords"]][:2]
+            "query": "family gatherings",
+            "expected_clues": ["family", "gatherings", "reunion", "dinner"],
+            "difficulty": "easy",
+            "target_photo_ids": [p["id"] for p in photos if "family gatherings" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_006",
-            "query": "Find the family gathering reunion dinner photo.",
-            "expected_clues": ["family", "reunion", "dinner", "table"],
+            "query": "pets with owner",
+            "expected_clues": ["pets", "owner", "dog", "park"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "family" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "pets with owner" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_007",
-            "query": "Find the nightclub club party photo with friends and purple lights.",
-            "expected_clues": ["club party", "nightclub", "friends", "lights"],
+            "query": "restaurant",
+            "expected_clues": ["restaurant", "dining", "bistro", "table"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "club" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "restaurant" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_008",
-            "query": "Find the Diwali celebration photo with diyas, lights, and sparklers.",
-            "expected_clues": ["Diwali", "diyas", "lights", "sparklers"],
+            "query": "Himalayan mountain",
+            "expected_clues": ["Himalayan mountain", "snow", "peaks"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "Diwali" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "Himalayan mountain" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_009",
-            "query": "Find the Holi celebration photo with vibrant colors and gulal.",
-            "expected_clues": ["Holi", "colors", "gulal", "festival"],
+            "query": "Jaipur",
+            "expected_clues": ["Jaipur", "palace", "Rajasthan", "Hawa Mahal"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "Holi" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "Jaipur" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_010",
-            "query": "Find the Jaipur Amber fort sightseeing photo.",
-            "expected_clues": ["Jaipur", "fort", "Amber palace", "pink city"],
-            "difficulty": "medium",
-            "target_photo_ids": [p["id"] for p in photos if "Jaipur" in p["location"]][:2]
+            "query": "food photos",
+            "expected_clues": ["food photos", "dishes", "pizza", "delicious"],
+            "difficulty": "easy",
+            "target_photo_ids": [p["id"] for p in photos if "food photos" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_011",
-            "query": "Find the food photo of pizza, pasta, and Indian thali dishes.",
-            "expected_clues": ["food", "pizza", "thali", "dishes"],
+            "query": "dancing class",
+            "expected_clues": ["dancing class", "dance", "studio", "choreography"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "food" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "dancing class" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_012",
-            "query": "Find the screenshot of outfit ideas and clothing fashion style.",
-            "expected_clues": ["screenshot", "outfit", "clothing", "style"],
+            "query": "swimming classes",
+            "expected_clues": ["swimming classes", "pool", "swim", "water"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "outfit" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "swimming classes" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_013",
-            "query": "Find the screenshot of positive thoughts and motivational quotes.",
-            "expected_clues": ["screenshot", "positive thought", "quote", "motivational"],
+            "query": "holi celebration with friend and family",
+            "expected_clues": ["holi", "colors", "gulal", "celebration"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "positive thought" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "holi celebration with friend and family" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_014",
-            "query": "Find the screenshot of social media discussion comments and tweets.",
-            "expected_clues": ["screenshot", "social media", "comment", "tweet"],
+            "query": "outfits",
+            "expected_clues": ["outfits", "screenshots", "fashion", "OOTD"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "social media" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "outfits" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_015",
-            "query": "Find the document scan of restaurant bill receipts and tax invoice.",
-            "expected_clues": ["document", "receipt", "bill", "invoice"],
+            "query": "positive thoughts",
+            "expected_clues": ["positive thoughts", "quote", "motivation", "mindset"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "receipt" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "positive thoughts" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_016",
-            "query": "Find the video clip of cafe coffee brewing and celebration.",
-            "expected_clues": ["video", "cafe video", "celebration clip"],
+            "query": "comment in social media",
+            "expected_clues": ["comment in social media", "social media", "tweet", "comments"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "video" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "comment in social media" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_017",
-            "query": "Find the dancing class photo in the dance studio with mirrors.",
-            "expected_clues": ["dancing class", "dance studio", "mirrors", "rehearsal"],
+            "query": "Restaurant bill receipts",
+            "expected_clues": ["Restaurant bill receipts", "bill", "receipt", "document"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "dancing class" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "Restaurant bill receipts" in p["keywords"]][:3]
         },
         {
             "task_id": "TASK_018",
-            "query": "Find the swimming classes photo in the clear blue pool.",
-            "expected_clues": ["swimming classes", "swimming pool", "pool water", "swim lesson"],
+            "query": "video like cafe",
+            "expected_clues": ["video", "cafe", "celebration", "clip"],
             "difficulty": "easy",
-            "target_photo_ids": [p["id"] for p in photos if "swimming classes" in p["keywords"]][:2]
+            "target_photo_ids": [p["id"] for p in photos if "video like cafe" in p["keywords"]][:3]
         }
     ]
 
@@ -568,7 +551,8 @@ def generate_retrieval_tasks(photos: list):
     with open(tasks_file, "w", encoding="utf-8") as f:
         json.dump(tasks, f, indent=2)
 
-    print(f"Successfully created {len(tasks)} retrieval tasks in {tasks_file}")
+    print(f"Successfully generated {len(tasks)} benchmark evaluation tasks in {tasks_file}")
+
 
 if __name__ == "__main__":
     generate_dataset()

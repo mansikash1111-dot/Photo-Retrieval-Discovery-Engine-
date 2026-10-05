@@ -12,6 +12,8 @@ from app.mvp.services.ranking import RankingService
 from app.mvp.services.clarification import ClarificationService
 from app.ai.groq import GroqProvider
 
+from app.config import DATA_DIR
+
 logger = logging.getLogger(__name__)
 
 class RetrievalService:
@@ -22,8 +24,9 @@ class RetrievalService:
         self.ranking_service = RankingService()
         self.clarification_service = ClarificationService(self.ai_provider)
         
-        self.vector_store = FAISSVectorStore()
-        self.vector_store.load("data/vector_index.json")
+        index_file = str((DATA_DIR / "vector_index.json").resolve())
+        self.vector_store = FAISSVectorStore(index_file=index_file)
+        self.vector_store.load(index_file)
 
     async def execute_retrieval(self, query: str, session_id: Optional[str] = None, step_number: int = 1) -> Dict[str, Any]:
         """
@@ -110,7 +113,7 @@ class RetrievalService:
         self.db.commit()
         self.db.refresh(step)
 
-        for res in ranked_results[:10]:
+        for res in ranked_results[:5]:
             r_entry = RetrievalResult(
                 session_id=session_id,
                 step_id=step.id,
@@ -125,10 +128,10 @@ class RetrievalService:
             )
             self.db.add(r_entry)
 
-        session.result_count = len(ranked_results)
+        session.result_count = min(len(ranked_results), 5)
         self.db.commit()
 
-        # Build response payload
+        # Build response payload (only return up to 5 top matching results)
         return {
             "session_id": session_id,
             "step_number": step_number,
@@ -150,7 +153,7 @@ class RetrievalService:
                     "final_score": r["final_score"],
                     "explanation": r["explanation"]
                 }
-                for r in ranked_results[:10]
+                for r in ranked_results[:5]
             ],
             "clarification": clarification
         }

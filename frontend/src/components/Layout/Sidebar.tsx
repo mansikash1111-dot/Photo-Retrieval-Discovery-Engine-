@@ -2,26 +2,33 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { 
   LayoutDashboard, 
-  Layers, 
-  Smartphone, 
-  Apple, 
-  MessageSquare, 
-  HelpCircle, 
-  Youtube, 
-  Globe, 
   PlayCircle, 
   Settings as SettingsIcon,
   SearchCode,
   Sparkles,
-  BarChart3
+  BarChart3,
+  LogOut,
+  LogIn
 } from 'lucide-react';
+import {
+  AllReviewsIcon,
+  GooglePlayIcon,
+  AppleAppStoreIcon,
+  RedditIcon,
+  GoogleCommunityIcon,
+  YouTubeIcon,
+  ForumsIcon
+} from '../Icons/BrandIcons';
 import { StatsResponse } from '../../types';
+import { useAuth } from '../../context/AuthContext';
 
 interface SidebarProps {
   stats?: StatsResponse;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
+  const { user, isAuthenticated, logout } = useAuth();
+
   const getCount = (slug?: string) => {
     if (!stats || !stats.source_breakdown) return null;
     if (!slug) return stats.total_collected;
@@ -29,7 +36,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
   };
 
   return (
-    <aside className="sidebar">
+    <aside className="sidebar" style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <div className="sidebar-header">
         <div className="sidebar-title">
           <SearchCode size={24} style={{ color: 'var(--accent-blue)' }} />
@@ -40,7 +47,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
         </div>
       </div>
 
-      <nav className="sidebar-nav">
+      <nav className="sidebar-nav" style={{ flex: 1, overflowY: 'auto' }}>
         <div className="nav-section-title">Overview</div>
         <NavLink to="/" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
@@ -70,7 +77,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
         
         <NavLink to="/reviews" end className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <Layers size={18} />
+            <AllReviewsIcon size={18} />
             <span>All Reviews</span>
           </div>
           {getCount() !== null && <span className="nav-count">{getCount()}</span>}
@@ -78,7 +85,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/google-play" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <Smartphone size={18} style={{ color: '#34d399' }} />
+            <GooglePlayIcon size={18} />
             <span>Google Play</span>
           </div>
           {getCount('google-play') !== null && <span className="nav-count">{getCount('google-play')}</span>}
@@ -86,7 +93,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/apple-app-store" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <Apple size={18} style={{ color: '#60a5fa' }} />
+            <AppleAppStoreIcon size={18} />
             <span>Apple App Store</span>
           </div>
           {getCount('apple-app-store') !== null && <span className="nav-count">{getCount('apple-app-store')}</span>}
@@ -94,7 +101,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/reddit" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <MessageSquare size={18} style={{ color: '#fb923c' }} />
+            <RedditIcon size={18} />
             <span>Reddit</span>
           </div>
           {getCount('reddit') !== null && <span className="nav-count">{getCount('reddit')}</span>}
@@ -102,7 +109,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/google-photos-community" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <HelpCircle size={18} style={{ color: '#93c5fd' }} />
+            <GoogleCommunityIcon size={18} />
             <span>Google Community</span>
           </div>
           {getCount('google-photos-community') !== null && <span className="nav-count">{getCount('google-photos-community')}</span>}
@@ -110,7 +117,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/youtube" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <Youtube size={18} style={{ color: '#f87171' }} />
+            <YouTubeIcon size={18} />
             <span>YouTube</span>
           </div>
           {getCount('youtube') !== null && <span className="nav-count">{getCount('youtube')}</span>}
@@ -118,7 +125,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
 
         <NavLink to="/reviews/forums" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <Globe size={18} style={{ color: '#c084fc' }} />
+            <ForumsIcon size={18} />
             <span>Forums</span>
           </div>
           {getCount('forums') !== null && <span className="nav-count">{getCount('forums')}</span>}
@@ -140,6 +147,90 @@ export const Sidebar: React.FC<SidebarProps> = ({ stats }) => {
           </div>
         </NavLink>
       </nav>
+
+      {/* User Session Footer Block */}
+      <div style={{
+        padding: '1rem',
+        borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+        background: 'rgba(15, 23, 42, 0.6)'
+      }}>
+        {isAuthenticated && user ? (
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '0.5rem'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', overflow: 'hidden' }}>
+              <div style={{
+                width: '2rem',
+                height: '2rem',
+                borderRadius: '50%',
+                background: 'linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#FFF',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                flexShrink: 0
+              }}>
+                {(user.full_name || user.email).charAt(0).toUpperCase()}
+              </div>
+              <div style={{ overflow: 'hidden' }}>
+                <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#F1F5F9', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {user.full_name || 'User Session'}
+                </div>
+                <div style={{ fontSize: '0.7rem', color: '#94A3B8', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {user.email}
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={logout}
+              title="Sign Out"
+              style={{
+                background: 'rgba(239, 68, 68, 0.12)',
+                border: '1px solid rgba(239, 68, 68, 0.3)',
+                color: '#FCA5A5',
+                borderRadius: '0.4rem',
+                padding: '0.35rem 0.5rem',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.3rem',
+                fontSize: '0.75rem',
+                flexShrink: 0
+              }}
+            >
+              <LogOut size={13} />
+              <span>Exit</span>
+            </button>
+          </div>
+        ) : (
+          <NavLink
+            to="/login"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '0.5rem',
+              borderRadius: '0.5rem',
+              background: 'rgba(37, 99, 235, 0.15)',
+              border: '1px solid rgba(37, 99, 235, 0.4)',
+              color: '#38BDF8',
+              textDecoration: 'none',
+              fontSize: '0.85rem',
+              fontWeight: 600
+            }}
+          >
+            <LogIn size={15} />
+            <span>Log In / Sign Up</span>
+          </NavLink>
+        )}
+      </div>
     </aside>
   );
 };

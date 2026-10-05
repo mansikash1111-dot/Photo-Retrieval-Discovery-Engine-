@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { AuthProvider } from './context/AuthContext';
+import { ProtectedRoute } from './components/Auth/ProtectedRoute';
+import { LoginPage } from './pages/Auth/LoginPage';
+
 import { Dashboard } from './pages/Dashboard';
 import { Reviews } from './pages/Reviews';
 import { GooglePlayReviews } from './pages/GooglePlayReviews';
@@ -16,26 +20,37 @@ import { AnalyticsPage } from './pages/MVP/AnalyticsPage';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        
-        {/* Part 5: AI-Native Photo Retrieval MVP Routes */}
-        <Route path="/mvp/retrieval" element={<RetrievalPage />} />
-        <Route path="/mvp/analytics" element={<AnalyticsPage />} />
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          {/* Public Overview & Auth Routes */}
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/login" element={<LoginPage />} />
+          
+          {/* Part 5: AI-Native Photo Retrieval MVP Routes (Protected) */}
+          <Route 
+            path="/mvp/retrieval" 
+            element={
+              <ProtectedRoute>
+                <RetrievalPage />
+              </ProtectedRoute>
+            } 
+          />
+          <Route path="/mvp/analytics" element={<AnalyticsPage />} />
 
-        {/* Part 1: Review Collection Engine Routes */}
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/reviews/google-play" element={<GooglePlayReviews />} />
-        <Route path="/reviews/apple-app-store" element={<AppStoreReviews />} />
-        <Route path="/reviews/reddit" element={<RedditReviews />} />
-        <Route path="/reviews/google-photos-community" element={<CommunityReviews />} />
-        <Route path="/reviews/youtube" element={<YouTubeReviews />} />
-        <Route path="/reviews/forums" element={<ForumReviews />} />
-        <Route path="/collection-jobs" element={<CollectionJobs />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </BrowserRouter>
+          {/* Part 1: Review Collection Engine Routes */}
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/reviews/google-play" element={<GooglePlayReviews />} />
+          <Route path="/reviews/apple-app-store" element={<AppStoreReviews />} />
+          <Route path="/reviews/reddit" element={<RedditReviews />} />
+          <Route path="/reviews/google-photos-community" element={<CommunityReviews />} />
+          <Route path="/reviews/youtube" element={<YouTubeReviews />} />
+          <Route path="/reviews/forums" element={<ForumReviews />} />
+          <Route path="/collection-jobs" element={<CollectionJobs />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
   );
 };
 

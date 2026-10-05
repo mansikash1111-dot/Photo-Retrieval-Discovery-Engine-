@@ -1,265 +1,289 @@
 [
   {
     "task_id": "TASK_001",
-    "query": "Find the photo from my Goa trip where we were sitting at a small cafe near the beach.",
+    "query": "club party with friends",
     "expected_clues": [
-      "Goa",
-      "beach",
-      "cafe",
-      "sitting"
+      "club",
+      "party",
+      "friends",
+      "nightclub"
     ],
-    "difficulty": "medium",
+    "difficulty": "easy",
     "target_photo_ids": [
       "photo_001",
-      "photo_002"
+      "photo_002",
+      "photo_003"
     ]
   },
   {
     "task_id": "TASK_002",
-    "query": "Find the picture of my dog with owner near the park during sunset.",
-    "expected_clues": [
-      "dog",
-      "pet",
-      "owner",
-      "park"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": [
-      "photo_013",
-      "photo_014"
-    ]
-  },
-  {
-    "task_id": "TASK_003",
-    "query": "Find the sick day medicine photo on the bedside table.",
-    "expected_clues": [
-      "medicine",
-      "pills",
-      "bedside table",
-      "sick"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": []
-  },
-  {
-    "task_id": "TASK_004",
-    "query": "Find the birthday party photo with friends, balloons, and cake.",
-    "expected_clues": [
-      "birthday",
-      "party",
-      "balloons",
-      "cake"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": []
-  },
-  {
-    "task_id": "TASK_005",
-    "query": "Find the mountain trekking photo with pine trees and trail.",
+    "query": "trekking",
     "expected_clues": [
       "trekking",
       "hiking",
       "trail",
       "mountains"
     ],
-    "difficulty": "medium",
-    "target_photo_ids": [
-      "photo_003",
-      "photo_004"
-    ]
-  },
-  {
-    "task_id": "TASK_006",
-    "query": "Find the family gathering reunion dinner photo.",
-    "expected_clues": [
-      "family",
-      "reunion",
-      "dinner",
-      "table"
-    ],
     "difficulty": "easy",
     "target_photo_ids": [
-      "photo_007",
-      "photo_008"
-    ]
-  },
-  {
-    "task_id": "TASK_007",
-    "query": "Find the nightclub club party photo with friends and purple lights.",
-    "expected_clues": [
-      "club party",
-      "nightclub",
-      "friends",
-      "lights"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": [
-      "photo_027",
-      "photo_028"
-    ]
-  },
-  {
-    "task_id": "TASK_008",
-    "query": "Find the Diwali celebration photo with diyas, lights, and sparklers.",
-    "expected_clues": [
-      "Diwali",
-      "diyas",
-      "lights",
-      "sparklers"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": [
-      "photo_011",
-      "photo_012"
-    ]
-  },
-  {
-    "task_id": "TASK_009",
-    "query": "Find the Holi celebration photo with vibrant colors and gulal.",
-    "expected_clues": [
-      "Holi",
-      "colors",
-      "gulal",
-      "festival"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": [
-      "photo_025",
-      "photo_026"
-    ]
-  },
-  {
-    "task_id": "TASK_010",
-    "query": "Find the Jaipur Amber fort sightseeing photo.",
-    "expected_clues": [
-      "Jaipur",
-      "fort",
-      "Amber palace",
-      "pink city"
-    ],
-    "difficulty": "medium",
-    "target_photo_ids": [
+      "photo_004",
       "photo_005",
       "photo_006"
     ]
   },
   {
-    "task_id": "TASK_011",
-    "query": "Find the food photo of pizza, pasta, and Indian thali dishes.",
+    "task_id": "TASK_003",
+    "query": "birthday party with friends",
     "expected_clues": [
-      "food",
-      "pizza",
-      "thali",
-      "dishes"
+      "birthday",
+      "party",
+      "friends",
+      "cake"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
       "photo_007",
-      "photo_008"
+      "photo_008",
+      "photo_009"
     ]
   },
   {
-    "task_id": "TASK_012",
-    "query": "Find the screenshot of outfit ideas and clothing fashion style.",
+    "task_id": "TASK_004",
+    "query": "Diwali with friends and family",
     "expected_clues": [
-      "screenshot",
-      "outfit",
-      "clothing",
-      "style"
+      "Diwali",
+      "diyas",
+      "lights",
+      "family"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
+      "photo_010",
+      "photo_011",
+      "photo_012"
+    ]
+  },
+  {
+    "task_id": "TASK_005",
+    "query": "family gatherings",
+    "expected_clues": [
+      "family",
+      "gatherings",
+      "reunion",
+      "dinner"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_013",
+      "photo_014",
+      "photo_015"
+    ]
+  },
+  {
+    "task_id": "TASK_006",
+    "query": "pets with owner",
+    "expected_clues": [
+      "pets",
+      "owner",
+      "dog",
+      "park"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_016",
+      "photo_017",
+      "photo_018"
+    ]
+  },
+  {
+    "task_id": "TASK_007",
+    "query": "restaurant",
+    "expected_clues": [
+      "restaurant",
+      "dining",
+      "bistro",
+      "table"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_019",
+      "photo_020",
+      "photo_021"
+    ]
+  },
+  {
+    "task_id": "TASK_008",
+    "query": "Himalayan mountain",
+    "expected_clues": [
+      "Himalayan mountain",
+      "snow",
+      "peaks"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_022",
+      "photo_023",
+      "photo_024"
+    ]
+  },
+  {
+    "task_id": "TASK_009",
+    "query": "Jaipur",
+    "expected_clues": [
+      "Jaipur",
+      "palace",
+      "Rajasthan",
+      "Hawa Mahal"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_025",
+      "photo_026",
+      "photo_027"
+    ]
+  },
+  {
+    "task_id": "TASK_010",
+    "query": "food photos",
+    "expected_clues": [
+      "food photos",
+      "dishes",
+      "pizza",
+      "delicious"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_028",
       "photo_029",
       "photo_030"
     ]
   },
   {
-    "task_id": "TASK_013",
-    "query": "Find the screenshot of positive thoughts and motivational quotes.",
+    "task_id": "TASK_011",
+    "query": "dancing class",
     "expected_clues": [
-      "screenshot",
-      "positive thought",
-      "quote",
-      "motivational"
+      "dancing class",
+      "dance",
+      "studio",
+      "choreography"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
       "photo_031",
-      "photo_032"
+      "photo_032",
+      "photo_033"
     ]
   },
   {
-    "task_id": "TASK_014",
-    "query": "Find the screenshot of social media discussion comments and tweets.",
+    "task_id": "TASK_012",
+    "query": "swimming classes",
     "expected_clues": [
-      "screenshot",
-      "social media",
-      "comment",
-      "tweet"
+      "swimming classes",
+      "pool",
+      "swim",
+      "water"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
-      "photo_033",
-      "photo_034"
-    ]
-  },
-  {
-    "task_id": "TASK_015",
-    "query": "Find the document scan of restaurant bill receipts and tax invoice.",
-    "expected_clues": [
-      "document",
-      "receipt",
-      "bill",
-      "invoice"
-    ],
-    "difficulty": "easy",
-    "target_photo_ids": [
+      "photo_034",
       "photo_035",
       "photo_036"
     ]
   },
   {
-    "task_id": "TASK_016",
-    "query": "Find the video clip of cafe coffee brewing and celebration.",
+    "task_id": "TASK_013",
+    "query": "holi celebration with friend and family",
     "expected_clues": [
-      "video",
-      "cafe video",
-      "celebration clip"
+      "holi",
+      "colors",
+      "gulal",
+      "celebration"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
       "photo_037",
-      "photo_038"
+      "photo_038",
+      "photo_039"
+    ]
+  },
+  {
+    "task_id": "TASK_014",
+    "query": "outfits",
+    "expected_clues": [
+      "outfits",
+      "screenshots",
+      "fashion",
+      "OOTD"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_040",
+      "photo_041",
+      "photo_042"
+    ]
+  },
+  {
+    "task_id": "TASK_015",
+    "query": "positive thoughts",
+    "expected_clues": [
+      "positive thoughts",
+      "quote",
+      "motivation",
+      "mindset"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_043",
+      "photo_044",
+      "photo_045"
+    ]
+  },
+  {
+    "task_id": "TASK_016",
+    "query": "comment in social media",
+    "expected_clues": [
+      "comment in social media",
+      "social media",
+      "tweet",
+      "comments"
+    ],
+    "difficulty": "easy",
+    "target_photo_ids": [
+      "photo_046",
+      "photo_047",
+      "photo_048"
     ]
   },
   {
     "task_id": "TASK_017",
-    "query": "Find the dancing class photo in the dance studio with mirrors.",
+    "query": "Restaurant bill receipts",
     "expected_clues": [
-      "dancing class",
-      "dance studio",
-      "mirrors",
-      "rehearsal"
+      "Restaurant bill receipts",
+      "bill",
+      "receipt",
+      "document"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
-      "photo_021",
-      "photo_022"
+      "photo_049",
+      "photo_050",
+      "photo_051"
     ]
   },
   {
     "task_id": "TASK_018",
-    "query": "Find the swimming classes photo in the clear blue pool.",
+    "query": "video like cafe",
     "expected_clues": [
-      "swimming classes",
-      "swimming pool",
-      "pool water",
-      "swim lesson"
+      "video",
+      "cafe",
+      "celebration",
+      "clip"
     ],
     "difficulty": "easy",
     "target_photo_ids": [
-      "photo_023",
-      "photo_024"
+      "photo_052",
+      "photo_053",
+      "photo_054"
     ]
   }
 ]

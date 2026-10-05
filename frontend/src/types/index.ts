@@ -114,3 +114,28 @@ export interface FetchReviewsParams {
   page?: number;
   page_size?: number;
 }
+
+export interface User {
+  id: number;
+  email: string;
+  full_name?: string;
+  created_at: string;
+}
+
+export interface SignUpRequest {
+  email: string;
+  password: string;
+  full_name?: string;
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface AuthResponse {
+  message: string;
+  token: string;
+  user: User;
+}
+

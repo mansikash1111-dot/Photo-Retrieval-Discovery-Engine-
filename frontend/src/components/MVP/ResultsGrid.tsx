@@ -7,6 +7,8 @@ interface ResultsGridProps {
   onRefine: () => void;
   loading?: boolean;
   query?: string;
+  hasSearched?: boolean;
+  onSelectTopic?: (topic: string) => void;
 }
 
 export const ResultsGrid: React.FC<ResultsGridProps> = ({
@@ -14,7 +16,9 @@ export const ResultsGrid: React.FC<ResultsGridProps> = ({
   onConfirm,
   onRefine,
   loading = false,
-  query = ''
+  query = '',
+  hasSearched = false,
+  onSelectTopic
 }) => {
   if (loading) {
     return (
@@ -29,6 +33,11 @@ export const ResultsGrid: React.FC<ResultsGridProps> = ({
     );
   }
 
+  // Only show results or "no photos found" if a search has actually been performed
+  if (!hasSearched) {
+    return null;
+  }
+
   if (!candidates || candidates.length === 0) {
     return (
       <div className="card" style={{ padding: '3.5rem 2rem', textAlign: 'center', background: 'var(--bg-card)', border: '1px dashed var(--border-color)', borderRadius: 'var(--radius-lg)' }}>
@@ -39,29 +48,65 @@ export const ResultsGrid: React.FC<ResultsGridProps> = ({
           We couldn't find any photos in your library matching this memory. Try searching for available topics in your library like:
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
-          {['Goa beach cafe', 'Birthday cake with balloons', 'Himalayan mountain trek', 'Golden retriever in park', 'Diwali lights', 'Lazy cat', 'Sick day medicine', 'Passport and travel luggage'].map((topic, idx) => (
-            <span key={idx} className="badge" style={{ background: 'rgba(59, 130, 246, 0.12)', color: '#60a5fa', border: '1px solid rgba(59, 130, 246, 0.3)', padding: '0.35rem 0.75rem', fontSize: '0.8rem', borderRadius: '9999px' }}>
+          {[
+            'club party with friends',
+            'trekking',
+            'birthday party with friends',
+            'Diwali with friends and family',
+            'family gatherings',
+            'pets with owner',
+            'restaurant',
+            'Himalayan mountain',
+            'Jaipur',
+            'food photos',
+            'dancing class',
+            'swimming classes',
+            'holi celebration with friend and family',
+            'outfits',
+            'positive thoughts',
+            'comment in social media',
+            'Restaurant bill receipts',
+            'video like cafe'
+          ].map((topic, idx) => (
+            <button
+              key={idx}
+              type="button"
+              className="badge"
+              onClick={() => onSelectTopic && onSelectTopic(topic)}
+              style={{
+                background: 'rgba(59, 130, 246, 0.12)',
+                color: '#60a5fa',
+                border: '1px solid rgba(59, 130, 246, 0.3)',
+                padding: '0.35rem 0.75rem',
+                fontSize: '0.8rem',
+                borderRadius: '9999px',
+                cursor: onSelectTopic ? 'pointer' : 'default'
+              }}
+            >
               {topic}
-            </span>
+            </button>
           ))}
         </div>
       </div>
     );
   }
 
+  // Display up to 5 matching candidates only
+  const displayedCandidates = candidates.slice(0, 5);
+
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
         <h3 style={{ fontSize: '1.1rem', fontWeight: 700, fontFamily: 'var(--font-heading)', color: '#fff' }}>
-          Possible Candidate Matches ({candidates.length})
+          Possible Candidate Matches ({displayedCandidates.length})
         </h3>
         <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-          Ranked by Semantic + Metadata + AI Score
+          Top 5 ranked by Semantic + Metadata + AI Score
         </span>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
-        {candidates.map((cand) => (
+        {displayedCandidates.map((cand) => (
           <PhotoResultCard
             key={cand.photo_id}
             candidate={cand}

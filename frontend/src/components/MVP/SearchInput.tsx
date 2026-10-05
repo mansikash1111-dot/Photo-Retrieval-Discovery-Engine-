@@ -15,11 +15,21 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   loading
 }) => {
   const examplePrompts = [
-    "Find the photo from my Goa trip where we were sitting at a small cafe near the beach.",
-    "Find the picture of my dog near the lake during sunset.",
-    "Find the birthday photo with balloons and cake.",
-    "Find the medicine photo I took when I was sick last year.",
-    "Find the rainy photo from my mountain trek trip in Manali."
+    "club party with friends",
+    "trekking",
+    "family gatherings",
+    "pets with owner",
+    "restaurant",
+    "Himalayan mountain",
+    "food photos",
+    "dancing class",
+    "swimming classes",
+    "holi celebration with friend and family",
+    "outfits",
+    "positive thoughts",
+    "comment in social media",
+    "Restaurant bill receipts",
+    "video like cafe"
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
