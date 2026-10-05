@@ -25,6 +25,13 @@ def get_collection_jobs(limit: int = 50, db: Session = Depends(get_db)):
     jobs = db.query(CollectionJob).order_by(desc(CollectionJob.created_at)).limit(limit).all()
     return [_build_job_response(j) for j in jobs]
 
+@router.delete("/jobs")
+def clear_collection_jobs(db: Session = Depends(get_db)):
+    """Deletes past collection job records to reset job history."""
+    count = db.query(CollectionJob).delete()
+    db.commit()
+    return {"status": "ok", "deleted_count": count}
+
 @router.get("/jobs/{job_id}", response_model=CollectionJobResponse)
 def get_collection_job_by_id(job_id: int, db: Session = Depends(get_db)):
     job = db.query(CollectionJob).filter(CollectionJob.id == job_id).first()

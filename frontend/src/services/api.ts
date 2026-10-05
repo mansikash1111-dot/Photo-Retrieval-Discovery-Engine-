@@ -51,6 +51,12 @@ export async function getCollectionJobs(): Promise<CollectionJob[]> {
   return res.json();
 }
 
+export async function clearCollectionJobs(): Promise<{ status: string; deleted_count: number }> {
+  const res = await fetch(`${API_BASE}/collection/jobs`, { method: 'DELETE' });
+  if (!res.ok) throw new Error('Failed to clear collection jobs');
+  return res.json();
+}
+
 export async function triggerCollection(source_slug?: string, query?: string, max_items: number = 50): Promise<CollectionJob[]> {
   const res = await fetch(`${API_BASE}/collection/run`, {
     method: 'POST',

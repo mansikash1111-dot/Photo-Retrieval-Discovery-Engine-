@@ -19,12 +19,12 @@ Examples of NON-RETRIEVAL-RELATED content:
 
 Respond ONLY with a valid JSON object with NO additional text or markdown formatting outside the JSON:
 
-{
+{{
   "is_retrieval_related": true|false,
   "relevance_score": 0.0 to 1.0,
   "retrieval_topic": "string",
   "reason": "Clear explanation of why this review is or is not retrieval-related based strictly on user evidence"
-}
+}}
 
 Allowed values for `retrieval_topic`:
 - "finding_specific_photo"

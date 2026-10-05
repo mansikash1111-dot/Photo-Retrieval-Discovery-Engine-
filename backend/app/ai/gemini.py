@@ -39,7 +39,10 @@ class GeminiProvider(BaseAIProvider):
                 GeminiProvider._warned_missing_key = True
             return self._heuristic_classification(content)
 
-        prompt = RELEVANCE_CLASSIFICATION_PROMPT.format(content=content)
+        try:
+            prompt = RELEVANCE_CLASSIFICATION_PROMPT.format(content=content)
+        except Exception:
+            prompt = RELEVANCE_CLASSIFICATION_PROMPT.replace("{content}", content).replace("{{", "{").replace("}}", "}")
 
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
         headers = {"Content-Type": "application/json"}
@@ -61,11 +64,24 @@ class GeminiProvider(BaseAIProvider):
                         parts = candidates[0]["content"].get("parts", [])
                         if parts and "text" in parts[0]:
                             raw_text = parts[0]["text"]
-                            return self._parse_json_response(raw_text)
+                            parsed = self._parse_json_response(raw_text)
+                            if parsed:
+                                return parsed
                 else:
                     logger.error(f"Gemini API returned status code {response.status_code}: {response.text}")
         except Exception as e:
             logger.error(f"Error calling Gemini API: {str(e)}")
+
+        # Fallback to Groq AI if available
+        try:
+            from app.ai.groq import GroqProvider
+            groq = GroqProvider()
+            if groq.api_key:
+                groq_result = await groq.classify_relevance(content)
+                if groq_result:
+                    return groq_result
+        except Exception as groq_err:
+            logger.warning(f"Groq fallback also unavailable: {groq_err}")
 
         logger.info("Falling back to heuristic classifier after Gemini API error/timeout.")
         return self._heuristic_classification(content)

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Layout } from '../components/Layout/Layout';
 import { CollectionJobStatus } from '../components/CollectionJobStatus/CollectionJobStatus';
-import { getCollectionJobs, triggerCollection, getStats } from '../services/api';
+import { getCollectionJobs, clearCollectionJobs, triggerCollection, getStats } from '../services/api';
 import { CollectionJob, StatsResponse } from '../types';
-import { Play, PlaySquare, RefreshCw, Sliders, CheckCircle2 } from 'lucide-react';
+import { Play, PlaySquare, RefreshCw, Sliders, CheckCircle2, Trash2 } from 'lucide-react';
 
 export const CollectionJobs: React.FC = () => {
   const [jobs, setJobs] = useState<CollectionJob[]>([]);
@@ -59,6 +59,17 @@ export const CollectionJobs: React.FC = () => {
       console.error('Error launching collection job:', err);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleClearHistory = async () => {
+    if (!window.confirm('Are you sure you want to clear the collection jobs history log?')) return;
+    try {
+      await clearCollectionJobs();
+      setLatestSummary(null);
+      await loadData();
+    } catch (err) {
+      console.error('Error clearing jobs history:', err);
     }
   };
 
@@ -198,10 +209,23 @@ export const CollectionJobs: React.FC = () => {
             </span>
           </div>
 
-          <button className="btn btn-secondary" onClick={loadData}>
-            <RefreshCw size={14} />
-            <span>Refresh</span>
-          </button>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            {jobs.length > 0 && (
+              <button
+                className="btn btn-secondary"
+                onClick={handleClearHistory}
+                style={{ borderColor: 'rgba(239, 68, 68, 0.3)', color: '#FCA5A5' }}
+                title="Clear past failed or completed job logs"
+              >
+                <Trash2 size={14} />
+                <span>Clear History</span>
+              </button>
+            )}
+            <button className="btn btn-secondary" onClick={loadData}>
+              <RefreshCw size={14} />
+              <span>Refresh</span>
+            </button>
+          </div>
         </div>
 
         {jobs.length === 0 ? (

@@ -106,7 +106,7 @@ class CollectionService:
 
             # Classify relevance using Gemini Flash AI
             classification = await self.relevance_service.classify_review(content)
-            if classification["relevance_status"] == "classified":
+            if classification.get("relevance_status") == "classified":
                 job.items_classified += 1
             else:
                 job.items_ai_failed += 1
