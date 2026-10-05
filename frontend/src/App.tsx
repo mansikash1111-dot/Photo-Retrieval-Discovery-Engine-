@@ -5,6 +5,7 @@ import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/Auth/ProtectedRoute';
 import { LoginPage } from './pages/Auth/LoginPage';
 
+import { HomePage } from './pages/HomePage';
 import { Dashboard } from './pages/Dashboard';
 import { Reviews } from './pages/Reviews';
 import { GooglePlayReviews } from './pages/GooglePlayReviews';
@@ -23,8 +24,11 @@ export const App: React.FC = () => {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          {/* Public Overview & Auth Routes */}
-          <Route path="/" element={<Dashboard />} />
+          {/* Public Landing Home Page */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
+          {/* Auth Routes */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<LoginPage defaultSignUp={true} />} />
           
